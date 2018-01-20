@@ -326,7 +326,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
 }
 
 .dark-bg-2 > div {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 10rem 0;
 }
 
@@ -343,7 +343,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
 }
 
 .dark-transparent-bg {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .dark-transparent-bg p {
@@ -1976,7 +1976,7 @@ h2.bg-heading {
   height: 100%;
   content: " ";
   position: absolute;
-  background: rgba(25, 35, 45, 0.6);
+  background: rgba(25, 35, 45, 0.5);
 }
 
 .parallax_banner:before {
@@ -2074,7 +2074,7 @@ h2.bg-heading {
   height: 100%;
   content: " ";
   position: absolute;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .parallax_color_pink:before {
@@ -2100,7 +2100,7 @@ h2.bg-heading {
   height: 100%;
   content: " ";
   position: absolute;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .parallax_color_blue:before {
@@ -10137,9 +10137,15 @@ svg.icon {
   margin-bottom: 35px;
 }
 
+hr.dotted {
+  border:0;
+  border-bottom:1px dashed rgba(255,255,255,.5);
+  margin-bottom:40px;
+  background: transparent;
+}
+
 .fit-box div.content-holder p {
-  margin-bottom: 30px;
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
   min-height: 14rem;
   padding-bottom: 10px;
 }
