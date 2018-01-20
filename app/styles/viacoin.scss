@@ -335,7 +335,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
 }
 
 .dark-bg-3 {
-  background: #333 url("/images/parallax/blackart.jpg") no-repeat 50% 50%;
+  background: #333 url("/images/parallax/blackart.jpg") no-repeat 50% 50%!important;
 }
 
 .dark-bg-3 h1, .dark-bg-3 h2, .dark-bg-3 h3, .dark-bg-3 h4, .dark-bg-3 h5, .dark-bg-3 h6, .dark-bg-3 p, .dark-bg-3 .subheading, .dark-bg-3 i {
@@ -2126,7 +2126,7 @@ h2.bg-heading {
   height: 100%;
   content: " ";
   position: absolute;
-  background: rgba(0, 0, 0, 0.785);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .parallax_color_no:before {
@@ -10376,7 +10376,7 @@ hr.dotted {
   margin-top: 22px;
   margin-bottom: 4px;
   padding: 0;
-  color: #b3b3b3;
+  color: #333;
 }
 
 .timeline .timeline-heading h4.subheading {
@@ -10428,7 +10428,7 @@ hr.dotted {
 #roadmap .panel {
   border-color: rgba(255, 255, 255, 0.1) !important;
   padding-top: 1.5rem !important;
-  background-color: #ffffffd1;
+  background-color: rgba(255,255,255,.8);
 }
 
 #roadmap ul.timeline li:hover .timeline-panel {
@@ -10448,6 +10448,7 @@ hr.dotted {
   border-radius: 5px;
   margin-top: 15px;
   height: 20px;
+  line-height: 20px;
   position: relative;
   overflow: hidden;
   background-color: rgba(1, 1, 1, 0.8);
@@ -10455,14 +10456,13 @@ hr.dotted {
 
 #roadmap div.progress-meter em {
   font-size: 12px;
-  line-height: 18px;
   text-align: left;
   padding-right: 5px;
   display: inline-block;
   height: 18px;
   line-height: 18px;
   position: absolute;
-  color: #5f5d5d;
+  color: #8a8787;
 }
 
 #roadmap div.progress-meter.left em {
@@ -10475,7 +10475,7 @@ hr.dotted {
 
 #roadmap div.progress-meter span {
   display: inline-block;
-  height: 18px;
+  height: 19px;
   background-color: rgba(0, 170, 224, 0.35);
   border-radius: 4px;
   transition: all 1s ease;
