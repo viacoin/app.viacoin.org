@@ -8814,7 +8814,7 @@ button.list-group-item-danger.active:focus {
 .panel-default > .panel-heading {
   color: #333333;
   background-color: #f5f5f5;
-  border-color: #ddd;
+  border-color: #353535;
 }
 
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
@@ -10141,6 +10141,7 @@ svg.icon {
   margin-bottom: 30px;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
   min-height: 14rem;
+  padding-bottom: 10px;
 }
 
 .fit-box div.content-holder img {
@@ -10206,8 +10207,12 @@ svg.icon {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+#litecoinpool{
+  font-size: 2.8vh;
+}
+
 .panel {
-  background-color: rgba(245, 245, 245, 0.94);
+  background-color: rgba(130, 130, 130, 0.94);
   border-color: rgba(0, 0, 0, 0.66);
 }
 
@@ -10217,18 +10222,42 @@ svg.icon {
 }
 
 .panel .panel-body {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #131313;
 }
 
 .panel i {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   color: rgba(0, 0, 0, 0.5);
 }
 
 .panel:hover i {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  color: #000 !important;
+  color: #07A8DE;
+}
+
+.panel:hover .fa-money {
+  color: #688a68;
+}
+
+.panel:hover .fa-bolt {
+  color: #b8c76a;
+}
+
+.panel:hover .fa-apple, .panel:hover .fa-github {
+  color: #6f6f6f;
+}
+
+.panel:hover .fa-usb {
+  color: #2b2b2b;
+}
+
+.panel:hover .fa-link {
+  color: #2b2b2b;
+}
+
+.panel:hover .fa-mobile {
+  color: #fffcfc;
 }
 
 #roadmap > div {
@@ -10796,7 +10825,7 @@ svg.icon {
 }
 
 .parallax i {
-  color: #333;
+  color: #cecece;
 }
 
 .icon-content-v3 {
