@@ -545,7 +545,7 @@
                         </div>
                         <div class="timeline-body">
                           <p class="text-muted">
-                            Optimize concurrency code. Speed up block fetching several times.
+                            Refactor code with focus on concurrency. Speed up block fetching several times.
                           </p>
 
                           <div class="progress-meter left">
@@ -615,8 +615,11 @@
                         </div>
                         <div class="timeline-body">
                           <p class="text-muted">
-                            Implementing the shortest digital signature scheme that is provably secure in a random oracle model.
-                            By using the Schnorr algorithm to sign transactions, security and efficiency both improve.
+                              It's the the successor of Elliptic Curve Digital Signatures as it is a more efficient algorithm.
+                              Schnorr signatures support “native multisig” which enables the aggregation of multiple signatures into a single one valid for the sum of the keys of their respective inputs.
+                              /batch validation. I could reduce the use of storage & bandwidth by 25% or more.<br>
+                              Another benefit would be incentivized privacy. 1 tx can include multiple tx's. By using a tumbler like coinjoin, all participants can not
+                              only combine their tx but also combine their signatures
                           </p>
 
                           <div class="progress-meter right">
@@ -639,6 +642,9 @@
                         </div>
                         <div class="timeline-body">
                           <p class="text-muted">
+                            Mast allows Viacoin transaction validation scripts to be stored in partially-hashed form and allows nodes to interact with Merkle Trees.
+                            This enables complicated redemption conditions that is currently not possible due to the script size and opcode limit, improves privacy by hiding unexecuted
+                            branches, and allows inclusion of non-consensus enforced data with very low or no additional cost.
                             MAST allows for complicated smart contracts to be created on the VIA blockchain without clogging it up.
                           </p>
 
@@ -662,36 +668,33 @@
                         </div>
                         <div class="timeline-body">
                           <p class="text-muted">
-                            Turning the VIA blockchain into a smart contract platform that also rewards the miners via merge-mining.
+                              Rootstock is a smart contract platform which has a two-way peg. The idea is to enable it to work with
+                              smart contracts. Rootstock runs a turing complete Virtual machine called Rootstock Virtual Machine (which
+                              is also compatible with Ethereum virtual machine!) and allows solidity compiled smart contracts to run.
                           </p>
                           <div class="progress-meter right">
                             <em>60%</em>
                             <span style="right:40%" data-wow-delay="1.7s" data-wow-iteration="1" class="wow slideInLeft"></span>
                           </div>
-
-
                         </div>
                       </div>
                       <div class="line"></div>
                     </li>
 
-
                     <li>
                       <div class="timeline-image">
-                        <i class="fa fa-user-secret fa-5x" aria-hidden="true"></i>
+                        <i class="fa fa-key fa-5x" aria-hidden="true"></i>
                         <img src="/images/favicon/via-64.svg"/>
                       </div>
                       <div class="timeline-panel panel">
                         <div class="timeline-heading">
-                          <h4>Styx Anonymous Transactions</h4>
-                          <h4 class="subheading">Read our STYX Whitepaper</h4>
+                          <h4>No keypool refill flush</h4>
+                          <h4 class="subheading"></h4>
                         </div>
                         <div class="timeline-body">
                           <p class="text-muted">
-                            Styx is an unlinkable anonymous atomic payment hub for Viacoin.
-                            <br/>Read the <a href="//viacoin.org/whitepaper/Viacoin-Styx.pdf" target="_blank">whitepaper</a>.
+                              ~20x speedup in creating a new wallet
                           </p>
-
                           <div class="progress-meter left">
                             <em>50%</em>
                             <span style="left:50%" data-wow-delay="1.8s" data-wow-iteration="1" class="wow slideInRight"></span>
@@ -724,6 +727,148 @@
                     </li>
 
 
+                    <li>
+                        <div class="timeline-image">
+                          <i class="fa fa-database fa-5x" aria-hidden="true"></i>
+                          <img src="/images/favicon/via-64.svg"/>
+                        </div>
+                        <div class="timeline-panel panel">
+                          <div class="timeline-heading">
+                            <h4>Upgrade LevelDB</h4>
+                            <h4 class="subheading"></h4>
+                          </div>
+                          <div class="timeline-body">
+                            <p class="text-muted">
+                                Contains hardware acceleration for CRC on architectures supporting SSE 4.2. As a result, synchronization and block validation will be faste
+                            </p>
+                            <div class="progress-meter left">
+                              <em>50%</em>
+                              <span style="left:50%" data-wow-delay="1.8s" data-wow-iteration="1" class="wow slideInRight"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="line"></div>
+                      </li>
+
+                      <li class="timeline-inverted">
+                          <div class="timeline-image">
+                            <i class="fa fa-bolt fa-5x" aria-hidden="true"></i>
+                            <img src="/images/favicon/via-64.svg"/>
+                          </div>
+                          <div class="timeline-panel panel">
+                            <div class="timeline-heading">
+                              <h4>Lightning Network Daemon (LND)</h4>
+                              <h4 class="subheading"></h4>
+                            </div>
+                            <div class="timeline-body">
+                              <p class="text-muted">
+                                The Lightning Network Daemon (lnd) - is a complete implementation of a Lightning Network node.
+                              </p>
+                              <div class="progress-meter right">
+                                <em>60%</em>
+                                <span style="right:40%" data-wow-delay="1.9s" data-wow-iteration="1" class="wow slideInLeft"></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="line"></div>
+                        </li>
+
+                        <li>
+                            <div class="timeline-image">
+                              <i class="fa fa-bolt fa-5x" aria-hidden="true"></i>
+                              <img src="/images/favicon/via-64.svg"/>
+                            </div>
+                            <div class="timeline-panel panel">
+                              <div class="timeline-heading">
+                                <h4>ZAP Lightning Network Wallet</h4>
+                                <h4 class="subheading"></h4>
+                              </div>
+                              <div class="timeline-body">
+                                <p class="text-muted">
+                                    Zap is a Lightning Network wallet that helps users accomplish their goals with a great experience. 
+                                    Taking in complex protocol language and delivering a friendly interface where anyone can send and receive cheap and instant.
+                                    <br/>Currently for Bitcoin: <a href="https://zap.jackmallers.com/" target="_blank">zap.jackmallers.com</a>.
+                                </p>
+                                <div class="progress-meter left">
+                                  <em>50%</em>
+                                  <span style="left:50%" data-wow-delay="1.8s" data-wow-iteration="1" class="wow slideInRight"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="line"></div>
+                          </li>
+
+                          <li class="timeline-inverted">
+                              <div class="timeline-image">
+                                <i class="fa fa-code fa-5x" aria-hidden="true"></i>
+                                <img src="/images/favicon/via-64.svg"/>
+                              </div>
+                              <div class="timeline-panel panel">
+                                <div class="timeline-heading">
+                                  <h4>ViacoinJ</h4>
+                                  <h4 class="subheading"></h4>
+                                </div>
+                                <div class="timeline-body">
+                                  <p class="text-muted">
+                                      Viacoin Core alternative implementation in Java.
+                                  </p>
+                                  <div class="progress-meter right">
+                                    <em>60%</em>
+                                    <span style="right:40%" data-wow-delay="1.9s" data-wow-iteration="1" class="wow slideInLeft"></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="line"></div>
+                            </li>
+
+                            <li>
+                                <div class="timeline-image">
+                                  <i class="fa fa-mobile fa-5x" aria-hidden="true"></i>
+                                  <img src="/images/favicon/via-64.svg"/>
+                                </div>
+                                <div class="timeline-panel panel">
+                                  <div class="timeline-heading">
+                                    <h4>Samourai mobile wallet fork for Viacoin</h4>
+                                    <h4 class="subheading"></h4>
+                                  </div>
+                                  <div class="timeline-body">
+                                    <p class="text-muted">
+                                        A mobile Viacoin wallet for the streets. A modern viacoin wallet hand forged to keep your transactions private, your identity masked, and your funds secure
+                                        <br/>Currently for Bitcoin: <a href="https://samouraiwallet.com/" target="_blank">ssamouraiwallet.com/</a>.
+                                    </p>
+                                    <div class="progress-meter left">
+                                      <em>50%</em>
+                                      <span style="left:50%" data-wow-delay="1.8s" data-wow-iteration="1" class="wow slideInRight"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="line"></div>
+                              </li>
+
+                              <li class="timeline-inverted">
+                                  <div class="timeline-image">
+                                  <i class="fa fa-user-secret fa-5x" aria-hidden="true"></i>
+                                  <img src="/images/favicon/via-64.svg"/>
+                                </div>
+                                <div class="timeline-panel panel">
+                                  <div class="timeline-heading">
+                                    <h4>Styx Anonymous Transactions</h4>
+                                    <h4 class="subheading">Read our STYX Whitepaper</h4>
+                                  </div>
+                                  <div class="timeline-body">
+                                    <p class="text-muted">
+                                      Styx is an unlinkable anonymous atomic payment hub for Viacoin.
+                                      <br/>Read the <a href="//viacoin.org/whitepaper/Viacoin-Styx.pdf" target="_blank">whitepaper</a>.
+                                    </p>
+          
+                                    <div class="progress-meter right">
+                                      <em>50%</em>
+                                      <span style="right:50%" data-wow-delay="1.8s" data-wow-iteration="1" class="wow slideInLeft"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="line"></div>
+                              </li>
 
                   </ul>
                 </div>
