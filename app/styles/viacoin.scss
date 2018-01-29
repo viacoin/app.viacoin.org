@@ -335,7 +335,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
 }
 
 .dark-bg-3 {
-  background: #333 url("/images/parallax/blackart.jpg") no-repeat 50% 50%!important;
+  background: #333 url("/images/parallax/blackart.jpg") no-repeat 50% 50% !important;
 }
 
 .dark-bg-3 h1, .dark-bg-3 h2, .dark-bg-3 h3, .dark-bg-3 h4, .dark-bg-3 h5, .dark-bg-3 h6, .dark-bg-3 p, .dark-bg-3 .subheading, .dark-bg-3 i {
@@ -4718,7 +4718,7 @@ pre code {
     width: 41.6666666667%;
   }
   .col-md-6 {
-    width: 50%;
+    width: 33%;
   }
   .col-md-7 {
     width: 58.3333333333%;
@@ -10138,9 +10138,9 @@ svg.icon {
 }
 
 hr.dotted {
-  border:0;
-  border-bottom:1px dashed rgba(255,255,255,.5);
-  margin-bottom:40px;
+  border: 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+  margin-bottom: 40px;
   background: transparent;
 }
 
@@ -10213,8 +10213,17 @@ hr.dotted {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-#litecoinpool{
+#litecoinpool {
   font-size: 2.8vh;
+}
+
+#viacoininsight {
+  font-size: 3vh;
+  color: #d6d695;
+  text-decoration-style: dotted;
+  font-family: Ubuntu;
+  text-decoration: none;
+  padding-bottom: 4px;
 }
 
 .panel {
@@ -10428,7 +10437,7 @@ hr.dotted {
 #roadmap .panel {
   border-color: rgba(255, 255, 255, 0.1) !important;
   padding-top: 1.5rem !important;
-  background-color: rgba(255,255,255,.8);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 #roadmap ul.timeline li:hover .timeline-panel {
