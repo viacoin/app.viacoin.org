@@ -1986,13 +1986,13 @@ h2.bg-heading {
   height: 100%;
   content: " ";
   position: absolute;
-  background: url(../../images/parallax/gridtile.png) repeat;
+  background: url(../images/parallax/gridtile.png) repeat;
 }
 
 @media (max-width: 762px) {
   .parallax_banner {
     position: relative;
-    background-image: url(../../images/parallax/intro-1.jpg);
+    background-image: url(../images/parallax/intro-1.jpg);
     height: auto;
   }
 }
@@ -2019,12 +2019,12 @@ h2.bg-heading {
   height: 100%;
   content: " ";
   position: absolute;
-  background: url(../../images/parallax/gridtile.png) repeat;
+  background: url(../images/parallax/gridtile.png) repeat;
 }
 
 .parallax_banner3 {
   position: relative;
-  background-image: url(../../images/parallax/intro-3.jpg);
+  background-image: url(../images/parallax/intro-3.jpg);
   height: 100vh;
 }
 
@@ -2050,13 +2050,13 @@ h2.bg-heading {
   height: 100%;
   content: " ";
   position: absolute;
-  background: url(../../images/parallax/gridtile.png) repeat;
+  background: url(../images/parallax/gridtile.png) repeat;
 }
 
 @media (max-width: 762px) {
   .parallax_banner3 {
     position: relative;
-    background-image: url(../../images/parallax/intro-3.jpg);
+    background-image: url(../images/parallax/intro-3.jpg);
     height: auto;
   }
 }
@@ -2084,7 +2084,7 @@ h2.bg-heading {
   height: 100%;
   content: " ";
   position: absolute;
-  background: url(../../images/parallax/gridtile.png) repeat;
+  background: url(../images/parallax/gridtile.png) repeat;
 }
 
 /*parallax_color_blue*/
@@ -2110,7 +2110,7 @@ h2.bg-heading {
   height: 100%;
   content: " ";
   position: absolute;
-  background: url(../../images/parallax/gridtile.png) repeat;
+  background: url(../images/parallax/gridtile.png) repeat;
 }
 
 /*parallax_color_no*/
@@ -2136,7 +2136,7 @@ h2.bg-heading {
   height: 100%;
   content: " ";
   position: absolute;
-  /*background: url(../../images/parallax/blackart2.jpg) repeat;*/
+  /*background: url(../images/parallax/blackart2.jpg) repeat;*/
   background-size: contain;
 
   background-color: #222;
@@ -2145,7 +2145,7 @@ h2.bg-heading {
 /*parallax_color_gradient*/
 .parallax_color_gradient {
   position: relative;
-  background-image: url(../../images/parallax/4.jpg);
+  background-image: url(../images/parallax/4.jpg);
   color: #FFF;
 }
 
@@ -2173,7 +2173,7 @@ h2.bg-heading {
   height: 100%;
   content: " ";
   position: absolute;
-  background: url(../../images/parallax/gridtile.png) repeat;
+  background: url(../images/parallax/gridtile.png) repeat;
 }
 
 canvas {
@@ -10661,37 +10661,37 @@ hr.dotted {
 
 @media (min-width: 0px) and (max-width: 800px) {
   .parallax_banner2 {
-    background-image: url(../../images/background/main/via-bg-1024.jpg);
+    background-image: url(../images/background/main/via-bg-1024.jpg);
   }
 }
 
 @media (min-width: 801px) and (max-width: 1200px) {
   .parallax_banner2 {
-    background-image: url(../../images/background/main/via-bg-1280.jpg);
+    background-image: url(../images/background/main/via-bg-1280.jpg);
   }
 }
 
 @media (min-width: 1201px) and (max-width: 1700px) {
   .parallax_banner2 {
-    background-image: url(../../images/background/main/via-bg-1600.jpg);
+    background-image: url(../images/background/main/via-bg-1600.jpg);
   }
 }
 
 @media (min-width: 1701px) and (max-width: 2300px) {
   .parallax_banner2 {
-    background-image: url(../../images/background/main/via-bg-1920.jpg);
+    background-image: url(../images/background/main/via-bg-1920.jpg);
   }
 }
 
 @media (min-width: 2301px) and (max-width: 3000px) {
   .parallax_banner2 {
-    background-image: url(../../images/background/main/via-bg-2600.jpg);
+    background-image: url(../images/background/main/via-bg-2600.jpg);
   }
 }
 
 @media (min-width: 3001px) {
   .parallax_banner2 {
-    background-image: url(../../images/background/main/via-bg-4k.jpg);
+    background-image: url(../images/background/main/via-bg-4k.jpg);
   }
 }
 
@@ -10702,31 +10702,31 @@ hr.dotted {
 
 @media (min-width: 0px) and (max-width: 1200px) {
   .parallax_color_no, .parallax_color_blue {
-    background-image: url(../../images/background/seoul/seoul-1280.jpg);
+    background-image: url(../images/background/seoul/seoul-1280.jpg);
   }
 }
 
 @media (min-width: 1201px) and (max-width: 1700px) {
   .parallax_color_no, .parallax_color_blue {
-    background-image: url(../../images/background/seoul/seoul-1600.jpg);
+    background-image: url(../images/background/seoul/seoul-1600.jpg);
   }
 }
 
 @media (min-width: 1701px) and (max-width: 2300px) {
   .parallax_color_no, .parallax_color_blue {
-    background-image: url(../../images/background/seoul/seoul-1920.jpg);
+    background-image: url(../images/background/seoul/seoul-1920.jpg);
   }
 }
 
 @media (min-width: 2000px) and (max-width: 3000px) {
   .parallax_color_no, .parallax_color_blue {
-    background-image: url(../../images/background/seoul/seoul-2600.jpg);
+    background-image: url(../images/background/seoul/seoul-2600.jpg);
   }
 }
 
 @media (min-width: 3001px) {
   .parallax_color_no, .parallax_color_blue {
-    background-image: url(../../images/background/seoul/seoul-4k.jpg);
+    background-image: url(../images/background/seoul/seoul-4k.jpg);
   }
 }
 
@@ -10737,37 +10737,37 @@ hr.dotted {
 
 @media (min-width: 0px) and (max-width: 999px) {
   .parallax_color_pink {
-    background-image: url(../../images/background/shanghai/shanghai-1024.jpg);
+    background-image: url(../images/background/shanghai/shanghai-1024.jpg);
   }
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
   .parallax_color_pink {
-    background-image: url(../../images/background/shanghai/shanghai-1280.jpg);
+    background-image: url(../images/background/shanghai/shanghai-1280.jpg);
   }
 }
 
 @media (min-width: 1201px) and (max-width: 1700px) {
   .parallax_color_pink {
-    background-image: url(../../images/background/shanghai/shanghai-1600.jpg);
+    background-image: url(../images/background/shanghai/shanghai-1600.jpg);
   }
 }
 
 @media (min-width: 1701px) and (max-width: 2300px) {
   .parallax_color_pink {
-    background-image: url(../../images/background/shanghai/shanghai-1920.jpg);
+    background-image: url(../images/background/shanghai/shanghai-1920.jpg);
   }
 }
 
 @media (min-width: 2000px) and (max-width: 3000px) {
   .parallax_color_pink {
-    background-image: url(../../images/background/shanghai/shanghai-2600.jpg);
+    background-image: url(../images/background/shanghai/shanghai-2600.jpg);
   }
 }
 
 @media (min-width: 3001px) {
   .parallax_color_pink {
-    background-image: url(../../images/background/shanghai/shanghai-4k.jpg);
+    background-image: url(../images/background/shanghai/shanghai-4k.jpg);
   }
 }
 
@@ -10781,19 +10781,19 @@ hr.dotted {
 
 @media (min-width: 0px) and (max-width: 800px) {
   .dark-bg-2 {
-    background-image: url(../../images/background/leddot/leddot-1024.jpg);
+    background-image: url(../images/background/leddot/leddot-1024.jpg);
   }
 }
 
 @media (min-width: 801px) and (max-width: 1200px) {
   .dark-bg-2 {
-    background-image: url(../../images/background/leddot/leddot-1280.jpg);
+    background-image: url(../images/background/leddot/leddot-1280.jpg);
   }
 }
 
 @media (min-width: 1201px) {
   .dark-bg-2 {
-    background-image: url(../../images/background/leddot/leddot-1680.jpg);
+    background-image: url(../images/background/leddot/leddot-1680.jpg);
   }
 }
 
