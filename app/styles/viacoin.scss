@@ -460,6 +460,10 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
   background-color: rgba(0, 0, 0, 0.6);
   padding: 15px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+     position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
 }
 
 .copyrights-wrapper p {
@@ -10118,6 +10122,8 @@ svg.icon {
   .footer {
     padding-right: 0;
     padding-left: 0;
+      padding-bottom: 75px;
+
   }
   /* Space out the masthead */
   .header {
@@ -10567,10 +10573,10 @@ hr.dotted {
     display: none;
   }
   #roadmap .timeline > li:nth-child(even) {
-    right: -25px;
+    right: 0px;
   }
   #roadmap .timeline > li:nth-child(odd) {
-    left: -25px;
+    left: 0px;
   }
 }
 
@@ -10978,4 +10984,7 @@ hr.dotted {
     width: 100%;
     height: auto;
     border-radius: 50%;
+}
+.panel-body a img {
+    max-width: 100% !important;
 }
