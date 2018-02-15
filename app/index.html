@@ -61,7 +61,6 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -155,10 +154,6 @@
                       implemented at a time. <strong>Several features can be deployed at the same time</strong><br>
                       Viacoin Whitepaper: <a href="https://github.com/viacoin/documents/blob/master/whitepapers/Viacoin_whitepaper.pdf">Viacoin_whitepaper.pdf</a>
                     </p>
-
-                  <hr class="dotted"/>
-                  <img src="images/other/speed.png" class="img-responsive "/>
-                  <div class="cover"></div>
                 </div>
               </div>
             </div>
@@ -177,10 +172,6 @@
                     This enables improvements of several orders of magnitude in transaction throughput by moving the majority of
                     transactions outside the consensus ledgers into Payment channels. This allows millions to billions of transactions
                     per second across the network. <strong>A capacity that blows away legacy payment rails.</strong></p>
-
-                  <hr class="dotted"/>
-                  <img src="images/other/scalable.jpg" class="img-responsive" />
-                  <div class="cover"></div>
                 </div>
               </div>
             </div>
@@ -198,9 +189,6 @@
                       Scrypt coin simultaneously Viacoin for “free”. As Viacoin mining isn’t driven by large block rewards, this allows
                       Viacoin to have a lower rate of inflation compared to other cryptocurrencies that do not support merged
                       mining.</p>
-                    <hr class="dotted"/>
-                    <img src="images/other/auxpow.png" class="img-responsive  " />
-                    <div class="cover"></div>
                 </div>
               </div>
             </div>
@@ -259,29 +247,17 @@
           </div>
           <div class="row margin-top-50">
             <div class="col-md-12 margin-bottom-40">
-  <div class="col-12 col-sm-3 text-center">
+  <div class="col-12 col-sm-4 text-center">
                     <h1 class="display-5 text-center coin-item wow fadeIn">0.13.3.7</h1>
                     <i>Current version</i>
                 </div>
-                <div class="col-12 col-sm-3 text-center">
-                    <h1 class="display-5 text-center coin-item wow fadeIn">179</h1>
+                <div class="col-12 col-sm-4 text-center">
+                    <h1 class="display-5 text-center coin-item wow fadeIn"><div id="stats-rank"></div></h1>
                     <i>Marketcap Rank</i>
                 </div>
-                <div class="col-12 col-sm-3 text-center">
-                    <h1 class="display-5 text-center coin-item wow fadeIn">$2.77</h1>
+                <div class="col-12 col-sm-4 text-center">
+                    <h1 class="display-5 text-center coin-item wow fadeIn"><div id="stats-price"></div></h1>
                    <i>Current Price</i>
-                </div>
-                <div class="col-12 col-sm-3 text-center">
-                    <h1 class="display-5 text-center coin-item wow fadeIn">$2,186,420</h1>
-                    <i>Volume (24H)</i>
-                </div>
-                <div class="col-12 col-sm-3 col-sm-offset-3 text-center">
-                    <h1 class="display-5 text-center coin-item wow fadeIn">22.980.860</h1>
-                    <i>Circulating Supply</i>
-                </div>
-                <div class="col-12 col-sm-3 text-center">
-                    <h1 class="display-5 text-center coin-item wow fadeIn">23.000.000</h1>
-                    <i>Max Supply</i>
                 </div>
                 
             </div>
@@ -309,7 +285,7 @@
             </div>
           </div>
           <!-- /.col -->
-                       <div class="col-sm-6 col-md-4 col-lg-3 col-lg-offset-3 col-md-offset-2">
+                       <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card card-inverse card-info">
                     <img class="card-img-top" src="images/team/romano.jpeg">
                     <div class="card-block">
@@ -326,7 +302,7 @@
             
             <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
                 <div class="card card-inverse card-info">
-                    <img class="card-img-top" src="https://pbs.twimg.com/profile_images/768053845704511488/tWKpRixA.jpg">
+                    <img class="card-img-top" src="images/team/frank.jpg">
                     <div class="card-block">
                         <h4 class="card-title">Frank Marrone</h4>
                         <div class="card-text">
@@ -335,6 +311,36 @@
                     </div>
                     <div class="card-footer">
                         <a href="https://www.linkedin.com/in/frank-marrone-b833533/" target="_blank"><button class="btn btn-info float-right btn-sm">Linkedin</button></a>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                <div class="card card-inverse card-info">
+                    <img class="card-img-top" src="images/team/nopic.jpg">
+                    <div class="card-block">
+                        <h4 class="card-title">Reorder</h4>
+                        <div class="card-text">
+                            Developer
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/reorder" target="_blank"><button class="btn btn-info float-right btn-sm">Github</button></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                <div class="card card-inverse card-info">
+                    <img class="card-img-top" src="images/team/nopic.jpg">
+                    <div class="card-block">
+                        <h4 class="card-title">Mike V</h4>
+                        <div class="card-text">
+                            Marketing Manager
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://twitter.com/TradingWhaIe" target="_blank"><button class="btn btn-info float-right btn-sm">Twitter</button></a>
                     </div>
                 </div>
             </div>
@@ -501,7 +507,7 @@
                   <div class="panel-heading">Litecoinpool</div>
                   <div class="panel-body">
                     <a href="https://www.litecoinpool.org/" target="_blank">
-                      <p id="litecoinpool"><b>litecoin</b>pool</p>
+                      <img src="images/pools/litecoinpool.png" width="210px">
                     </a>
                   </div>
                 </div>
@@ -577,7 +583,7 @@
                   <div class="panel-heading">Block Explorer</div>
                   <div class="panel-body">
                     <a href="https://chainz.cryptoid.info/via/" target="_blank">
-                      <img src="https://chainz.cryptoid.info/theme/cryptoID64.png">
+                      <img src="images/pools/cryptoid.png">
                     </a>
                   </div>
                 </div>
