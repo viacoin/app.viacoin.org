@@ -460,6 +460,10 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
   background-color: rgba(0, 0, 0, 0.6);
   padding: 15px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+     position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
 }
 
 .copyrights-wrapper p {
@@ -1445,6 +1449,11 @@ ul.features-list li {
 
 #navbar {
   padding-bottom: 10px;
+    
+    @media (max-width: 767px) {
+        background-color:black;
+    }
+    
 }
 
 .navbar .container-fluid {
@@ -2136,11 +2145,9 @@ h2.bg-heading {
   height: 100%;
   content: " ";
   position: absolute;
-  /*background: url(../images/parallax/blackart2.jpg) repeat;*/
+  background: url(../images/parallax/chalkboard.jpg) repeat;
   background-size: contain;
-
   background-color: #222;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%333' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
 }
 /*parallax_color_gradient*/
 .parallax_color_gradient {
@@ -6924,7 +6931,11 @@ tbody.collapse.in {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 20px 15px;
+    @media (max-width: 991px) {
+    margin-top: -3px;    
+    }
+
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
@@ -7257,10 +7268,10 @@ tbody.collapse.in {
 .navbar-toggle {
   position: relative;
   float: right;
-  margin-right: 15px;
+  position:relative;
+    right:-60px;
   padding: 9px 10px;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 3px;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
@@ -10071,10 +10082,12 @@ button.close {
 }
 
 .navbar-brand img {
-  max-width: 175px;
-  padding-top: 0;
+    @media screen and (min-width: 768px) {
+        position: relative;
+  top: -15px;  
+    }
   position: relative;
-  top: -15px;
+  top: -25px;
 }
 
 svg.icon {
@@ -10083,7 +10096,7 @@ svg.icon {
 }
 
 .navbar {
-  background-color: #000000 !important;
+  background-color: black !important;
 }
 
 .container {
@@ -10109,6 +10122,8 @@ svg.icon {
   .footer {
     padding-right: 0;
     padding-left: 0;
+      padding-bottom: 75px;
+
   }
   /* Space out the masthead */
   .header {
@@ -10125,7 +10140,7 @@ svg.icon {
 }
 
 .icon-box-v2:hover h3, .icon-box-v2:hover i {
-  color: #07A8DE;
+  color: #1E9E9E;
 }
 
 #resources, #wallets, #roadmap {
@@ -10240,7 +10255,7 @@ hr.dotted {
 .panel:hover i {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  color: #07A8DE;
+  color: #1E9E9E;
 }
 
 .panel:hover .fa-money {
@@ -10488,7 +10503,7 @@ hr.dotted {
 }
 
 #roadmap ul.timeline li:hover h4:not(.subheading) {
-  color: #07A8DE !important;
+  color: #1E9E9E !important;
 }
 
 #roadmap ul.timeline li:hover .progress-meter {
@@ -10501,11 +10516,11 @@ hr.dotted {
 }
 
 #roadmap ul.timeline li:hover .progress-meter span {
-  background-color: #23aad8;
+  background-color: #1E9E9E;
 }
 
 #roadmap ul.timeline li:hover .timeline-image {
-  background-color: #07A8DE;
+  background-color: #1E9E9E;
 }
 
 #roadmap ul.timeline li:hover .timeline-image i {
@@ -10558,10 +10573,10 @@ hr.dotted {
     display: none;
   }
   #roadmap .timeline > li:nth-child(even) {
-    right: -25px;
+    right: 0px;
   }
   #roadmap .timeline > li:nth-child(odd) {
-    left: -25px;
+    left: 0px;
   }
 }
 
@@ -10651,7 +10666,7 @@ hr.dotted {
 }
 
 .icon-heart {
-  fill: #07A8DE;
+  fill: #1E9E9E;
 }
 
 .parallax_banner2 {
@@ -10886,4 +10901,91 @@ hr.dotted {
     margin-bottom: 5%;
   }
 }
+.coin-item{
+  color: #1E9E9E !important;
+}
+.progress-meter{
+  em{
+    z-index:1000;
+}  
+}
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    margin-bottom: 15px;
+}
 
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+    background-color:white;
+    color:black;
+}
+
+.card-img-top {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.28571429em;
+    font-weight: 700;
+    line-height: 1.2857em;
+    color:black !important;
+    text-transform: none;
+}
+
+.card-text {
+    clear: both;
+    margin-top: .5em;
+    color: rgba(0, 0, 0, .68);
+}
+
+.card-footer {
+    font-size: 1em;
+    position: static;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    padding: .75em 1em;
+    color: rgba(0, 0, 0, .4);
+    border-top: 1px solid rgba(0, 0, 0, .05) !important;
+    background: #fff;
+}
+
+.card-inverse .btn {
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+
+.profile {
+    position: absolute;
+    top: -12px;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.profile-avatar {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.panel-body a img {
+    max-width: 100% !important;
+}
