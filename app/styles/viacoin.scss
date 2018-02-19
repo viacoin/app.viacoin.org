@@ -1608,7 +1608,7 @@ ul.features-list li {
     padding: 5px 15px 5px 25px;
   }
   .navbar-inverse .navbar-brand {
-    padding-top: 15px;
+    /*padding-top: 15px;*/
   }
   .navbar-inverse .navbar-brand h1 {
     padding-top: 0px;
@@ -7246,17 +7246,16 @@ tbody.collapse.in {
 
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
+ padding: 5px 0;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 50px;
   height: 50px;
 }
 
 .navbar-brand img {
   max-width: 175px;
   padding-top: 0;
-  position: relative;
-  top: -15px;
+
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
@@ -10089,15 +10088,6 @@ button.close {
 
 .marketing p + h4 {
   margin-top: 28px;
-}
-
-.navbar-brand img {
-    @media screen and (min-width: 768px) {
-        position: relative;
-  top: -15px;  
-    }
-  position: relative;
-  top: -25px;
 }
 
 svg.icon {
