@@ -10807,7 +10807,11 @@ hr.dotted {
 @media (min-width: 0px) and (max-width: 800px) {
   .dark-bg-2 {
     background-image: url(../images/background/leddot/leddot-1024.jpg);
+    background-size: cover;
   }
+  .dark-bg-2 > div {
+    background-color: rgba(0, 0, 0, 0.6)!important;
+    }
 }
 
 @media (min-width: 801px) and (max-width: 1200px) {
