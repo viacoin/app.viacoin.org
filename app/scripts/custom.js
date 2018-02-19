@@ -168,13 +168,13 @@ $(document).ready(function() {
 
  $(function() {
             $.ajax({
-                dataType: "json",
-                url: "https://api.coinmarketcap.com/v1/ticker/viacoin/",
+                dataType: 'json',
+                url: 'https://api.coinmarketcap.com/v1/ticker/viacoin/',
                success: function(data) {
                    var rank = data[0].rank;
                    var price = parseFloat(data[0].price_usd).toFixed(2);
-                    document.getElementById("stats-rank").innerHTML = rank;
-                   document.getElementById("stats-price").innerHTML = '$' + price;
+                    document.getElementById('stats-rank').innerHTML = rank;
+                   document.getElementById('stats-price').innerHTML = '$' + price;
                 }
             });
         });
