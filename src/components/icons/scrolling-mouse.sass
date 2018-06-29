@@ -1,0 +1,17 @@
+.icon-scrolling-mouse
+  width: 1.5rem
+  height: 2rem
+  stroke: $white
+  stroke-width: 1
+  fill: none
+  opacity: .7
+
+  .scroller
+    fill: $white
+    stroke: none
+    animation: updown 2s infinite
+
+@include keyframes(updown)
+  0% { -webkit-transform: translate(0, 0); transform: translate(0, 0) }
+  50% { -webkit-transform: translate(0, 5px); transform: translate(0, 5px) }
+  100% { -webkit-transform: translate(0, 0); transform: translate(0, 0) }

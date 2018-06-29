@@ -1,0 +1,46 @@
+@import "../node_modules/bulma/sass/utilities/mixins"
+@import "../node_modules/bulma/sass/utilities/controls"
+
+// ANIMATIONS
+
+@mixin keyframes($animation-name)
+  @-webkit-keyframes #{$animation-name}
+    @content
+  @-moz-keyframes #{$animation-name}
+    @content
+  @-ms-keyframes #{$animation-name}
+    @content
+  @-o-keyframes #{$animation-name}
+    @content
+  @keyframes #{$animation-name}
+    @content
+
+@mixin animation($str)
+  -webkit-animation: #{$str}
+  -moz-animation: #{$str}
+  -ms-animation: #{$str}
+  -o-animation: #{$str}
+  animation: #{$str}
+
+@mixin transition($args...)
+  -webkit-transition: $args
+  -moz-transition: $args
+  -ms-transition: $args
+  -o-transition: $args
+  transition: $args
+
+@mixin grayscale($value)
+  -webkit-filter: #{"grayscale(#{$value})"}
+  -moz-filter: #{"grayscale(#{$value})"}
+  filter: #{"grayscale(#{$value})"}
+
+
+// DEFAULT ANIMATIONS
+
+@include keyframes(fadein)
+  0% { opacity: 0; visibility: hidden}
+  100% { opacity: 1; visibility: visible}
+
+@include keyframes(fadeout)
+  0% { opacity: 1; visibility: visible}
+  100% { opacity: 0; visibility: hidden}

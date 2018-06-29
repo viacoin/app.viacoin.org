@@ -1,0 +1,76 @@
+@import "../node_modules/bulma/sass/utilities/initial-variables"
+@import "../node_modules/bulma/sass/utilities/functions"
+@import "../node_modules/bulma/sass/utilities/derived-variables"
+
+// COLORS
+$background: hsl(50,50%,1%)
+$background-opacity: hsla(50,50%,1%, .8)
+$link: hsl(200, 52%, 65%)
+$black-ter: hsl(59,49%,8%)
+$green: hsl(89,73%,48%)
+$blue: hsl(199,53%,66%)
+$red: hsl(359,79%,41%)
+$orange: hsl(30,73%,48%)
+$cyan: hsl(208,73%,48%)
+
+// NOTIFICATIONS
+$is-success: $green
+$is-danger: $red
+$is-warning: $orange
+$is-almost-ready: $orange
+$is-info: hsl(68,73%,48%)
+
+// TYPES WEIGHT
+$weight-black: 900
+
+// TYPES FAMILY
+$family-impact: "Montserrat"
+$family-common: "Roboto"
+
+// NAV
+$navbar-height: 0
+$navbar-background-color: transparent
+$navbar-item-color: $white
+
+// TITLES
+$title-color: $white
+$title-size:	$size-3
+$title-weight: $weight-semibold
+$title-strong-weight: $weight-black
+$title-strong-color: $white
+$subtitle-color: $white
+$subtitle-strong-color: $green
+
+// TEXT
+$text: $white
+
+// CARD
+$card-color: $white
+$card-shadow:	none
+$card-footer-border-top: none
+
+// TIMELINE
+$timeline-line: 0
+$timeline-content-padding: 0
+$timeline-marker-background-color: transparent
+$timeline-marker-border: 0
+
+// MODAL
+$modal-background-background-color: $white
+
+// MENU
+$menu-item-color:	$link
+$menu-item-radius: $radius-small
+$menu-item-hover-color: $text-strong
+$menu-item-hover-background-color: transparent
+$menu-item-active-color: $link-invert
+$menu-item-active-background-color: $link
+
+// HAMBURGER ICON
+$hamburger-types: (spin)!default
+$hamburger-layer-color: $white
+$hamburger-layer-width: 30px !default
+$hamburger-layer-height: 2px !default
+
+@import "./mixins"
+@import "../node_modules/bulma/sass/base/all"

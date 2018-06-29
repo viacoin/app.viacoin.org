@@ -1,0 +1,80 @@
+@charset "utf-8"
+
+@import "../node_modules/bulma/sass/layout/section"
+@import "../node_modules/bulma/sass/layout/hero"
+@import "../node_modules/bulma/sass/grid/columns"
+@import "../node_modules/bulma/sass/elements/container"
+@import "../node_modules/bulma/sass/elements/title"
+@import "../node_modules/bulma/sass/elements/tag"
+@import "../node_modules/bulma/sass/elements/icon"
+@import "../node_modules/bulma/sass/elements/button"
+@import "../node_modules/bulma/sass/elements/box"
+@import "../node_modules/bulma/sass/components/navbar"
+@import "../node_modules/bulma/sass/components/card"
+@import "../node_modules/bulma/sass/components/modal"
+
+@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers"
+
+@import "../node_modules/aos/src/sass/aos"
+
+[data-aos^=hide][data-aos^=hide]
+  opacity: 1
+  transition-property: opacity, transform
+
+[data-aos^=hide][data-aos^=hide].aos-animate
+  opacity: 0
+  transform: translate(0)
+
+html,
+body
+  background: $background
+
+p
+  font-family: $family-common
+
+.app
+  section
+    @include transition(all 300ms ease-in-out)
+
+.columns
+  +mobile
+    margin: 0
+
+.is-link
+  background: $link
+
+.has-svg-align
+  display: inline-block
+  *
+    vertical-align: middle
+
+.grayscale
+  @include grayscale(100%)
+  &:hover
+    @include grayscale(0)
+
+.title
+  font-family: $family-impact
+  text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.35)
+
+  &.is-1
+    letter-spacing: -.3rem
+    +mobile
+      font-size: 1.7rem
+      line-height: 1.7rem
+      margin: 0 0 1rem 0
+      letter-spacing: -.1rem
+    +desktop
+      font-size: 4.8rem
+      line-height: 4rem
+
+.subtitle
+  +mobile
+    font-size: $size-6
+  font-size: $size-4
+  font-family: $family-common
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.35)
+
+button
+  &:focus
+    outline: 0

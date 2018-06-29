@@ -1,0 +1,45 @@
+.gauge-container
+  display: block
+  &.is-success
+    .gauge
+      .value,
+      .dial
+        stroke: $is-success
+        stroke: $is-success
+
+  &.is-danger
+    .gauge
+      .value,
+      .dial
+        stroke: $is-danger
+        stroke: $is-danger
+
+  &.is-warning
+    .gauge
+      .value,
+      .dial
+        stroke: $is-warning
+        stroke: $is-warning
+
+  &.is-info
+    .gauge
+      .value,
+      .dial
+        stroke: $is-info
+        stroke: $is-info
+
+  .gauge
+    .dial
+      stroke: $black-ter
+      opacity: 0
+      stroke-width: .1
+    .value
+      stroke-width: 5
+    .value-text
+      font-family: $family-common
+      font-weight: $weight-bold
+      font-size: $size-3
+      letter-spacing: -.3rem
+      alignment-baseline: middle
+      dominant-baseline: central
+      fill: $white

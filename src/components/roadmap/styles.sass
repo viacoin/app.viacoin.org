@@ -1,0 +1,49 @@
+.is-roadmap
+  +mobile
+    text-align: center
+  .columns
+    &:nth-of-type(2n)
+      flex-direction: row-reverse
+      p
+        +mobile
+          text-align: center
+        text-align: right
+    justify-content: flex-end
+  .column
+    hr
+      &.is-success
+        background-color: $is-success
+      &.is-danger
+        background-color: $is-danger
+      &.is-warning
+        background-color: $is-warning
+      &.is-info
+        background-color: $is-info
+
+    .gauge-container
+      +mobile
+        width: 8rem
+      margin-left: auto
+      margin-right: auto
+      width: 15rem
+
+    p
+      +mobile
+        line-height: $size-7
+        font-size: $size-7
+      line-height: $size-5
+      font-size: $size-5
+
+    .heading
+      +mobile
+        font-size: $size-4
+        line-height: $size-4
+      color: $blue
+      font-size: $size-3
+      line-height: $size-3
+      text-transform: uppercase
+      font-weight: $weight-bold !important
+      font-family: $family-common
+      letter-spacing: -.1rem
+      margin: 0 0 .5rem 0
+      text-shadow: none
