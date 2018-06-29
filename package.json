@@ -14,7 +14,7 @@
     "start": "npm run dev",
     "build": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack/dev.config.js",
-    "deploy": "npm run build && gh-pages -d build -r https://github.com/viacoin/app.viacoin.org.git"
+    "deploy": "npm run build && gh-pages -d build -r https://github.com/viacoin/viacoin.org"
   },
   "author": "Yudao",
   "license": "MIT",
