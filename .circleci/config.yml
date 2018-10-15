@@ -13,7 +13,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-          - "bc:5a:52:49:9e:09:69:22:a4:88:09:a8:82:75:c8:b5"
+          - "c5:5d:36:86:47:2b:16:72:75:f4:a0:68:c8:81:db:64"
 
       - run:
           name: Install synaptic dependencies
