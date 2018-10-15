@@ -31,7 +31,7 @@ export default class LayoutVendors extends preact.Component {
             VENDORS
           </h3>
         </div>
-        <div class="columns has-text-centered is-vcentered">
+        <div class="columns is-multiline has-text-centered is-vcentered">
           {vendors}
         </div>
       </div>
