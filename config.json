@@ -285,6 +285,13 @@
 			"url": ["https://github.com/abllr", "https://twitter.com/cryptoshot"]
 		},
 		{
+			"name": "Rockstardev",
+			"job": "Developer",
+			"picture": "team/rockstardev.svg",
+			"icons": ["GithubIcon", "TwitterIcon"],
+			"url": ["https://github.com/rockstardev", "https://twitter.com/@r0ckstardev"]
+		},
+		{
 			"name": "Mike V",
 			"job": "Head of Marketing",
 			"picture": "team/mikev.svg",
