@@ -12,6 +12,7 @@ import CoinomiIcon from 'components/icons/wallets/coinomi';
 import TrezorIcon from 'components/icons/wallets/trezor';
 import LedgerIcon from 'components/icons/wallets/ledger';
 import CopayIcon from 'components/icons/wallets/copay';
+import PungoIcon from 'components/icons/wallets/pungo';
 
 import './bg-blue-cosmos.jpg';
 import './styles.sass'
@@ -30,6 +31,7 @@ export default class LayoutTeam extends preact.Component {
       CoinomiIcon,
       TrezorIcon,
       LedgerIcon,
+      PungoIcon,
       LinuxIcon,
       CopayIcon,
       AndroidIcon
