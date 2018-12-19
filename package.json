@@ -4,10 +4,9 @@
   "description": "Viacoin website",
   "main": "index.js",
   "homepage": "//www.viacoin.org",
-  "repository" :
-  {
-    "type" : "git",
-    "url" : "https://github.com/viacoin/app.viacoin.org.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/viacoin/app.viacoin.org.git"
   },
   "private": true,
   "scripts": {
@@ -36,7 +35,7 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
-    "browser-sync": "^2.24.5",
+    "browser-sync": "^2.26.3",
     "browser-sync-webpack-plugin": "^2.2.2",
     "bulma": "^0.6.2",
     "clean-webpack-plugin": "^0.1.19",
@@ -50,8 +49,8 @@
     "google-fonts-webpack-plugin": "^0.4.4",
     "hamburgers": "^0.9.3",
     "html-webpack-plugin": "^2.30.1",
-    "image-webpack-loader": "^4.3.1",
-    "node-sass": "^4.9.0",
+    "image-webpack-loader": "^4.6.0",
+    "node-sass": "^4.11.0",
     "postcss-import": "^11.1.0",
     "postcss-loader": "^2.1.4",
     "sass-loader": "^6.0.7",
@@ -62,7 +61,8 @@
     "uglify-js": "^3.3.24",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.11.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.0.0",
     "webpack-merge": "^4.1.2",
     "workbox-webpack-plugin": "^2.1.3",
     "write-file-webpack-plugin": "^4.2.0"
