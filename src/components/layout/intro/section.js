@@ -17,7 +17,7 @@ export default class LayoutIntro extends preact.Component {
     const {config} = props;
     return <section class="hero is-fullheight is-intro" data-aos="hide" data-aos-easing="ease-in-out-cubic" data-aos-anchor-placement="center-top">
       <div class="hero-head">
-        <Navbar marketcap={config.coinmarketcap} />
+        {/* <Navbar marketcap={config.coinmarketcap} /> */}
       </div>
       <div class="hero-body is-paddingless">
         <Slider config={config} />
