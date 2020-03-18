@@ -34,38 +34,45 @@ export default class App extends preact.Component {
     let host = '//' + window.location.hostname + '/' + window.location.pathname + '/';
     if(process.env.NODE_ENV == 'development') host = '';
     request.get(host + '/config.json')
-    // .then(res => {
-    //   const data = res.body;
-    //   request.get('https://api.coinmarketcap.com/v1/ticker/viacoin/')
-    //   .then(res => {
-    //     const market = res.body[0]
-    //     data.slider.slides = data.slider.slides.map(s => {
-    //       return s.replace(
-    //         "{rank}",
-    //         numbro(market.rank).format({
-    //           output: "ordinal"
-    //         })
-    //       )
-    //       .replace(
-    //         "{market_cap_usd}",
-    //         numbro(market.market_cap_usd).format({
-    //           average: true,
-    //           mantissa: 2
-    //         })
-    //       )
-    //       .replace(
-    //         "{24h_volume_usd}",
-    //         numbro(market["24h_volume_usd"]).format({
-    //           average: true,
-    //           mantissa: 2
-    //         })
-    //       )
-    //     })
-    //     this.state.config = data;
-    //     this.state.config.coinmarketcap = market;
-    //     this.setState({config: this.state.config, loading: false});
-    //   })
-    // })
+    .then(res => {
+      const data = res.body;
+      request.get('https://min-api.cryptocompare.com/data/pricemultifull?fsyms=VIA&tsyms=USD')
+      .then(res => {
+        const market = res.body["RAW"]["VIA"]["USD"]
+        //console.log(market)
+        data.slider.slides = data.slider.slides.map(s => {
+          return s.replace(
+            "{price}",
+            numbro(market.PRICE).format({
+              average: false,
+              mantissa: 2,
+            })
+          )
+          .replace(
+            "{market_cap_usd}",
+            numbro(market.MKTCAP).format({
+              average: true,
+              mantissa: 2
+            })
+          )
+          .replace(
+            "{24h_volume_usd}",
+            numbro(market.VOLUMEDAY).format({
+              average: true,
+              mantissa: 2
+            })
+          )
+        })
+        this.state.config = data;
+        this.state.config.coinmarketcap = market;
+        this.setState({config: this.state.config, loading: false});
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+    })
+    
   }
 
   componentDidMount() {

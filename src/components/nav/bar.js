@@ -10,13 +10,14 @@ import './styles.sass'
 export default class Navbar extends preact.Component {
   render(props, state) {
     const {marketcap} = props;
-    const priceUSD = numbro(marketcap.price_usd).format({mantissa: 2});
+    console.log(marketcap)
+    const priceUSD = numbro(marketcap.PRICE).format({mantissa: 2});
     return <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="">
           <Logo circle="true" text="true" />
           <div class="tag is-large is-statistics has-text-centered">
-            <div class="is-value">${priceUSD}</div>
+            {/* <div class="is-value">${priceUSD}</div> */}
             <div class="is-label">Current Price</div>
           </div>
         </a>
