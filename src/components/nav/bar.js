@@ -17,7 +17,7 @@ export default class Navbar extends preact.Component {
         <a class="navbar-item" href="">
           <Logo circle="true" text="true" />
           <div class="tag is-large is-statistics has-text-centered">
-            {/* <div class="is-value">${priceUSD}</div> */}
+            <div class="is-value">${priceUSD}</div>
             <div class="is-label">Current Price</div>
           </div>
         </a>
