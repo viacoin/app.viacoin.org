@@ -4,10 +4,8 @@ import WalletIcon from 'components/icons/menu/wallet';
 import WhitepaperIcon from 'components/icons/menu/whitepaper';
 import TwitterIcon from 'components/icons/social/twitter';
 import RedditIcon from 'components/icons/social/reddit';
-import DiscordIcon from 'components/icons/social/discord';
 import BitcoinTalkIcon from 'components/icons/social/bitcoin-talk';
 import MediumIcon from 'components/icons/social/medium';
-import TelegramIcon from 'components/icons/social/telegram';
 
 import './styles.sass'
 
@@ -93,10 +91,8 @@ export default class Sidebar extends preact.Component {
             <div class="column is-social">
               <ul>
                 <li><a href="https://twitter.com/viacoin" title="Viacoin Twitter" target="_blank"><TwitterIcon /></a></li>
-                <li><a href="https://telegram.me/viacoin" title="Viacoin Telegram" target="_blank"><TelegramIcon /></a></li>
                 <li><a href="https://medium.com/@viacoin" title="Viacoin Medium" target="_blank"><MediumIcon /></a></li>
                 <li><a href="https://www.reddit.com/r/viacoin/" title="Viacoin Reddit" target="_blank"><RedditIcon /></a></li>
-                <li><a href="https://discordapp.com/invite/f7SXbBX" title="Viacoin Discord" target="_blank"><DiscordIcon /></a></li>
                 <li><a href="https://bitcointalk.org/index.php?topic=699278.0" title="Viacoin Bitcoin Talk" target="_blank"><BitcoinTalkIcon /></a></li>
               </ul>
             </div>

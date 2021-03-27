@@ -27,10 +27,8 @@ export default class LayoutFooter extends preact.Component {
             <h4 class="title is-1">Community</h4>
             <p>
               <a href="https://twitter.com/viacoin" title="Viacoin Twitter" target="_blank"><TwitterIcon /></a>
-              <a href="https://telegram.me/viacoin" title="Viacoin Telegram" target="_blank"><TelegramIcon /></a>
               <a href="https://medium.com/@viacoin" title="Viacoin Medium" target="_blank"><MediumIcon /></a>
               <a href="https://www.reddit.com/r/viacoin/" title="Viacoin Reddit" target="_blank"><RedditIcon /></a>
-              <a href="https://discordapp.com/invite/f7SXbBX" title="Viacoin Discord" target="_blank"><DiscordIcon /></a>
               <a href="https://bitcointalk.org/index.php?topic=699278.0" title="Viacoin Bitcoin Talk" target="_blank"><BitcoinTalkIcon /></a>
             </p>
             <br /><br />
@@ -50,7 +48,7 @@ export default class LayoutFooter extends preact.Component {
       <div class="is-mention has-text-centered">
         <Logo circle="true" />
         <p>Viacoin is an open-source Bitcoin blockchain based open-source project. Get involved on Github!</p>
-        <p class="is-copyright">© 2018 Viacoin. All Rights Reserved</p>
+        <p class="is-copyright">© 2021 Viacoin. All Rights Reserved</p>
       </div>
     </section>;
   }
