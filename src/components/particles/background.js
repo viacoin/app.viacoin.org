@@ -7,6 +7,8 @@ export default class ParticlesBackground extends Component {
     // ensure a clean slate if hot-reloaded or remounted
     this.destroyParticles();
     this.ensureParticlesScript();
+    this.attachHostToBody();
+    this.ensureSectionHosts();
     this.initParticles();
   }
 
@@ -17,6 +19,12 @@ export default class ParticlesBackground extends Component {
       this._retryTimer = null;
     }
     this.destroyParticles();
+    try {
+      const host = typeof document !== 'undefined' ? document.getElementById('particles-js') : null;
+      if (host && host.parentNode === document.body) {
+        document.body.removeChild(host);
+      }
+    } catch (_) {}
   }
 
   // Load particles.js via CDN to avoid module resolution issues
@@ -35,6 +43,45 @@ export default class ParticlesBackground extends Component {
     } catch (_) {
       // no-op
     }
+  }
+
+  // Ensure host is under <body> to avoid clipping/stacking contexts across sections
+  attachHostToBody() {
+    try {
+      if (typeof document === 'undefined') return;
+      const host = document.getElementById('particles-js');
+      if (host && host.parentNode !== document.body) {
+        document.body.insertBefore(host, document.body.firstChild);
+      }
+    } catch (_) {}
+  }
+
+  // Ensure per-section overlays exist so particles are visible within those sections too
+  ensureSectionHosts() {
+    try {
+      if (typeof document === 'undefined') return;
+
+      const ensure = (selector, id) => {
+        const section = document.querySelector(selector);
+        if (!section) return;
+
+        // Make the section a positioning context
+        const cs = window.getComputedStyle(section);
+        if (cs && cs.position === 'static') {
+          section.style.position = 'relative';
+        }
+
+        if (!document.getElementById(id)) {
+          const host = document.createElement('div');
+          host.id = id;
+          host.className = 'section-particles';
+          section.insertBefore(host, section.firstChild);
+        }
+      };
+
+      ensure('section.is-features', 'particles-features');
+      ensure('section.is-roadmap', 'particles-roadmap');
+    } catch (_) {}
   }
 
   // Initialize particles.js with strict-mode-safe guards
@@ -70,6 +117,16 @@ export default class ParticlesBackground extends Component {
 
         // Attempt initialization; suppress non-fatal strict mode violations
         fn('particles-js', this.getConfig());
+
+        // Initialize overlays for specific sections if their hosts exist
+        const featuresHost = document.getElementById('particles-features');
+        if (featuresHost) {
+          fn('particles-features', this.getConfig());
+        }
+        const roadmapHost = document.getElementById('particles-roadmap');
+        if (roadmapHost) {
+          fn('particles-roadmap', this.getConfig());
+        }
       } catch (err) {
         // Suppress known strict-mode issues without breaking the visual effect
         // Keep noise to a minimum; log at debug level for troubleshooting if needed
