@@ -1,10 +1,10 @@
 {
   "slider": {
     "slides": [
-      "<div class=\"columns is-vcentered\"><div class=\"column is-6\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">SECURE MICROPAYMENTS PERFECTED</h1><h2 class=\"subtitle is-4 has-text-white-bis\">Viacoin is a fast, secure digital currency that enables instant payments to anyone, anywhere in the world.</h2><div class=\"content has-text-white-ter\"><p><strong class=\"has-text-white\">✓ 24 second block time</strong> - Ultra-fast confirmations</p><p><strong class=\"has-text-white\">✓ Low transaction fees</strong> - Minimal cost per transaction</p><p><strong class=\"has-text-white\">✓ Strong network hashrate</strong> - Highly secure blockchain</p><p><strong class=\"has-text-white\">✓ OP_CHECKLOCKTIMEVERIFY</strong> - Advanced scripting capabilities</p><p><strong class=\"has-text-white\">✓ Tor nodes available</strong> - Enhanced privacy options</p></div></div></div><div class=\"column is-6\"><div class=\"box has-background-black-ter\"><div class=\"content has-text-white\"><h3 class=\"title is-4 has-text-white\">Market Statistics</h3><div class=\"columns\"><div class=\"column\"><p class=\"heading has-text-grey-light\">Price</p><p class=\"title is-5 has-text-success\">${price}</p></div><div class=\"column\"><p class=\"heading has-text-grey-light\">Market Cap</p><p class=\"title is-5 has-text-info\">${market_cap_usd}</p></div><div class=\"column\"><p class=\"heading has-text-grey-light\">24h Volume</p><p class=\"title is-5 has-text-warning\">${24h_volume_usd}</p></div></div></div></div></div></div>",
-      "<div class=\"columns is-vcentered\"><div class=\"column is-6\"><figure class=\"image\"><img src=\"intro/btcpay.png\" alt=\"BTCPay Server Integration\" /></figure></div><div class=\"column is-6\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">INTRODUCING BTCPAY SUPPORT</h1><h2 class=\"subtitle is-4 has-text-white-bis\">Accept Viacoin payments with BTCPay Server - the self-hosted, open-source cryptocurrency payment processor.</h2><div class=\"content has-text-white-ter\"><p><strong class=\"has-text-white\">✓ Self-hosted solution</strong> - Complete control over your payments</p><p><strong class=\"has-text-white\">✓ No third-party dependencies</strong> - Direct peer-to-peer transactions</p><p><strong class=\"has-text-white\">✓ Open source</strong> - Transparent and auditable code</p><p><strong class=\"has-text-white\">✓ Multiple integrations</strong> - E-commerce platform support</p><p><strong class=\"has-text-white\">✓ Lightning Network ready</strong> - Instant micropayments</p></div><div class=\"buttons\"><a class=\"button is-primary is-medium\" href=\"https://github.com/btcpayserver/btcpayserver\" target=\"_blank\"><span>Learn More</span></a></div></div></div></div>",
-      "<div class=\"columns is-vcentered\"><div class=\"column is-6\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">VIACOIN COPAY MULTISIGNATURE WALLET</h1><h2 class=\"subtitle is-4 has-text-white-bis\">Secure your Viacoin with advanced multisignature technology using our Copay-based wallet solution.</h2><div class=\"content has-text-white-ter\"><p><strong class=\"has-text-white\">✓ Multisignature security</strong> - Require multiple signatures for transactions</p><p><strong class=\"has-text-white\">✓ Shared wallets</strong> - Perfect for organizations and teams</p><p><strong class=\"has-text-white\">✓ Hierarchical Deterministic</strong> - Generate unlimited addresses</p><p><strong class=\"has-text-white\">✓ Cross-platform</strong> - Available on desktop and mobile</p><p><strong class=\"has-text-white\">✓ Open source</strong> - Community audited and transparent</p></div><div class=\"buttons\"><a class=\"button is-primary is-medium\" href=\"https://github.com/viacoin/copay\" target=\"_blank\"><span>Download Wallet</span></a></div></div></div><div class=\"column is-6\"><figure class=\"image\"><img src=\"intro/copay.png\" alt=\"Viacoin Copay Wallet\" /></figure></div></div>",
-      "<div class=\"columns is-vcentered\"><div class=\"column is-6\"><figure class=\"image\"><img src=\"intro/ledger.png\" alt=\"Ledger Hardware Wallet Support\" /></figure></div><div class=\"column is-6\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">INTRODUCING HARDWARE WALLET SUPPORT</h1><h2 class=\"subtitle is-4 has-text-white-bis\">Store your Viacoin safely with Ledger hardware wallet integration - the most secure way to manage your cryptocurrency.</h2><div class=\"content has-text-white-ter\"><p><strong class=\"has-text-white\">✓ Cold storage security</strong> - Private keys never leave the device</p><p><strong class=\"has-text-white\">✓ Ledger integration</strong> - Full support for Ledger Nano S & X</p><p><strong class=\"has-text-white\">✓ Secure transactions</strong> - Confirm all transactions on device</p><p><strong class=\"has-text-white\">✓ Recovery seed</strong> - 24-word backup for ultimate security</p><p><strong class=\"has-text-white\">✓ Multi-currency support</strong> - Manage multiple cryptocurrencies</p></div><div class=\"buttons\"><a class=\"button is-primary is-medium\" href=\"https://www.ledger.com\" target=\"_blank\"><span>Get Hardware Wallet</span></a></div></div></div></div>"
+      "<div class=\"columns is-vcentered is-centered\"><div class=\"column is-8 is-offset-2 has-text-centered\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">SECURE MICROPAYMENTS PERFECTED</h1><h2 class=\"subtitle is-4 has-text-white-bis\">Viacoin is a fast, secure digital currency that enables instant payments to anyone, anywhere in the world.</h2><div class=\"content has-text-white-ter has-text-centered\"><p><strong class=\"has-text-white\">✓ 24 second block time</strong> - Ultra-fast confirmations</p><p><strong class=\"has-text-white\">✓ Low transaction fees</strong> - Minimal cost per transaction</p><p><strong class=\"has-text-white\">✓ Strong network hashrate</strong> - Highly secure blockchain</p><p><strong class=\"has-text-white\">✓ OP_CHECKLOCKTIMEVERIFY</strong> - Advanced scripting capabilities</p><p><strong class=\"has-text-white\">✓ Tor nodes available</strong> - Enhanced privacy options</p><div class=\"columns is-market-stats has-text-centered\"><div class=\"column\"><p class=\"heading has-text-grey-light\">Price</p><p class=\"title is-1 has-text-white has-text-weight-bold market-value\">${price}</p></div><div class=\"column has-separator\"><p class=\"heading has-text-grey-light\">Market Cap</p><p class=\"title is-1 has-text-white has-text-weight-bold market-value\">${market_cap_usd}</p></div><div class=\"column has-separator\"><p class=\"heading has-text-grey-light\">Volume 24H</p><p class=\"title is-1 has-text-white has-text-weight-bold market-value\">${24h_volume_usd}</p></div></div></div></div></div>",
+      "<div class=\"columns is-vcentered is-centered\"><div class=\"column is-5 has-text-centered\"><figure class=\"image\"><img src=\"intro/btcpay.png\" alt=\"BTCPay Server Integration\" /></figure></div><div class=\"column is-5 has-text-centered\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">INTRODUCING BTCPAY SUPPORT</h1><h2 class=\"subtitle is-4 has-text-white-bis\">Accept Viacoin payments with BTCPay Server - the self-hosted, open-source cryptocurrency payment processor.</h2><div class=\"content has-text-white-ter\"><p><strong class=\"has-text-white\">✓ Self-hosted solution</strong> - Complete control over your payments</p><p><strong class=\"has-text-white\">✓ No third-party dependencies</strong> - Direct peer-to-peer transactions</p><p><strong class=\"has-text-white\">✓ Open source</strong> - Transparent and auditable code</p><p><strong class=\"has-text-white\">✓ Multiple integrations</strong> - E-commerce platform support</p><p><strong class=\"has-text-white\">✓ Lightning Network ready</strong> - Instant micropayments</p></div><div class=\"buttons\"><a class=\"button is-primary is-medium\" href=\"https://github.com/btcpayserver/btcpayserver\" target=\"_blank\"><span>Learn More</span></a></div></div></div></div>",
+      "<div class=\"columns is-vcentered is-centered\"><div class=\"column is-5 has-text-centered\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">VIACOIN COPAY MULTISIGNATURE WALLET</h1><h2 class=\"subtitle is-4 has-text-white-bis\">Secure your Viacoin with advanced multisignature technology using our Copay-based wallet solution.</h2><div class=\"content has-text-white-ter\"><p><strong class=\"has-text-white\">✓ Multisignature security</strong> - Require multiple signatures for transactions</p><p><strong class=\"has-text-white\">✓ Shared wallets</strong> - Perfect for organizations and teams</p><p><strong class=\"has-text-white\">✓ Hierarchical Deterministic</strong> - Generate unlimited addresses</p><p><strong class=\"has-text-white\">✓ Cross-platform</strong> - Available on desktop and mobile</p><p><strong class=\"has-text-white\">✓ Open source</strong> - Community audited and transparent</p></div><div class=\"buttons\"><a class=\"button is-primary is-medium\" href=\"https://github.com/viacoin/copay\" target=\"_blank\"><span>Download Wallet</span></a></div></div></div><div class=\"column is-5 has-text-centered\"><figure class=\"image\"><img src=\"intro/copay.png\" alt=\"Viacoin Copay Wallet\" /></figure></div></div>",
+      "<div class=\"columns is-vcentered is-centered\"><div class=\"column is-5 has-text-centered\"><figure class=\"image\"><img src=\"intro/ledger.png\" alt=\"Ledger Hardware Wallet Support\" /></figure></div><div class=\"column is-5 has-text-centered\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">INTRODUCING HARDWARE WALLET SUPPORT</h1><h2 class=\"subtitle is-4 has-text-white-bis\">Store your Viacoin safely with Ledger hardware wallet integration - the most secure way to manage your cryptocurrency.</h2><div class=\"content has-text-white-ter\"><p><strong class=\"has-text-white\">✓ Cold storage security</strong> - Private keys never leave the device</p><p><strong class=\"has-text-white\">✓ Ledger integration</strong> - Full support for Ledger Nano S & X</p><p><strong class=\"has-text-white\">✓ Secure transactions</strong> - Confirm all transactions on device</p><p><strong class=\"has-text-white\">✓ Recovery seed</strong> - 24-word backup for ultimate security</p><p><strong class=\"has-text-white\">✓ Multi-currency support</strong> - Manage multiple cryptocurrencies</p></div><div class=\"buttons\"><a class=\"button is-primary is-medium\" href=\"https://www.ledger.com\" target=\"_blank\"><span>Get Hardware Wallet</span></a></div></div></div></div>"
     ]
   },
   "features": [
@@ -37,7 +37,7 @@
   "roadmap": [
     {
       "title": "TREZOR HARDWARE WALLET SUPPORT",
-      "text": "Complete integration with Trezor hardware wallet for secure cold storage of Viacoin.",
+      "text": "TREZOR is one of the most trusted and secure ways to store your Viacoins. Isolate your private keys into the safety of TREZOR & enjoy Viacoin without risk. The best protection at no cost to your inconvenience.",
       "progress": 100,
       "icons": [
         "TrezorIcon"
@@ -45,7 +45,7 @@
     },
     {
       "title": "GENERAL BYTES ATM SUPPORT",
-      "text": "Viacoin support integrated into General Bytes cryptocurrency ATM network.",
+      "text": "General Bytes is the leading cryptocurrency hardware manufacturer. They have sold over 1250+ ATMS spread across 40+ countries. Viacoin is now available on all General Bytes ATMs.",
       "progress": 100,
       "icons": [
         "WindowsIcon",
@@ -54,16 +54,21 @@
     },
     {
       "title": "BTCPAY SERVER SUPPORT",
-      "text": "Full Viacoin integration with BTCPay Server for merchant payment processing.",
+      "text": "BTCPay Server is an Open Source payment processor, written in C#, that conforms to the invoice API of Bitpay. This allows easy migration of your code base to your own, self-hosted payment processor. Viacoin is now available as a payment option",
       "progress": 100,
       "icons": [
         "WindowsIcon",
-        "LinuxIcon"
+        "LinuxIcon",
+        "MacOsIcon",
+        "ChromeOsIcon",
+        "AndroidIcon",
+        "IosIcon",
+        "WindowsPhoneIcon"
       ]
     },
     {
       "title": "VIACOIN CORE 0.15.1",
-      "text": "Major core wallet update with performance improvements and security enhancements.",
+      "text": "Viacoin Core 0.15.1 is a big update compared to its previous version. The following features and improvements are included: chainstate database restructure, valid block assertion, p2p network optimization, UTXO mempool optimization, block relay improvements, no keypool refill flush and upgrade LevelDB.",
       "progress": 100,
       "icons": [
         "WindowsIcon",
@@ -81,7 +86,7 @@
     },
     {
       "title": "VIALECTRUM 3.2.2",
-      "text": "Latest Vialectrum release with SegWit support and enhanced user interface.",
+      "text": "Vialectrum is a fast, secure and very easy to use lightweight Viacoin client. Your funds are securely stored and can easily be recovered from any device using a secret phrase. Vialectrum 3.2.2 comes with faster transaction signing, hardware wallet improvements, an optional 'dark theme', several bug fixes and more",
       "progress": 100,
       "icons": [
         "VialectrumIcon"
@@ -89,7 +94,7 @@
     },
     {
       "title": "VIACOIN CORE 0.16",
-      "text": "Next major core release with advanced features and protocol improvements.",
+      "text": "Viacoin Core 0.16 will feature the following: bech32 address support, sha256 hashing optimizations (which leads to faster synchronization and block validation), HD wallets by default, several bug fixes and other optimizations.",
       "progress": 80,
       "icons": [
         "WindowsIcon",
@@ -99,7 +104,7 @@
     },
     {
       "title": "VIACOIN ECLAIR",
-      "text": "Lightning Network implementation based on ACINQ's Eclair for Viacoin.",
+      "text": "Viacoin Eclair is an implementation of the Viacoin Lightning Network. Viacoin Eclair enables you to run your own Viacoin Lightning Network node and make Viacoin Lightning Network payments. Opening and closing channels is much fast than Bitcoin due to Viacoin's 24 second block time.",
       "progress": 80,
       "icons": [
         "LightningNetworkIcon"
@@ -107,7 +112,7 @@
     },
     {
       "title": "VIACOIN COPAY",
-      "text": "Multi-signature wallet solution based on BitPay's Copay for Viacoin.",
+      "text": "Secure your personal funds with multiple signatures, or just one. Take security into your own hands and avoid trusting third parties with your savings. Like a joint-checking account, your Viacoin Copay wallet can have multiple users. Manage shared funds with friends and coworkers. Share a wallet with your child and introduce them to Viacoin. Viacoin Copay makes sharing a wallet simple and secure.",
       "progress": 80,
       "icons": [
         "CopayIcon"
@@ -115,7 +120,7 @@
     },
     {
       "title": "VIACOIN SAMOURAI",
-      "text": "Privacy-focused mobile wallet with advanced anonymity features for Viacoin.",
+      "text": "A modern Viacoin wallet hand forged to keep your transactions private, your identity masked, and your funds secure. Currently available for Bitcoin: samouraiwallet.com",
       "progress": 50,
       "icons": [
         "AndroidIcon",
@@ -153,7 +158,7 @@
     },
     {
       "title": "NVIACOIN",
-      "text": "Node.js implementation and libraries for Viacoin blockchain interaction.",
+      "text": "NViacoin is the most complete Viacoin library for the .NET platform. It provides low level access to Viacoin primitives so you can easily build your application on top of it. NViacoin is an important component for BTCPay and Styx (which uses TumbleBit).",
       "progress": 100,
       "icons": [
         "WindowsIcon",
@@ -163,7 +168,7 @@
     },
     {
       "title": "VIACOINJ",
-      "text": "Java implementation and SDK for Viacoin blockchain development and integration.",
+      "text": "Viacoin Core alternative implementation in Java. ViacoinJ is a library for working with the Viacoin protocol. It can maintain a wallet, send/receive transactions without needing a local copy of Viacoin Core and has many other advanced features. It’s implemented in Java but can be used from any JVM compatible language.",
       "progress": 100,
       "icons": [
         "WindowsIcon",
@@ -173,7 +178,7 @@
     },
     {
       "title": "LIGHTNING NETWORK DAEMON (LND)",
-      "text": "Lightning Labs' LND implementation with full Viacoin network support.",
+      "text": "Faster and cheaper than Bitcoin. The Lightning Network Daemon (lnd) is a complete implementation of a Lightning Network node.",
       "progress": 90,
       "icons": [
         "LightningNetworkIcon",
@@ -183,7 +188,7 @@
     },
     {
       "title": "Viacoin Bech32 for Native SegWit addresses",
-      "text": "Implementation of Bech32 address format for native SegWit transaction support.",
+      "text": "Bech32 addresses are natively SegWit compatible, meaning the transaction doesn’t need extra space to put SegWit in the P2SH address. It also has more advantages like smaller QR codes, stronger protection against typing errors, enables auto completion and only consisting of lower cases. Vialectrum 3.1.3.1 and Coinomi are already support Bech32 addresses. Ledger and Viacoin Core 0.16 wil add Bech32 support soon.",
       "progress": 90,
       "icons": [
         "FastAndSecureIcon",
@@ -192,7 +197,7 @@
     },
     {
       "title": "C-LIGHTNING",
-      "text": "Blockstream's C-Lightning implementation with Viacoin blockchain integration.",
+      "text": "C-lightning is a standard compliant implementation of the Lightning Network protocol. The Lightning Network is a scalability solution for Viacoin, enabling secure and instant transfer of funds between any two parties for any amount.",
       "progress": 80,
       "icons": [
         "LightningNetworkIcon",
@@ -201,7 +206,7 @@
     },
     {
       "title": "SCHNORR SIGNATURES",
-      "text": "Advanced cryptographic signature scheme for improved privacy and efficiency.",
+      "text": "The successor of Elliptic Curve Digital Signatures. It is a more efficient algorithm than Elliptic Curve Digital Signatures. Schnorr signatures support “native multisig” which enables the aggregation of multiple signatures into a single one valid for the sum of the keys. /batch validation. It could reduce the use of storage & bandwidth by 25% or more.",
       "progress": 35,
       "icons": [
         "FastAndSecureIcon",
@@ -210,7 +215,7 @@
     },
     {
       "title": "MAST (MERKELIZED ABSTRACT SYNTAX TREES)",
-      "text": "Advanced smart contract functionality with improved privacy and scalability.",
+      "text": "Node Interaction with Merkle Trees. M.A.S.T allows Viacoin transaction validation scripts to be stored in partially-hashed form and nodes to interact with the merkle tree. This enables complicated redemption conditions, improves privacy by hiding unexecuted branches & allows inclusion of non-consensus enforced data. MAST allows for complicated smart contracts to be created on the VIA blockchain without clogging it up.",
       "progress": 35,
       "icons": [
         "ScalableIcon",
@@ -219,7 +224,7 @@
     },
     {
       "title": "STYX ANONYMOUS TRANSACTIONS",
-      "text": "Privacy layer implementation for anonymous and untraceable Viacoin transactions.",
+      "text": "Styx is an unlinkable anonymous atomic payment hub for Viacoin. Read our STYX Whitepaper.",
       "progress": 30,
       "icons": [
         "FastAndSecureIcon",
@@ -228,7 +233,7 @@
     },
     {
       "title": "RSK SMART CONTRACTS",
-      "text": "Smart contract platform integration bringing Ethereum-compatible functionality to Viacoin.",
+      "text": "Ethereum Compatible Smart Contracts. Rootstock is a smart contract platform which has a two-way peg. The idea is to enable it to work with smart contracts. Rootstock runs a turing complete Virtual machine called Rootstock Virtual Machine (which is also compatible with Ethereum virtual machine!) and allows solidity compiled smart contracts to run.",
       "progress": 20,
       "icons": [
         "ScalableIcon",

@@ -2,8 +2,15 @@
   +mobile
     width: 100%
   margin-left: auto
-  margin-right  : auto
+  margin-right: auto
   display: flex
+  justify-content: center
+  width: 100%
+  
+  .container
+    display: flex
+    justify-content: center
+    width: 100%
 
   img
     width: 60%
@@ -28,6 +35,46 @@
           border-right: solid 1px $white
         &:last-child
           border-left: solid 1px $white
+
+  // New market statistics styling
+  .is-market-stats
+    margin: 2rem 0 0 0
+    
+    .column
+      padding: 1rem 0
+      position: relative
+      
+      &.has-separator::before
+        content: "|"
+        position: absolute
+        left: -1px
+        top: 50%
+        transform: translateY(-50%)
+        color: $white
+        font-size: 2rem
+        font-weight: 300
+        opacity: 0.6
+        z-index: 1
+    
+    .market-value
+      font-size: 3rem !important
+      line-height: 3rem !important
+      font-weight: 900 !important
+      color: $white !important
+      text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4)
+      margin-bottom: 0.5rem !important
+      
+      +mobile
+        font-size: 1.8rem !important
+        line-height: 1.8rem !important
+        
+    .heading
+      font-size: 0.875rem
+      font-weight: 500
+      text-transform: uppercase
+      letter-spacing: 0.1em
+      opacity: 0.8
+      margin-bottom: 0.5rem !important
 
   .is-statistics
     +mobile
