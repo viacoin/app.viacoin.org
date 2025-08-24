@@ -9,6 +9,7 @@ import DigitIcon from 'components/icons/features/digit';
 import AtomicSwapIcon from 'components/icons/features/atomic-swap';
 import ScalableIcon from 'components/icons/features/scalable';
 import LightningNetworkIcon from 'components/icons/features/lightning-network';
+import ShieldIcon from 'components/icons/features/shield';
 
 import "./styles.sass"
 
@@ -21,7 +22,8 @@ export default class LayoutFeatures extends Component {
       DigitIcon,
       AtomicSwapIcon,
       ScalableIcon,
-      LightningNetworkIcon
+      LightningNetworkIcon,
+      ShieldIcon
     }
     return config.map(f => {
       const Icon = icons[f.icon];

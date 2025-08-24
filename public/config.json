@@ -2,36 +2,41 @@
   "slider": {
     "slides": [
       "<div class=\"columns is-vcentered is-centered\"><div class=\"column is-8 is-offset-2 has-text-centered\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">SECURE MICROPAYMENTS PERFECTED</h1><h2 class=\"subtitle is-4 has-text-white-bis\">Viacoin is a fast, secure digital currency that enables instant payments to anyone, anywhere in the world.</h2><div class=\"content has-text-white-ter has-text-centered\"><p><strong class=\"has-text-white\">✓ 24 second block time</strong> - Ultra-fast confirmations</p><p><strong class=\"has-text-white\">✓ Low transaction fees</strong> - Minimal cost per transaction</p><p><strong class=\"has-text-white\">✓ Strong network hashrate</strong> - Highly secure blockchain</p><p><strong class=\"has-text-white\">✓ OP_CHECKLOCKTIMEVERIFY</strong> - Advanced scripting capabilities</p><p><strong class=\"has-text-white\">✓ Tor nodes available</strong> - Enhanced privacy options</p><div class=\"columns is-market-stats has-text-centered\"><div class=\"column\"><p class=\"heading has-text-grey-light\">Price</p><p class=\"title is-1 has-text-white has-text-weight-bold market-value\">${price}</p></div><div class=\"column has-separator\"><p class=\"heading has-text-grey-light\">Market Cap</p><p class=\"title is-1 has-text-white has-text-weight-bold market-value\">${market_cap_usd}</p></div><div class=\"column has-separator\"><p class=\"heading has-text-grey-light\">Volume 24H</p><p class=\"title is-1 has-text-white has-text-weight-bold market-value\">${24h_volume_usd}</p></div></div></div></div></div>",
-      "<div class=\"columns is-vcentered is-centered\"><div class=\"column is-5 has-text-centered\"><figure class=\"image\"><img src=\"intro/btcpay.png\" alt=\"BTCPay Server Integration\" /></figure></div><div class=\"column is-5 has-text-centered\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">INTRODUCING BTCPAY SUPPORT</h1><h2 class=\"subtitle is-4 has-text-white-bis\">Accept Viacoin payments with BTCPay Server - the self-hosted, open-source cryptocurrency payment processor.</h2><div class=\"content has-text-white-ter\"><p><strong class=\"has-text-white\">✓ Self-hosted solution</strong> - Complete control over your payments</p><p><strong class=\"has-text-white\">✓ No third-party dependencies</strong> - Direct peer-to-peer transactions</p><p><strong class=\"has-text-white\">✓ Open source</strong> - Transparent and auditable code</p><p><strong class=\"has-text-white\">✓ Multiple integrations</strong> - E-commerce platform support</p><p><strong class=\"has-text-white\">✓ Lightning Network ready</strong> - Instant micropayments</p></div><div class=\"buttons\"><a class=\"button is-primary is-medium\" href=\"https://github.com/btcpayserver/btcpayserver\" target=\"_blank\"><span>Learn More</span></a></div></div></div></div>",
-      "<div class=\"columns is-vcentered is-centered\"><div class=\"column is-5 has-text-centered\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">VIACOIN COPAY MULTISIGNATURE WALLET</h1><h2 class=\"subtitle is-4 has-text-white-bis\">Secure your Viacoin with advanced multisignature technology using our Copay-based wallet solution.</h2><div class=\"content has-text-white-ter\"><p><strong class=\"has-text-white\">✓ Multisignature security</strong> - Require multiple signatures for transactions</p><p><strong class=\"has-text-white\">✓ Shared wallets</strong> - Perfect for organizations and teams</p><p><strong class=\"has-text-white\">✓ Hierarchical Deterministic</strong> - Generate unlimited addresses</p><p><strong class=\"has-text-white\">✓ Cross-platform</strong> - Available on desktop and mobile</p><p><strong class=\"has-text-white\">✓ Open source</strong> - Community audited and transparent</p></div><div class=\"buttons\"><a class=\"button is-primary is-medium\" href=\"https://github.com/viacoin/copay\" target=\"_blank\"><span>Download Wallet</span></a></div></div></div><div class=\"column is-5 has-text-centered\"><figure class=\"image\"><img src=\"intro/copay.png\" alt=\"Viacoin Copay Wallet\" /></figure></div></div>",
-      "<div class=\"columns is-vcentered is-centered\"><div class=\"column is-5 has-text-centered\"><figure class=\"image\"><img src=\"intro/ledger.png\" alt=\"Ledger Hardware Wallet Support\" /></figure></div><div class=\"column is-5 has-text-centered\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">INTRODUCING HARDWARE WALLET SUPPORT</h1><h2 class=\"subtitle is-4 has-text-white-bis\">Store your Viacoin safely with Ledger hardware wallet integration - the most secure way to manage your cryptocurrency.</h2><div class=\"content has-text-white-ter\"><p><strong class=\"has-text-white\">✓ Cold storage security</strong> - Private keys never leave the device</p><p><strong class=\"has-text-white\">✓ Ledger integration</strong> - Full support for Ledger Nano S & X</p><p><strong class=\"has-text-white\">✓ Secure transactions</strong> - Confirm all transactions on device</p><p><strong class=\"has-text-white\">✓ Recovery seed</strong> - 24-word backup for ultimate security</p><p><strong class=\"has-text-white\">✓ Multi-currency support</strong> - Manage multiple cryptocurrencies</p></div><div class=\"buttons\"><a class=\"button is-primary is-medium\" href=\"https://www.ledger.com\" target=\"_blank\"><span>Get Hardware Wallet</span></a></div></div></div></div>"
+      "<div class=\"columns is-vcentered is-centered\"><div class=\"column is-5 has-text-centered\"><figure class=\"image\"><img src=\"intro/btcpay.png\" alt=\"BTCPay Server Integration\" /></figure></div><div class=\"column is-5 has-text-centered\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">INTRODUCING BTCPAY SUPPORT</h1><h2 class=\"subtitle is-4 has-text-white-bis\">Accept Viacoin payments with BTCPay Server - the self-hosted, open-source cryptocurrency payment processor.</h2><div class=\"content has-text-white-ter\"><p><strong class=\"has-text-white\">✓ Self-hosted solution</strong> - Complete control over your payments</p><p><strong class=\"has-text-white\">✓ No third-party dependencies</strong> - Direct peer-to-peer transactions</p><p><strong class=\"has-text-white\">✓ Open source</strong> - Transparent and auditable code</p><p><strong class=\"has-text-white\">✓ Multiple integrations</strong> - E-commerce platform support</p><p><strong class=\"has-text-white\">✓ Lightning Network ready</strong> - Instant micropayments</p></div></div></div></div>",
+      "<div class=\"columns is-vcentered is-centered\"><div class=\"column is-5 has-text-centered\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">VIACOIN COPAY MULTISIGNATURE WALLET</h1><h2 class=\"subtitle is-4 has-text-white-bis\">Secure your Viacoin with advanced multisignature technology using our Copay-based wallet solution.</h2><div class=\"content has-text-white-ter\"><p><strong class=\"has-text-white\">✓ Multisignature security</strong> - Require multiple signatures for transactions</p><p><strong class=\"has-text-white\">✓ Shared wallets</strong> - Perfect for organizations and teams</p><p><strong class=\"has-text-white\">✓ Hierarchical Deterministic</strong> - Generate unlimited addresses</p><p><strong class=\"has-text-white\">✓ Cross-platform</strong> - Available on desktop and mobile</p><p><strong class=\"has-text-white\">✓ Open source</strong> - Community audited and transparent</p></div></div></div><div class=\"column is-5 has-text-centered\"><figure class=\"image\"><img src=\"intro/copay.png\" alt=\"Viacoin Copay Wallet\" /></figure></div></div>",
+      "<div class=\"columns is-vcentered is-centered\"><div class=\"column is-5 has-text-centered\"><figure class=\"image\"><img src=\"intro/ledger.png\" alt=\"Ledger Hardware Wallet Support\" /></figure></div><div class=\"column is-5 has-text-centered\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">INTRODUCING HARDWARE WALLET SUPPORT</h1><h2 class=\"subtitle is-4 has-text-white-bis\">Store your Viacoin safely with Ledger hardware wallet integration - the most secure way to manage your cryptocurrency.</h2><div class=\"content has-text-white-ter\"><p><strong class=\"has-text-white\">✓ Cold storage security</strong> - Private keys never leave the device</p><p><strong class=\"has-text-white\">✓ Ledger integration</strong> - Full support for Ledger Nano S & X</p><p><strong class=\"has-text-white\">✓ Secure transactions</strong> - Confirm all transactions on device</p><p><strong class=\"has-text-white\">✓ Recovery seed</strong> - 24-word backup for ultimate security</p><p><strong class=\"has-text-white\">✓ Multi-currency support</strong> - Manage multiple cryptocurrencies</p></div></div></div></div>"
     ]
   },
   "features": [
     {
       "icon": "FastAndSecureIcon",
       "title": "Fast & Secure",
-      "text": "Transactions are confirmed quickly with robust security."
+      "text": "Viacoin is an open source cryptocurrency created in 2014, derived from the Bitcoin protocol. Viacoin has a total supply of 23,176,392 coins and has a 24 second block time, resulting in a transaction speed 25x faster than Bitcoin. Viacoin can handle 175 transactions per second without scaling through Segwit or Lightning Network, making it perfect for fast (micro)transactions"
     },
     {
       "icon": "DigitIcon",
-      "title": "Digital Currency",
-      "text": "A decentralized digital currency for payments."
+      "title": "Auxiliary Proof-of-Work",
+      "text": "Viacoin uses merged mining, also known as 'AuxPoW'. This allows miners to mine for more than one blockchain at the same time. A miner could mine Litecoin and Viacoin or any other Scrypt coin simultaneously. Miners have an incentive to mine Viacoin, even if the reward is low, as they are able to mine Viacoin for “free”. This results in a very high network hashrate, which highly increases the network security."
     },
     {
       "icon": "AtomicSwapIcon",
       "title": "Atomic Swaps",
-      "text": "Cross-chain trading without intermediaries."
+      "text": "With Viacoin you can perform cross-chain atomic swaps between different cryptocurrencies without using centralized exchanges. Viacoin was the first cryptocurrency to integrate Peter Todd's OP_CHECKLOCKTIMEVERIFY BIP 65 proposal. Our atomic swap contract uses SHA256 secret hashes (instead of RIPEMD160) as it is more secure and has wider compatibility with altcoins"
     },
     {
       "icon": "ScalableIcon",
       "title": "Scalable",
-      "text": "Designed to scale for global usage."
+      "text": "Viacoin has adopted SegWit. Segregated Witness helps to shrink the size of a transaction and cope with the UTXO growth. It also aims to increase the per-block transaction throughput by a factor of 2 or 3, while simultaneously making block syncing faster for new nodes. Viacoin will also integrate other features like Schnorr signatures, which will help lowering the transaction size and costs"
     },
     {
       "icon": "LightningNetworkIcon",
       "title": "Lightning Network",
-      "text": "Instant, low-fee transactions over Lightning."
+      "text": "Viacoin is ready to use the Lightning Network. This enables improvements of several orders of magnitude in transaction throughput by moving the majority of transactions outside the consensus ledgers into payment channels. This allows millions to billions of transactions per second across the network. A capacity that blows away legacy payment rails"
+    },
+    {
+      "icon": "ShieldIcon",
+      "title": "Dark Gravity wave",
+      "text": "Dark Gravity Wave (DGW) is a new algorithm designed to address certain flaws such as the time warp attack in the KGW algorithm. This concept was first introduced in Dash, previously known as Darkcoin. It makes use of multiple exponential moving averages and simple move averages to achieve a smoother readjustment mechanism"
     }
   ],
   "roadmap": [
@@ -112,7 +117,7 @@
     },
     {
       "title": "VIACOIN COPAY",
-      "text": "Secure your personal funds with multiple signatures, or just one. Take security into your own hands and avoid trusting third parties with your savings. Like a joint-checking account, your Viacoin Copay wallet can have multiple users. Manage shared funds with friends and coworkers. Share a wallet with your child and introduce them to Viacoin. Viacoin Copay makes sharing a wallet simple and secure.",
+      "text": "ecure your personal funds with multiple signatures, or just one. Take security into your own hands and avoid trusting third parties with your savings. Like a joint-checking account, your Viacoin Copay wallet can have multiple users. Manage shared funds with friends and coworkers. Share a wallet with your child and introduce them to Viacoin. Viacoin Copay makes sharing a wallet simple and secure.",
       "progress": 80,
       "icons": [
         "CopayIcon"
@@ -120,7 +125,7 @@
     },
     {
       "title": "VIACOIN SAMOURAI",
-      "text": "A modern Viacoin wallet hand forged to keep your transactions private, your identity masked, and your funds secure. Currently available for Bitcoin: samouraiwallet.com",
+      "text": "A modern Viacoin wallet hand forged to keep your transactions private, your identity masked, and your funds secure. Currently available for Bitcoin: samouraiwallet.com.",
       "progress": 50,
       "icons": [
         "AndroidIcon",
@@ -129,16 +134,19 @@
     },
     {
       "title": "VIACOIN ECLAIR WALLET",
-      "text": "User-friendly Lightning Network wallet interface for Viacoin Eclair implementation.",
+      "text": "Viacoin Eclair Wallet is a next generation, Lightning-ready Viacoin wallet. It can be used as a regular Viacoin wallet, and can also connect to the Viacoin Lightning Network for cheap and instant payments.",
       "progress": 0,
       "icons": [
         "LightningNetworkIcon",
+        "WindowsIcon",
+        "MacOsIcon",
+        "LinuxIcon",
         "MobileIcon"
       ]
     },
     {
       "title": "ZAP LIGHTNING NETWORK WALLET",
-      "text": "Desktop Lightning Network wallet with Viacoin support for instant transactions.",
+      "text": "Trustlessly send and receive viacoins instantly with minimal fees via the Lightning Network. Zap is a free Lightning Network wallet focused on user experience and ease of use, with the overall goal of helping the cryptocurrency community scale Bitcoin and other cryptocurrencies. Currently available for Bitcoin: zap.jackmallers.com.",
       "progress": 0,
       "icons": [
         "LightningNetworkIcon",
