@@ -36,15 +36,17 @@ export default class LayoutFeatures extends Component {
   render(props, state) {
     const {config} = props;
     const cards = this.cards(config);
-    return <section class="container is-features" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center">
-      <div class="has-text-centered">
-        <Logo text="true" />
-        <h3 class="title is-1 has-text-weight-light">
-          4 YEARS OF EXPERIENCE <strong>FEATURES FOR THE FUTURE</strong>
-        </h3>
-      </div>
-      <div class="columns">
-        {cards}
+    return <section class="section is-features has-background-blue-space" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center">
+      <div class="container">
+        <div class="has-text-centered">
+          <Logo text="true" />
+          <h3 class="title is-1 has-text-weight-light">
+            4 YEARS OF EXPERIENCE <strong>FEATURES FOR THE FUTURE</strong>
+          </h3>
+        </div>
+        <div class="columns">
+          {cards}
+        </div>
       </div>
     </section>;
   }
