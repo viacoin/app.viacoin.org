@@ -1,7 +1,7 @@
 import { h, Component } from 'preact';
 import AOS from 'aos/dist/aos';
 import analytics from 'universal-ga';
-import request from 'superagent';
+import numbro from 'numbro';
 
 import SplashScreen from 'components/splash/screen';
 import Particles from 'components/particles/background';
@@ -27,17 +27,71 @@ export default class App extends Component {
     }
   }
 
-  config() {
+  async config() {
     let host = '//' + window.location.hostname + '/' + window.location.pathname + '/';
     if(import.meta.env.DEV) host = '';
-    request.get(host + '/config.json')
-    .then(res => {
-      const data = res.body;
+    
+    try {
+      // Load config.json
+      const configResponse = await fetch(host + 'config.json');
+      if (!configResponse.ok) {
+        throw new Error(`Config fetch failed: ${configResponse.status}`);
+      }
+      const data = await configResponse.json();
+      
+      // Fetch market data from CryptoCompare API
+      try {
+        const marketResponse = await fetch('https://min-api.cryptocompare.com/data/pricemultifull?fsyms=VIA&tsyms=USD');
+        if (marketResponse.ok) {
+          const marketData = await marketResponse.json();
+          const viaData = marketData.RAW?.VIA?.USD;
+          
+          if (viaData) {
+            // Format market data using numbro
+            const price = '$' + numbro(viaData.PRICE).format({
+              average: true,
+              mantissa: 2
+            });
+            
+            const marketCap = '$' + numbro(viaData.MKTCAP).format({
+              average: true,
+              mantissa: 2
+            });
+            
+            const volume24h = '$' + numbro(viaData.VOLUMEDAY).format({
+              average: true,
+              mantissa: 2
+            });
+            
+            // Replace placeholders in slider slides
+            if (data.slider && data.slider.slides) {
+              data.slider.slides = data.slider.slides.map(slide => {
+                return slide
+                  .replace(/\$\{price\}/g, price)
+                  .replace(/\$\{market_cap_usd\}/g, `$${marketCap}`)
+                  .replace(/\$\{24h_volume_usd\}/g, `$${volume24h}`);
+              });
+            }
+          }
+        }
+      } catch (marketError) {
+        console.warn('Market data fetch failed, using placeholders:', marketError);
+        // Replace placeholders with fallback values
+        if (data.slider && data.slider.slides) {
+          data.slider.slides = data.slider.slides.map(slide => {
+            return slide
+              .replace(/\$\{price\}/g, '$0.00')
+              .replace(/\$\{market_cap_usd\}/g, '$0.00')
+              .replace(/\$\{24h_volume_usd\}/g, '$0.00');
+          });
+        }
+      }
+      
       this.state.config = data;
       this.setState({config: this.state.config, loading: false});
-    })
-    .catch(function (error) {
-      // handle error
+      
+    } catch (error) {
+      // handle config loading error
       console.log('Config loading failed, using fallback config:', error);
       
       // Provide fallback config structure when loading fails
@@ -59,7 +113,7 @@ export default class App extends Component {
       
       this.state.config = fallbackConfig;
       this.setState({config: this.state.config, loading: false});
-    }.bind(this))
+    }
   }
 
   componentDidMount() {

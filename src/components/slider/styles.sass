@@ -34,10 +34,64 @@
       &:not(body)
         padding: 0
     display: inline-block
-    background: transparent
+    background: transparent !important
     padding: .5rem 0 0 1rem
     font-family: $family-primary
+    border: none !important
     @include animation('fadein 1s')
+
+  .tag.is-statistics
+    background: transparent !important
+    border: none !important
+    color: $white !important
+    box-shadow: none !important
+    border-radius: 0 !important
+
+  // Target the entire market statistics container to ensure full transparency
+  .columns.is-marketcap
+    background: transparent !important
+    
+    .tag.is-statistics
+      background: transparent !important
+      border: none !important
+      border-radius: 0 !important
+      box-shadow: none !important
+    
+    .column
+      background: transparent !important
+      
+    // Make the header text more elegant
+    .tag.is-statistics
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5)
+      
+      .is-value
+        font-weight: 600
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6)
+      
+      .is-label
+        opacity: 0.9
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4)
+
+  // CRITICAL: Override Bulma's .box default white background
+  // This targets the .box element that wraps the market statistics
+  .box
+    background: transparent !important
+    background-color: transparent !important
+    box-shadow: none !important
+    border: none !important
+    
+    // Ensure all nested elements are also transparent
+    .content
+      background: transparent !important
+      
+    .columns
+      background: transparent !important
+      
+    .column
+      background: transparent !important
+      
+    .title, .heading
+      background: transparent !important
 
     .is-value
       +mobile
