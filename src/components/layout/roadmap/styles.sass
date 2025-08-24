@@ -6,9 +6,9 @@
   // Removed background shorthand to inherit layered background from .has-background-blue-space (avoids resetting background-image/size/position/repeat/attachment)
   min-height: 100vh
   padding-bottom: 5rem
-  // Fix the image layer to the viewport to avoid section-height scaling while keeping the gradient scrolling.
+  // Gradient-only overlay; the background image is applied on body to keep it fixed across sections.
   &.has-background-blue-space
-    background-attachment: scroll, fixed
+    background-attachment: scroll
 
   h3
     strong

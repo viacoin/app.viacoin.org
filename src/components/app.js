@@ -117,6 +117,11 @@ export default class App extends Component {
   }
 
   componentDidMount() {
+    // Apply fixed, full-viewport background image on <body> to match old site behavior
+    if (typeof document !== 'undefined' && document.body) {
+      document.body.classList.add('has-background-blue-space');
+    }
+
     this.config();
     AOS.init();
     if(import.meta.env.PROD) {
