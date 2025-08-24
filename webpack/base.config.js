@@ -81,7 +81,7 @@ module.exports = {
     new GoogleFontsPlugin({
       fonts: [
         { family: "Montserrat", variants: ["300", "400", "600", "900"] },
-        { family: "Roboto", variants: ["400", "600", "700"] }
+        { family: "Roboto", variants: ["400", "500", "700"] }
       ]
     }),
     new WriteFilePlugin(),

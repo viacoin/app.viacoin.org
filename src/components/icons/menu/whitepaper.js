@@ -1,8 +1,7 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
-/** @jsx preact.h */
 
-export default class Whitepaper extends preact.Component {
+export default class Whitepaper extends Component {
   render() {
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 506 506">
       <path d="M495.7,0H10.3A10.3,10.3,0,0,0,0,10.3V495.7A10.3,10.3,0,0,0,10.3,506H422.9a10.3,10.3,0,1,0,0-20.59H20.59V20.59H485.41V495.7a10.3,10.3,0,1,0,20.59,0V10.3A10.3,10.3,0,0,0,495.7,0Z"/>

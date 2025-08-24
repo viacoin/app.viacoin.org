@@ -1,6 +1,5 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 import AOS from 'aos/dist/aos';
-import numbro from 'numbro';
 import analytics from 'universal-ga';
 import request from 'superagent';
 
@@ -19,9 +18,7 @@ import Sidebar from 'components/nav/side';
 import './app.sass'
 import './bg-blue-space.jpg'
 
-/** @jsx preact.h */
-
-export default class App extends preact.Component {
+export default class App extends Component {
   constructor() {
     super();
     this.state = {
@@ -32,53 +29,43 @@ export default class App extends preact.Component {
 
   config() {
     let host = '//' + window.location.hostname + '/' + window.location.pathname + '/';
-    if(process.env.NODE_ENV == 'development') host = '';
+    if(import.meta.env.DEV) host = '';
     request.get(host + '/config.json')
     .then(res => {
       const data = res.body;
-      request.get('https://min-api.cryptocompare.com/data/pricemultifull?fsyms=VIA&tsyms=USD')
-      .then(res => {
-        const market = res.body["RAW"]["VIA"]["USD"]
-        //console.log(market)
-        data.slider.slides = data.slider.slides.map(s => {
-          return s.replace(
-            "{price}",
-            numbro(market.PRICE).format({
-              average: false,
-              mantissa: 2,
-            })
-          )
-          .replace(
-            "{market_cap_usd}",
-            numbro(market.MKTCAP).format({
-              average: true,
-              mantissa: 2
-            })
-          )
-          .replace(
-            "{24h_volume_usd}",
-            numbro(market.VOLUMEDAY).format({
-              average: true,
-              mantissa: 2
-            })
-          )
-        })
-        this.state.config = data;
-        this.state.config.coinmarketcap = market;
-        this.setState({config: this.state.config, loading: false});
-      })
-      .catch(function (error) {
-        // handle error
-        console.log(error);
-      })
+      this.state.config = data;
+      this.setState({config: this.state.config, loading: false});
     })
-    
+    .catch(function (error) {
+      // handle error
+      console.log('Config loading failed, using fallback config:', error);
+      
+      // Provide fallback config structure when loading fails
+      const fallbackConfig = {
+        slider: {
+          slides: [
+            "Viacoin - Fast, secure digital currency",
+            "Lightning Network enabled for instant transactions"
+          ]
+        },
+        features: [],
+        roadmap: [],
+        wallets: [],
+        team: [],
+        resources: [],
+        vendors: [],
+        donate: {}
+      };
+      
+      this.state.config = fallbackConfig;
+      this.setState({config: this.state.config, loading: false});
+    }.bind(this))
   }
 
   componentDidMount() {
     this.config();
     AOS.init();
-    if(process.env.NODE_ENV != 'development') {
+    if(import.meta.env.PROD) {
       analytics.initialize('UA-119053871-1');
       analytics.pageview('/');
     }

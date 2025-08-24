@@ -1,10 +1,9 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
 import './styles.sass'
 
-/** @jsx preact.h */
 
-export default class FeatureCard extends preact.Component {
+export default class FeatureCard extends Component {
   constructor() {
     super();
     this.toggleActiveClass = this.toggleActiveClass.bind(this);

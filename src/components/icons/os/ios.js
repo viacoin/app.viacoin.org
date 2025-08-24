@@ -1,8 +1,7 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
-/** @jsx preact.h */
 
-export default class IOS extends preact.Component {
+export default class IOS extends Component {
   render() {
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
     <path class="st0" d="m240 191.9c-7.1-0.9-14.3-1.8-22.3 0-16.9 4.5-29.4 19.6-33.9 41.9-3.6 15.1-2.7 33.9 2.7 48.1 7.1 22.3 23.2 34.7 42.8 33.9 19.6 0 35.6-12.5 42.8-33.9 4.5-14.3 5.3-32.1 2.7-48.1-5.4-22.3-17.9-37.5-34.8-41.9z"/>

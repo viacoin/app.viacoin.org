@@ -1,12 +1,11 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
 import Logo from 'components/logo/picture';
 
 import './styles.sass'
 
-/** @jsx preact.h */
 
-export default class SplashScreen extends preact.Component {
+export default class SplashScreen extends Component {
   constructor() {
     super();
     this.toggleActiveClass= this.toggleActiveClass.bind(this);

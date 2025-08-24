@@ -1,8 +1,7 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
-/** @jsx preact.h */
 
-export default class AtomicSwap extends preact.Component {
+export default class AtomicSwap extends Component {
   render() {
     return <svg xmlns="http://www.w3.org/2000/svg" class="icon-atomic-swap" viewBox="0 0 508.25 507.68">
       <path d="M480.71,131.14c22.9,6.49,31.17,25.38,39.15,45.54l-22.05,7.15-2.39-4.71c-2.45-4.86-4.46-10-7.44-14.53-8.28-12.54-16.33-12.63-24.68-.2-11.33,16.89-15.89,36.27-19.42,55.9-5.34,29.66-5.9,59.52-3,89.48,1,10.15.94,10.15-9,13.23-3.95,1.22-7.89,2.47-12.7,4-.7-5.49-1.53-10.57-2-15.67-4-44.6-1.84-88.65,12.31-131.52a145.83,145.83,0,0,1,8.88-20.37c6.88-13.51,16.66-24,31.82-28.28Z" transform="translate(-221.75 -21.76)"/>

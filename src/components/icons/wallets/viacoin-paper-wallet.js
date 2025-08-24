@@ -1,8 +1,7 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
-/** @jsx preact.h */
 
-export default class ViacoinPaperWallet extends preact.Component {
+export default class ViacoinPaperWallet extends Component {
   render() {
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500.68 260.1">
       <path d="M435.94,125.9H5.66V386H506.34V125.9Zm50.83,192.66q-37.15,10.72-47.92,47.92H73.15q-10.73-37.17-47.92-47.92V193.39q37.16-10.72,47.92-47.92H438.9q10.74,36.17,47.93,47.92V318.56Z" transform="translate(-5.66 -125.9)"/><path d="M256,286l7.44-17.74H248.6Z" transform="translate(-5.66 -125.9)"/>

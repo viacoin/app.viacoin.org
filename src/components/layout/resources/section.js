@@ -1,12 +1,11 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
 import Logo from 'components/logo/picture';
 
 import "./styles.sass";
 
-/** @jsx preact.h */
 
-export default class LayoutResources extends preact.Component {
+export default class LayoutResources extends Component {
 
   resource(obj) {
     return <div>

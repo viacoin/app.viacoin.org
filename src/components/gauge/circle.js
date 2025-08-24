@@ -1,10 +1,9 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
 import Gauge from "svg-gauge";
 
 import "./circle.sass"
 
-/** @jsx preact.h */
 
 const defaultOptions = {
   min: 0,
@@ -17,7 +16,7 @@ const defaultOptions = {
   }
 };
 
-export default class GaugeCircle extends preact.Component {
+export default class GaugeCircle extends Component {
   componentDidMount() {
     const isFirefox = typeof InstallTrigger !== 'undefined';
     this.renderGauge(this.props);

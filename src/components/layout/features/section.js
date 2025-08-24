@@ -1,4 +1,4 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
 import Logo from 'components/logo/picture';
 
@@ -12,9 +12,8 @@ import LightningNetworkIcon from 'components/icons/features/lightning-network';
 
 import "./styles.sass"
 
-/** @jsx preact.h */
 
-export default class LayoutFeatures extends preact.Component {
+export default class LayoutFeatures extends Component {
 
   cards(config) {
     const icons = {

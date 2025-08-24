@@ -1,10 +1,9 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
 import './scrolling-chevrons.sass'
 
-/** @jsx preact.h */
 
-export default class ScrollingChevrons extends preact.Component {
+export default class ScrollingChevrons extends Component {
   render() {
     return <div class="scrolling-chevrons">
       <div class="chevron"></div>

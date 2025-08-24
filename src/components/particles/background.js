@@ -1,12 +1,11 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
-const particles = require('particles.js');
+import 'particles.js';
 
 import './styles.sass'
 
-/** @jsx preact.h */
 
-export default class ParticlesBackground extends preact.Component {
+export default class ParticlesBackground extends Component {
   componentDidMount() {
     this.particles = particlesJS("particles-js", {
       "particles": {

@@ -1,4 +1,4 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
 import WalletIcon from 'components/icons/menu/wallet';
 import WhitepaperIcon from 'components/icons/menu/whitepaper';
@@ -9,9 +9,8 @@ import MediumIcon from 'components/icons/social/medium';
 
 import './styles.sass'
 
-/** @jsx preact.h */
 
-export default class Sidebar extends preact.Component {
+export default class Sidebar extends Component {
   constructor() {
     super();
     this.toggleActiveClass= this.toggleActiveClass.bind(this);
