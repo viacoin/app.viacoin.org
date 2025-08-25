@@ -1,10 +1,9 @@
 module.exports = {
-  plugins: {
-    autoprefixer: {},
-    'postcss-import': {},
-    cssnano: {
-      safe: true,
-      discardComments: { removeAll: true }
-    }
-  }
+  plugins: [
+    require('postcss-import')(),
+    require('autoprefixer')(),
+    require('cssnano')({
+      preset: ['default', { discardComments: { removeAll: true } }]
+    })
+  ]
 };
