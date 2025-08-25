@@ -37,9 +37,12 @@ export default class LayoutFooter extends Component {
           <div class="column is-development">
             <h4 class="title is-1">Development</h4>
             <p>
-              <a class="button is-medium is-link" href="https://github.com/viacoin/" title="Github" target="_blank">Github</a>
-              <a class="button is-medium is-link" href="https://github.com/viacoin/viacoin/releases" title="All releases" target="_blank">All releases</a>
-              <a class="button is-medium is-link" href="http://199.247.3.130" title="Blockchain Bootstrap" target="_blank">Blockchain Bootstrap</a>
+              <a class="button is-medium is-link" href="https://github.com/viacoin/" title="Viacoin Github" target="_blank">Viacoin Github</a>
+              <a class="button is-medium is-link" href="https://github.com/viacoin/viacoin/releases" title="All releases" target="_blank">Viacoin Core All releases</a>
+              <a class="button is-medium is-link" href="https://github.com/vianetwork/" title="Via L2 zkEVM Rollup Github" target="_blank">Via L2 zkEVM Rollup Github (new)</a>
+              <a class="button is-medium is-link" href="https://docs.onvia.org/?utm_source=viacoin.org&utm_medium=referral&utm_campaign=announcement-2025-08&utm_content=footer-development" title="Via L2 Gitbook docs" target="_blank" rel="noopener">New Via L2 | Gitbook docs</a>
+              <a class="button is-medium is-link" href="https://blog.onvia.org" title="Via L2 zkEVM Rollup Blog" target="_blank">Via L2 zkEVM Rollup | Blog (new)</a>
+              <a class="button is-medium is-link" href="https://buildonvia.org/?utm_source=viacoin.org&utm_medium=referral&utm_campaign=announcement-2025-08&utm_content=footer-development" title="Build on Via — developer portal" target="_blank" rel="noopener">New Via L2 | Build on Via</a>
             </p>
           </div>
         </div>
