@@ -3,6 +3,7 @@ import { resolve } from 'path';
 import { transformSync } from 'esbuild';
 
 export default defineConfig({
+  base: '/',
   define: {
     'process.env': {}
   },
@@ -16,7 +17,7 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: 'build'
+    outDir: 'dist'
   },
   server: {
     port: 3001
