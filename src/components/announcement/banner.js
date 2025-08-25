@@ -30,13 +30,13 @@ export default class AnnouncementBanner extends Component {
   render(props, state) {
     if (!state.visible) return null;
     return (
-      <div class="via-l2-banner-overlay" role="dialog" aria-modal="true" aria-label="Announcement: Viacoin is becoming Via L2">
+      <div class="via-l2-banner-overlay" role="dialog" aria-modal="true" aria-label="Announcement: Viacoin is becoming Via L2 | Sovereign Validity zkEVM Rollup for Bitcoin">
         <div class="banner-backdrop" onclick={this.dismiss}></div>
-        <div class="via-l2-banner" role="region" aria-label="Announcement: Viacoin is becoming Via L2" data-banner="via-l2-announcement">
+        <div class="via-l2-banner" role="region" aria-label="Announcement: Viacoin is becoming Via L2 | Sovereign Validity zkEVM Rollup for Bitcoin" data-banner="via-l2-announcement">
           <div class="container">
             <div class="banner-inner">
               <div class="banner-text">
-                <h1 class="announcement-title"><strong>Viacoin transitions into a Sovereign Validity-Proof zkEVM Rollup for Bitcoin</strong></h1>
+                <h1 class="announcement-title"><strong>Viacoin transitions into Via L2 | Sovereign Validity zkEVM Rollup for Bitcoin</strong></h1>
               <div class="banner-ctas">
                 <a class="banner-link secondary" href="https://docs.onvia.org/?utm_source=viacoin.org&amp;utm_medium=referral&amp;utm_campaign=announcement-2025-08&amp;utm_content=banner-secondary">Via L2 Rollup Gitbook Documentation</a>
                 <a class="banner-link secondary" href="https://blog.onvia.org/introducing-via-a-bitcoin-l2-sovereign-zk-rollup/">Blog post announcement</a>
