@@ -1,19 +1,18 @@
-import preact from 'preact';
+import { h, Component, render } from 'preact';
 
 import Modal from 'components/modal/window';
 
 import "./styles.sass"
 
-/** @jsx preact.h */
 
-export default class Donate extends preact.Component {
+export default class Donate extends Component {
   constructor() {
     super();
     this.open = this.open.bind(this);
   }
 
   open(e) {
-    preact.render((
+    render((
       <Modal classes="modal is-active is-donate">{this.modal()}</Modal>
     ), document.body);
   }

@@ -1,4 +1,4 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
 import GithubIcon from 'components/icons/social/github';
 import TwitterIcon from 'components/icons/social/twitter';
@@ -7,9 +7,8 @@ import LinkedinIcon from 'components/icons/social/linkedin';
 import './styles.sass'
 
 
-/** @jsx preact.h */
 
-export default class TeamCard extends preact.Component {
+export default class TeamCard extends Component {
 
   icons(config) {
     return config.icons.map((i, idx) => {

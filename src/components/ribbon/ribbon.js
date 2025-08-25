@@ -1,10 +1,9 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
 import './styles.sass';
 
-/** @jsx preact.h */
 
-export default class Ribbon extends preact.Component {
+export default class Ribbon extends Component {
 
   render(props, state) {
     const classes = "corner-ribbon " + props.classes;    

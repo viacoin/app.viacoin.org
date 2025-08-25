@@ -1,10 +1,9 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
 import './scrolling-mouse.sass';
 
-/** @jsx preact.h */
 
-export default class ScrollingMouse extends preact.Component {
+export default class ScrollingMouse extends Component {
   render() {
     return <svg class="icon-scrolling-mouse" viewBox="0 0 25.166666 37.8704414">
         <path class="stroke" d="M12.5833445 36.6204414h-0.0000229C6.3499947 36.6204414 1.25 31.5204487 1.25 25.2871208V12.5833216C1.25 6.3499947 6.3499951 1.25 12.5833216 1.25h0.0000229c6.2333269 0 11.3333216 5.0999947 11.3333216 11.3333216v12.7037992C23.916666 31.5204487 18.8166714 36.6204414 12.5833445 36.6204414z"></path>

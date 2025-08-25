@@ -1,4 +1,4 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
 import Logo from 'components/logo/picture';
 import WindowsIcon from 'components/icons/os/windows';
@@ -17,9 +17,8 @@ import PungoIcon from 'components/icons/wallets/pungo';
 import './bg-blue-cosmos.jpg';
 import './styles.sass'
 
-/** @jsx preact.h */
 
-export default class LayoutTeam extends preact.Component {
+export default class LayoutTeam extends Component {
 
   resource(obj) {
     const icons = {
@@ -64,9 +63,26 @@ export default class LayoutTeam extends preact.Component {
   }
 
   render(props, state) {
-    const os = this.wallets(this.props.config.first[0].os);
-    const apps = this.wallets(this.props.config.first[1].apps);
-    const thirds = this.wallets(this.props.config.third);
+    // Defensive programming: check if config and wallet data exist
+    let os = [];
+    let apps = [];
+    let thirds = [];
+    
+    if (this.props.config &&
+        this.props.config.first &&
+        Array.isArray(this.props.config.first) &&
+        this.props.config.first.length >= 2) {
+      if (this.props.config.first[0] && this.props.config.first[0].os) {
+        os = this.wallets(this.props.config.first[0].os);
+      }
+      if (this.props.config.first[1] && this.props.config.first[1].apps) {
+        apps = this.wallets(this.props.config.first[1].apps);
+      }
+    }
+    
+    if (this.props.config && this.props.config.third) {
+      thirds = this.wallets(this.props.config.third);
+    }
     return <section class="is-wallet">
       <div class="container">
         <div class="has-text-centered" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center">

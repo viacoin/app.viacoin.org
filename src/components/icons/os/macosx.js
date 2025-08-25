@@ -1,8 +1,7 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
-/** @jsx preact.h */
 
-export default class MacOSX extends preact.Component {
+export default class MacOSX extends Component {
   render() {
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 417.41 512">
       <path d="M354.53,0h3.64c2.93,36.11-10.86,63.09-27.61,82.62C314.13,102,291.62,120.84,255.22,118,252.8,82.4,266.6,57.42,283.33,37.93,298.84,19.76,327.28,3.6,354.53,0Z" transform="translate(-47.3 0)"/>

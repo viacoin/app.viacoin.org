@@ -1,12 +1,11 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
 import GaugeCircular from "components/gauge/circle";
 
 import './styles.sass'
 
-/** @jsx preact.h */
 
-export default class RoadmapMedia extends preact.Component {
+export default class RoadmapMedia extends Component {
 
   constructor() {
     super();

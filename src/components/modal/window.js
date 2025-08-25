@@ -1,8 +1,7 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
-/** @jsx preact.h */
 
-export default class Modal extends preact.Component {
+export default class Modal extends Component {
   constructor() {
     super();
     this.close = this.close.bind(this);

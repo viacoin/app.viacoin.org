@@ -1,11 +1,10 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 import AlloyFinger from 'alloyfinger';
 
 import './styles.sass';
 
-/** @jsx preact.h */
 
-export default class SliderIntro extends preact.Component {
+export default class SliderIntro extends Component {
   constructor() {
     super();
     this.toggleControls = this.toggleControls.bind(this);
@@ -123,6 +122,18 @@ export default class SliderIntro extends preact.Component {
   }
 
   renderSlides(){
+    // Defensive programming: check if config and slider data exist
+    if (!this.props.config || !this.props.config.slider || !this.props.config.slider.slides) {
+      // Return fallback slides if config is missing
+      const fallbackSlides = [
+        "Viacoin - Fast, secure digital currency",
+        "Lightning Network enabled for instant transactions"
+      ];
+      return fallbackSlides.map(slide => {
+        return <div class="slide is-hidden has-text-centered" dangerouslySetInnerHTML={{__html: slide}}></div>
+      });
+    }
+    
     return this.props.config.slider.slides.map(slide => {
       return <div class="slide is-hidden has-text-centered" dangerouslySetInnerHTML={{__html: slide}}></div>
     });

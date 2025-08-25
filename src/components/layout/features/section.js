@@ -1,4 +1,4 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
 import Logo from 'components/logo/picture';
 
@@ -9,12 +9,12 @@ import DigitIcon from 'components/icons/features/digit';
 import AtomicSwapIcon from 'components/icons/features/atomic-swap';
 import ScalableIcon from 'components/icons/features/scalable';
 import LightningNetworkIcon from 'components/icons/features/lightning-network';
+import ShieldIcon from 'components/icons/features/shield';
 
 import "./styles.sass"
 
-/** @jsx preact.h */
 
-export default class LayoutFeatures extends preact.Component {
+export default class LayoutFeatures extends Component {
 
   cards(config) {
     const icons = {
@@ -22,7 +22,8 @@ export default class LayoutFeatures extends preact.Component {
       DigitIcon,
       AtomicSwapIcon,
       ScalableIcon,
-      LightningNetworkIcon
+      LightningNetworkIcon,
+      ShieldIcon
     }
     return config.map(f => {
       const Icon = icons[f.icon];
@@ -35,15 +36,17 @@ export default class LayoutFeatures extends preact.Component {
   render(props, state) {
     const {config} = props;
     const cards = this.cards(config);
-    return <section class="container is-features" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center">
-      <div class="has-text-centered">
-        <Logo text="true" />
-        <h3 class="title is-1 has-text-weight-light">
-          4 YEARS OF EXPERIENCE <strong>FEATURES FOR THE FUTURE</strong>
-        </h3>
-      </div>
-      <div class="columns">
-        {cards}
+    return <section class="section is-features has-background-blue-space" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center">
+      <div class="container">
+        <div class="has-text-centered">
+          <Logo text="true" />
+          <h3 class="title is-1 has-text-weight-light">
+            4 YEARS OF EXPERIENCE <strong>FEATURES FOR THE FUTURE</strong>
+          </h3>
+        </div>
+        <div class="columns">
+          {cards}
+        </div>
       </div>
     </section>;
   }

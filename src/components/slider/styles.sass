@@ -2,8 +2,15 @@
   +mobile
     width: 100%
   margin-left: auto
-  margin-right  : auto
+  margin-right: auto
   display: flex
+  justify-content: center
+  width: 100%
+  
+  .container
+    display: flex
+    justify-content: center
+    width: 100%
 
   img
     width: 60%
@@ -29,15 +36,109 @@
         &:last-child
           border-left: solid 1px $white
 
+  // New market statistics styling
+  .is-market-stats
+    margin: 2rem 0 0 0
+    
+    .column
+      padding: 1rem 0
+      position: relative
+      
+      &.has-separator::before
+        content: "|"
+        position: absolute
+        left: -1px
+        top: 50%
+        transform: translateY(-50%)
+        color: $white
+        font-size: 2rem
+        font-weight: 300
+        opacity: 0.6
+        z-index: 1
+    
+    .market-value
+      font-size: 3rem !important
+      line-height: 3rem !important
+      font-weight: 900 !important
+      color: $white !important
+      text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4)
+      margin-bottom: 0.5rem !important
+      
+      +mobile
+        font-size: 1.8rem !important
+        line-height: 1.8rem !important
+        
+    .heading
+      font-size: 0.875rem
+      font-weight: 500
+      text-transform: uppercase
+      letter-spacing: 0.1em
+      opacity: 0.8
+      margin-bottom: 0.5rem !important
+
   .is-statistics
     +mobile
       &:not(body)
         padding: 0
     display: inline-block
-    background: transparent
+    background: transparent !important
     padding: .5rem 0 0 1rem
-    font-family: $family-common
+    font-family: $family-primary
+    border: none !important
     @include animation('fadein 1s')
+
+  .tag.is-statistics
+    background: transparent !important
+    border: none !important
+    color: $white !important
+    box-shadow: none !important
+    border-radius: 0 !important
+
+  // Target the entire market statistics container to ensure full transparency
+  .columns.is-marketcap
+    background: transparent !important
+    
+    .tag.is-statistics
+      background: transparent !important
+      border: none !important
+      border-radius: 0 !important
+      box-shadow: none !important
+    
+    .column
+      background: transparent !important
+      
+    // Make the header text more elegant
+    .tag.is-statistics
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5)
+      
+      .is-value
+        font-weight: 600
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6)
+      
+      .is-label
+        opacity: 0.9
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4)
+
+  // CRITICAL: Override Bulma's .box default white background
+  // This targets the .box element that wraps the market statistics
+  .box
+    background: transparent !important
+    background-color: transparent !important
+    box-shadow: none !important
+    border: none !important
+    
+    // Ensure all nested elements are also transparent
+    .content
+      background: transparent !important
+      
+    .columns
+      background: transparent !important
+      
+    .column
+      background: transparent !important
+      
+    .title, .heading
+      background: transparent !important
 
     .is-value
       +mobile
@@ -59,6 +160,9 @@
     @include animation('fadein 2s')
     padding: 0 2rem
     display: block
+    
+    &.has-text-centered
+      text-align: center !important
 
   .navigation
     background: #000
@@ -85,8 +189,8 @@
   .prev:hover polyline,
   .prev:focus polyline,
   .next:hover polyline,
-  .next:focus polyline,
-    stroke: $white-ter
+  .next:focus polyline
+    stroke: $white
     stroke-width: 2
     transition: all 650ms ease-in-out
 

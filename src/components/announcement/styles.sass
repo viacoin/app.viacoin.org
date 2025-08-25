@@ -1,0 +1,274 @@
+@charset "utf-8"
+
+// Overlay wrapper for full-screen modal
+.via-l2-banner-overlay
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 9999
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 1rem
+
+  +mobile
+    padding: 0.5rem
+    align-items: flex-start
+    padding-top: 2rem
+
+// Backdrop for dimming background
+.banner-backdrop
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: rgba(0, 0, 0, 0.8)
+  cursor: pointer
+
+.via-l2-banner
+  background: $background-opacity
+  color: $white
+  border: 1px solid rgba(255,255,255,.12)
+  border-radius: 8px
+  position: relative
+  z-index: 1
+  max-width: 90vw
+  max-height: 90vh
+  overflow-y: auto
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4)
+
+  +mobile
+    max-width: 95vw
+    max-height: 95vh
+    border-radius: 6px
+
+  .container
+    padding: 0 .75rem
+
+  .banner-inner
+    display: flex
+    align-items: center
+    gap: 1rem
+    padding: .75rem 0
+
+    +mobile
+      flex-direction: column
+      align-items: stretch
+      text-align: left
+
+  .banner-text
+    flex: 1
+    font-size: $size-6
+    line-height: 1.4
+    max-width: 72ch
+    margin: 0 auto
+
+    strong
+      font-weight: $weight-black
+      color: $white
+
+    p
+      line-height: 1.65
+      margin-bottom: 1.2rem
+      color: inherit
+
+      &:last-child
+        margin-bottom: 0
+
+    +mobile
+      max-width: none
+      margin: 0
+
+  .announcement-title
+    font-size: clamp(2rem, 2.5vw + 1rem, 3rem)
+    line-height: 1.15
+    letter-spacing: -0.01em
+  .announcement-title
+    font-size: clamp(2rem, 2.5vw + 1rem, 3rem)
+    line-height: 1.15
+    letter-spacing: -0.01em
+  .banner-ctas
+    display: flex
+    gap: .5rem
+    margin-top: 1.5rem
+    margin-bottom: 1.5rem
+
+    +tablet
+      margin-top: 2rem
+      margin-bottom: 2rem
+
+    +widescreen
+      margin-top: 2.25rem
+      margin-bottom: 2rem
+
+    +mobile
+      width: 100%
+      flex-direction: column
+
+    .banner-link
+      display: inline-block
+      font-family: $family-primary
+      border-radius: 4px
+      padding: .5rem .75rem
+      text-decoration: none
+      white-space: nowrap
+
+      &:focus
+        outline: 2px dotted $white
+        outline-offset: 2px
+
+    .primary
+      background: $link
+      color: $black-ter
+
+      &:hover
+        filter: brightness(1.1)
+
+    .secondary
+      background: transparent
+      color: $white
+      border: 1px solid rgba(255,255,255,.3)
+
+      &:hover
+        background: rgba(255,255,255,.08)
+
+  .banner-close
+    position: absolute
+    top: 1rem
+    right: 1rem
+    background: transparent
+    border: 0
+    color: $white
+    font-size: 2rem
+    line-height: 1
+    cursor: pointer
+    padding: .5rem
+    border-radius: 50%
+    width: 3rem
+    height: 3rem
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 2
+
+    +mobile
+      top: 0.75rem
+      right: 0.75rem
+      font-size: 1.75rem
+      width: 2.5rem
+      height: 2.5rem
+
+    &:hover
+      background: rgba(255, 255, 255, 0.1)
+      color: $white
+
+    &:focus
+      outline: 2px dotted $white
+      outline-offset: 2px
+
+// Smooth transitions for overlay and interactions
+@media (prefers-reduced-motion: no-preference)
+  .via-l2-banner-overlay
+    animation: fadeIn 300ms ease-out
+
+  .via-l2-banner
+    animation: slideIn 300ms ease-out
+
+  .banner-backdrop
+    animation: backdropFadeIn 300ms ease-out
+
+  .via-l2-banner .banner-link
+    transition: background-color 160ms ease, filter 160ms ease, transform 120ms ease, box-shadow 160ms ease, transform 120ms ease, box-shadow 160ms ease
+
+  .banner-close
+    transition: background-color 200ms ease
+
+@media (prefers-reduced-motion: reduce)
+  .via-l2-banner-overlay,
+  .via-l2-banner,
+  .banner-backdrop,
+  .via-l2-banner .banner-link,
+  .banner-close
+    transition: none
+    animation: none
+
+// Keyframe animations for overlay entrance
+@keyframes fadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@keyframes slideIn
+  from
+    opacity: 0
+    transform: scale(0.9) translateY(-20px)
+  to
+    opacity: 1
+    transform: scale(1) translateY(0)
+
+@keyframes backdropFadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+// Prevent body scroll when overlay is active
+body.overlay-active
+  overflow: hidden// CTA emphasis overrides (appended)
+.via-l2-banner
+  .banner-ctas
+    flex-wrap: wrap
+    .banner-link
+      font-weight: 600
+      font-size: clamp(0.95rem, 0.4vw + 0.9rem, 1.1rem)
+      padding: .75rem 1.1rem
+      border-radius: 6px
+      box-shadow: 0 4px 12px rgba(0,0,0,.25)
+
+.via-l2-banner .banner-ctas .banner-link:hover
+  transform: translateY(-1px)
+  box-shadow: 0 6px 16px rgba(0,0,0,.35)
+
+.via-l2-banner .banner-ctas .banner-link:active
+  transform: translateY(0)
+
+.via-l2-banner .banner-ctas .primary
+  box-shadow: 0 6px 18px rgba(0,0,0,.4)
+
+.via-l2-banner .banner-ctas .secondary
+  background: rgba(255,255,255,.08)
+  border: 1px solid rgba(255,255,255,.35)
+
+.via-l2-banner .banner-ctas .secondary:hover
+  background: rgba(255,255,255,.14)
+// CTA emphasis overrides (appended)
+.via-l2-banner
+  .banner-ctas
+    flex-wrap: wrap
+    .banner-link
+      font-weight: 600
+      font-size: clamp(0.95rem, 0.4vw + 0.9rem, 1.1rem)
+      padding: .75rem 1.1rem
+      border-radius: 6px
+      box-shadow: 0 4px 12px rgba(0,0,0,.25)
+
+.via-l2-banner .banner-ctas .banner-link:hover
+  transform: translateY(-1px)
+  box-shadow: 0 6px 16px rgba(0,0,0,.35)
+
+.via-l2-banner .banner-ctas .banner-link:active
+  transform: translateY(0)
+
+.via-l2-banner .banner-ctas .primary
+  box-shadow: 0 6px 18px rgba(0,0,0,.4)
+
+.via-l2-banner .banner-ctas .secondary
+  background: rgba(255,255,255,.08)
+  border: 1px solid rgba(255,255,255,.35)
+
+.via-l2-banner .banner-ctas .secondary:hover
+  background: rgba(255,255,255,.14)

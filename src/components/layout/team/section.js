@@ -1,4 +1,4 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
 import Logo from 'components/logo/picture';
 
@@ -7,9 +7,8 @@ import Card from 'components/team/card';
 import './bg-blue-moon.jpg';
 import './styles.sass'
 
-/** @jsx preact.h */
 
-export default class LayoutTeam extends preact.Component {
+export default class LayoutTeam extends Component {
 
   cards(config) {
     const x = 3; // chunks size

@@ -1,8 +1,7 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
-/** @jsx preact.h */
 
-export default class Android extends preact.Component {
+export default class Android extends Component {
   render() {
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 436.72 512">
       <path d="M69.47,167H68.16a30.6,30.6,0,0,0-30.52,30.52V330.36A30.58,30.58,0,0,0,68.16,360.9h1.33A30.61,30.61,0,0,0,100,330.36V197.47A30.66,30.66,0,0,0,69.47,167Z" transform="translate(-37.64 0)"/><path class="cls-1" d="M114.62,381.65a28.08,28.08,0,0,0,28,28h30v71.77A30.62,30.62,0,0,0,203.17,512h1.31A30.62,30.62,0,0,0,235,481.43V409.66h41.89v71.77A30.66,30.66,0,0,0,307.5,512h1.29a30.61,30.61,0,0,0,30.54-30.57V409.66h30a28.08,28.08,0,0,0,28-28V171.83H114.62Z" transform="translate(-37.64 0)"/>

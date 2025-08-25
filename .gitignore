@@ -102,3 +102,5 @@ $RECYCLE.BIN/
 # Dependency directories
 node_modules
 build
+
+private_docs/*

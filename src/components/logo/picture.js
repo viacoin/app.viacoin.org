@@ -1,10 +1,9 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
 import './styles.sass'
 
-/** @jsx preact.h */
 
-export default class Picture extends preact.Component {
+export default class Picture extends Component {
   render(props, state) {
     const circle = props.circle || false;
     const text = props.text || false;

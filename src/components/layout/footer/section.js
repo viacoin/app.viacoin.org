@@ -1,4 +1,4 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
 import Donate from 'components/donate/modal';
 import Logo from 'components/logo/picture';
@@ -14,9 +14,8 @@ import "./styles.sass";
 
 import './bg-footer.jpg'
 
-/** @jsx preact.h */
 
-export default class LayoutFooter extends preact.Component {
+export default class LayoutFooter extends Component {
 
   render(props, state) {
     const {config} = props;

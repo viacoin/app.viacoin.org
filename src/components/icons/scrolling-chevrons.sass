@@ -31,7 +31,14 @@ $base: 0.5rem
       transform: skewY(-30deg)
 
 @include keyframes(move-chevron)
-  25% { opacity: .3; }
-  33.3% { opacity: .3; transform: translateY($base * 3.8)}
-  66.6% { opacity: .3; transform: translateY($base * 5.2) }
-  100% { opacity: 0; transform: translateY($base * 8) scale(0.5)}
+  25%
+    opacity: .3
+  33.3%
+    opacity: .3
+    transform: translateY($base * 3.8)
+  66.6%
+    opacity: .3
+    transform: translateY($base * 5.2)
+  100%
+    opacity: 0
+    transform: translateY($base * 8) scale(0.5)

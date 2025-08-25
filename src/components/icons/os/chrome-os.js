@@ -1,8 +1,7 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
-/** @jsx preact.h */
 
-export default class ChromeOS extends preact.Component {
+export default class ChromeOS extends Component {
   render() {
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 511.96">
       <path d="M160.32,256A95.68,95.68,0,1,0,256,160.34,95.78,95.78,0,0,0,160.32,256Z" transform="translate(0 -0.02)"/><path id="_Tracé_2" data-name="&lt;Tracé&gt;" class="cls-1" d="M476.3,129.73a4.21,4.21,0,0,0,0-4.22A255.88,255.88,0,0,0,256,0,254.88,254.88,0,0,0,55.88,96.39a4.19,4.19,0,0,0-.36,4.72l72.07,124.81a4.18,4.18,0,0,0,3.63,2.1,3.64,3.64,0,0,0,.57,0,4.17,4.17,0,0,0,3.49-3.1A124.66,124.66,0,0,1,256,131.36c3.53,0,7.17.16,10.84.48H472.65A4.21,4.21,0,0,0,476.3,129.73Z" transform="translate(0 -0.02)"/>
