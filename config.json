@@ -1,464 +1,537 @@
-
-
 {
-	"slider": {
-		"slides": [
-			"<h1 class=\"title is-1 is-spaced has-text-weight-normal\"><strong class=\"has-text-weight-semibold\">SECURE MICROPAYMENTS</strong> <strong>PERFECTED</strong></h1><h2 class=\"subtitle is-aleatory\">Viacoin has a <strong>24 second block time</strong>, <strong>low transaction fees</strong> and a <strong>strong network hashrate</strong>.<br />This makes Viacoin perfect for making fast and secure (micro)transactions.</h2><h2 class=\"subtitle is-aleatory\">Viacoin was the <strong>first cryptocurrency</strong> to implement <strong>OP_CHECKLOCKTIMEVERIFY</strong>, which is a crucial component for Lightning Network and atomic swaps.</h2><h2 class=\"subtitle is-aleatory\">The Viacoin Core and Vialectrum wallets <strong>provide anonymous connections</strong> to the Viacoin network<br />by letting you connect to <strong>Tor nodes</strong>.</h2><div class=\"columns is-mobile is-vcentered is-marketcap\"><div class=\"column\"><div class=\"tag is-large is-statistics has-text-centered\"><div class=\"is-value\">${price}</div><div class=\"is-label\">Price</div></div></div><div class=\"column\"><div class=\"tag is-large is-statistics has-text-centered\"><div class=\"is-value\">${market_cap_usd}</div><div class=\"is-label\">Market Cap</div></div></div><div class=\"column\"><div class=\"tag is-large is-statistics has-text-centered\"><div class=\"is-value\">${24h_volume_usd}</div><div class=\"is-label\">Volume 24H</div></div></div></div>",
-			"<div class=\"columns is-vcentered\"><div class=\"column is-half has-text-left\"><span class=\"tag is-success is-medium\">NEW</span><h1 class=\"title is-1 is-spaced has-text-weight-normal has-text-black-ter\">INTRODUCING <strong>BTCPAY</strong> <strong>SUPPORT</strong></h1><h2 class=\"subtitle\">Viacoin support has been added to BTCpay, meaning that merchants from all over the world can start accepting Viacoin as a payment method. BTCPay Server is an Open Source payment processor that conforms to the invoice API of Bitpay.</h2></div><div class=\"column is-half\"><img src=\"intro/btcpay.png\" alt=\"BTCpay\" title=\"BTCpay\"/></div></div>",
-			"<div class=\"columns is-vcentered\"><div class=\"column is-three-fifths has-text-left\"><span class=\"tag is-success is-medium\">NEW</span><h1 class=\"title is-1 is-spaced has-text-weight-normal has-text-black-ter\"><strong>VIACOIN COPAY</strong> MULTISIGNATURE WALLET</h1><h2 class=\"subtitle\">Viacoin has launched its multisignature wallet. The Viacoin Copay app securely stores multiple, distinct viacoin wallets, allowing both business and privacy-conscious users to keep funds carefully separated. Manage personal, business, and testnet wallets easily, all without leaving the app. Viacoin Copay uses hierarchical-deterministic (HD) wallets, allowing for secure in-app wallet generation and backup.</h2></div><div class=\"column\"><img src=\"intro/copay.png\" alt=\"Copay\" title=\"Copay\"/></div></div>",
-		        "<div class=\"columns is-vcentered\"><div class=\"column is-half has-text-left\"><span class=\"tag is-success is-medium\">NEW</span><h1 class=\"title is-1 is-spaced has-text-weight-normal has-text-black-ter\">INTRODUCING <strong>HARDWARE</strong> <strong>WALLET SUPPORT</strong></h1><h2 class=\"subtitle\">Viacoin has Ledger Nano S and Ledger Blue support. By embedding the private keys on the chip Ledger provides the safest wallet solution known to the market.</h2></div><div class=\"column is-half\"><img src=\"intro/ledger.png\" alt=\"Ledger\" title=\"Ledger\"/></div></div>"
-		]
-	},
-	"features": [{
-			"icon": "FastAndSecureIcon",
-			"title": "Fast & Secure",
-			"text": "Viacoin is an open source cryptocurrency created in 2014, derived from the Bitcoin protocol. Viacoin has a total supply of 23,176,392 coins and has a 24 second block time, resulting in a transaction speed 25x faster than Bitcoin. Viacoin can handle 175 transactions per second without scaling through Segwit or Lightning Network, making it perfect for fast (micro)transactions."
-		},
-		{
-			"icon": "AtomicSwapIcon",
-			"title": "Atomic Swaps",
-			"text": "With Viacoin you can perform cross-chain atomic swaps between different cryptocurrencies without using centralized exchanges. Viacoin was the first cryptocurrency to integrate Peter Todd's OP_CHECKLOCKTIMEVERIFY BIP 65 proposal. Our atomic swap contract uses SHA256 secret hashes (instead of RIPEMD160) as it is more secure and has wider compatibility with altcoins."
-		},
-		{
-			"icon": "DigitIcon",
-			"title": "Auxiliary Proof-of-Work",
-			"text": "Viacoin uses merged mining, also known as 'AuxPoW'. This allows miners to mine for more than one blockchain at the same time. A miner could mine Litecoin and Viacoin or any other Scrypt coin simultaneously. Miners have an incentive to mine Viacoin, even if the reward is low, as they are able to mine Viacoin for “free”. This results in a very high network hashrate, which highly increases the network security."
-		},
-		{
-			"icon": "ScalableIcon",
-			"title": "Scalable",
-			"text": "Viacoin has adopted SegWit. Segregated Witness helps to shrink the size of a transaction and cope with the UTXO growth. It also aims to increase the per-block transaction throughput by a factor of 2 or 3, while simultaneously making block syncing faster for new nodes. Viacoin will also integrate other features like Schnorr signatures, which will help lowering the transaction size and costs."
-		},
-		{
-			"icon": "LightningNetworkIcon",
-			"title": "Lightning Network",
-			"text": "Viacoin is ready to use the Lightning Network. This enables improvements of several orders of magnitude in transaction throughput by moving the majority of transactions outside the consensus ledgers into payment channels. This allows millions to billions of transactions per second across the network. A capacity that blows away legacy payment rails."
-		}
-	],
-	"wallets": {
-		"first": [{
-				"os": [{
-						"icon": "WindowsIcon",
-						"title": "Windows 64-bit",
-						"url": "https://github.com/viacoin/viacoin/releases/download/v0.15.2/viacoin-0.15.2-win64-setup-unsigned.exe",
-						"button": "Download",
-						"version": ["Viacoin Core", "0.15.2"]
-					},
-					{
-						"icon": "WindowsIcon",
-						"title": "Windows 32-bit",
-						"url": "https://github.com/viacoin/viacoin/releases/download/v0.15.2/viacoin-0.15.2-win32-setup-unsigned.exe",
-						"button": "Download",
-						"version": ["Viacoin Core", "0.15.2"]
-					},
-					{
-						"icon": "MacOsIcon",
-						"title": "Mac OSX",
-						"url": "https://github.com/viacoin/viacoin/releases/download/v0.15.2/viacoin-0.15.2-osx-unsigned.dmg",
-						"button": "Download",
-						"version": ["Viacoin Core", "0.15.2"]
-					},
-					{
-						"icon": "LinuxIcon",
-						"title": "Linux",
-						"url": "https://github.com/viacoin/viacoin/releases/download/v0.15.2/viacoin-0.15.2-x86_64-linux-gnu.tar.gz",
-						"button": "Download",
-						"version": ["Viacoin Core", "0.15.2"]
-					}
-				]
-			},
-			{
-				"apps": [{
-						"icon": "AndroidIcon",
-						"title": "Viacoin Copay",
-						"url": "https://play.google.com/store/apps/details?id=org.viacoin.copay",
-						"button": "Download"
-					},
-					{
-						"icon": "VialectrumIcon",
-						"title": "Vialectrum 3.2.2.",
-						"url": "https://github.com/viacoin/vialectrum/releases/tag/3.2.2",
-						"button": "Download"
-					},
-					{
-						"icon": "ViacoinPaperWalletIcon",
-						"title": "Viacoin Paper Wallet",
-						"url": "https://viacoin.github.io/address-generator",
-						"button": "Open"
-					}
-				]
-			}
-		],
-		"third": [
-			{
-				"icon": "LedgerIcon",
-				"title": "Ledger hardware wallets",
-				"url": "https://www.ledgerwallet.com",
-				"button": "Buy"
-			},
-			{
-				"icon": "CoinomiIcon",
-				"title": "Coinomi (mobile)",
-				"url": "https://coinomi.com",
-				"button": "Download"
-			},
-			{
-				"icon": "TrezorIcon",
-				"title": "Trezor",
-				"url": "https://trezor.io/",
-				"button": "Buy"
-			},
-			{
-				"icon": "PungoIcon",
-				"title": "Pungo Wallet",
-				"url": "https://pungo.app/",
-				"button": "Download"
-			}
-		]
-	},
-	"roadmap": [{
-			"progress": 100,
-			"title": "TREZOR HARDWARE WALLET SUPPORT",
-			"text": "TREZOR is one of the most trusted and secure ways to store your Viacoins. Isolate your private keys into the safety of TREZOR & enjoy Viacoin without risk. The best protection at no cost to your inconvenience.",
-			"icons": ["WindowsIcon", "MacOsIcon", "LinuxIcon", "ChromeOsIcon", "AndroidIcon"]
-		},
-		{
-			"progress": 100,
-			"title": "GENERAL BYTES ATM SUPPORT",
-			"text": "General Bytes is the leading cryptocurrency hardware manufacturer. They have sold over 1250+ ATMS spread across 40+ countries. Viacoin is now available on all General Bytes ATMs. ",
-			"icons": []
-		},
-		{
-			"progress": 100,
-			"title": "BTCPAY SERVER SUPPORT",
-			"text": "BTCPay Server is an Open Source payment processor, written in C#, that conforms to the invoice API of Bitpay. This allows easy migration of your code base to your own, self-hosted payment processor. Viacoin is now available as a payment option.",
-			"icons": ["WindowsIcon", "MacOsIcon", "LinuxIcon", "ChromeOsIcon", "AndroidIcon", "IosIcon", "WindowsPhoneIcon"]
-		},
-		{
-			"progress": 100,
-			"title": "VIACOIN CORE 0.15.1",
-			"text": "Viacoin Core 0.15.1 is a big update compared to its previous version. The following features and improvements are included: chainstate database restructure, valid block assertion, p2p network optimization, UTXO mempool optimization, block relay improvements, no keypool refill flush and upgrade LevelDB.",
-			"icons": ["WindowsIcon", "MacOsIcon", "LinuxIcon"]
-		},
-		{
-			"progress": 100,
-			"title": "VIALECTRUM 3.1.3.1",
-			"text": "Vialectrum is a fast, secure and very easy to use lightweight Viacoin client. Your funds are securely stored and can easily be recovered from any device using a secret phrase. Vialectrum 3.1.3.1 comes with Bech32 address support, better fee estimation and VialectrumX Tor nodes.",
-			"icons": ["WindowsIcon", "MacOsIcon", "LinuxIcon"]
-		},
-		{
-			"progress": 100,
-			"title": "VIALECTRUM 3.2.2",
-			"text": "Vialectrum is a fast, secure and very easy to use lightweight Viacoin client. Your funds are securely stored and can easily be recovered from any device using a secret phrase. Vialectrum 3.2.2 comes with faster transaction signing, hardware wallet improvements, an optional 'dark theme', several bug fixes and more.",
-			"icons": ["WindowsIcon", "MacOsIcon", "LinuxIcon"]
-		},
-		{
-			"progress": 80,
-			"title": "VIACOIN CORE 0.16",
-			"text": "Viacoin Core 0.16 will feature the following: bech32 address support, sha256 hashing optimizations (which leads to faster synchronization and block validation), HD wallets by default, several bug fixes and other optimizations.",
-			"icons": ["WindowsIcon", "MacOsIcon", "LinuxIcon"]
-		},
-		{
-			"progress": 80,
-			"title": "VIACOIN ECLAIR",
-			"text": "Viacoin Eclair is an implementation of the Viacoin Lightning Network. Viacoin Eclair enables you to run your own Viacoin Lightning Network node and make Viacoin Lightning Network payments. Opening and closing channels is much fast than Bitcoin due to Viacoin's 24 second block time.",
-			"icons": ["WindowsIcon", "MacOsIcon", "LinuxIcon"]
-		},
-		{
-			"progress": 80,
-			"title": "VIACOIN COPAY",
-			"text": "Secure your personal funds with multiple signatures, or just one. Take security into your own hands and avoid trusting third parties with your savings. Like a joint-checking account, your Viacoin Copay wallet can have multiple users. Manage shared funds with friends and coworkers. Share a wallet with your child and introduce them to Viacoin. Viacoin Copay makes sharing a wallet simple and secure.",
-			"icons": ["WindowsIcon", "MacOsIcon", "LinuxIcon", "ChromeOsIcon", "AndroidIcon", "IosIcon", "WindowsPhoneIcon"]
-		},
-		{
-			"progress": 50,
-			"title": "VIACOIN SAMOURAI",
-			"text": "A modern Viacoin wallet hand forged to keep your transactions private, your identity masked, and your funds secure. Currently available for Bitcoin: samouraiwallet.com.",
-			"icons": ["AndroidIcon"]
-		},
-		{
-			"progress": 0,
-			"title": "VIACOIN ECLAIR WALLET",
-			"text": "Viacoin Eclair Wallet is a next generation, Lightning-ready Viacoin wallet. It can be used as a regular Viacoin wallet, and can also connect to the Viacoin Lightning Network for cheap and instant payments.",
-			"icons": ["AndroidIcon"]
-		},
-                {
-			"progress": 0,
-			"title": "ZAP LIGHTNING NETWORK WALLET",
-			"text": "Trustlessly send and receive viacoins instantly with minimal fees via the Lightning Network. Zap is a free Lightning Network wallet focused on user experience and ease of use, with the overall goal of helping the cryptocurrency community scale Bitcoin and other cryptocurrencies. Currently available for Bitcoin: zap.jackmallers.com.",
-			"icons": ["WindowsIcon", "MacOsIcon", "LinuxIcon"]
-		},
-		{
-			"progress": 100,
-			"title": "VIAD (VIACOIN GOLANG)",
-			"text": "Viacoin Core alternative implementation in Golang. It properly downloads, validates, and serves the block chain using the exact rules (including consensus bugs) for block acceptance as Viacoin Core. Viad allows the Viacoin development team to start working on user-friendly Viacoin Lightning wallets.",
-			"icons": []
-		},
-		{
-			"progress": 100,
-			"title": "NVIACOIN",
-			"text": "NViacoin is the most complete Viacoin library for the .NET platform. It provides low level access to Viacoin primitives so you can easily build your application on top of it. NViacoin is an important component for BTCPay and Styx (which uses TumbleBit).",
-			"icons": []
-		},
-		{
-			"progress": 100,
-			"title": "VIACOINJ",
-			"text": "Viacoin Core alternative implementation in Java. ViacoinJ is a library for working with the Viacoin protocol. It can maintain a wallet, send/receive transactions without needing a local copy of Viacoin Core and has many other advanced features. It’s implemented in Java but can be used from any JVM compatible language.",
-			"icons": []
-		},
-		{
-			"progress": 90,
-			"title": "LIGHTNING NETWORK DAEMON (LND)",
-			"text": "Faster and cheaper than Bitcoin. The Lightning Network Daemon (lnd) is a complete implementation of a Lightning Network node.",
-			"icons": []
-		},
-		{
-			"progress": 90,
-			"title": "Viacoin Bech32 for Native SegWit addresses",
-			"text": "Bech32 addresses are natively SegWit compatible, meaning the transaction doesn’t need extra space to put SegWit in the P2SH address. It also has more advantages like smaller QR codes, stronger protection against typing errors, enables auto completion and only consisting of lower cases. Vialectrum 3.1.3.1 and Coinomi are already support Bech32 addresses. Ledger and Viacoin Core 0.16 wil add Bech32 support soon.",
-			"icons": []
-		},
-		{
-			"progress": 80,
-			"title": "C-LIGHTNING",
-			"text": "C-lightning is a standard compliant implementation of the Lightning Network protocol. The Lightning Network is a scalability solution for Viacoin, enabling secure and instant transfer of funds between any two parties for any amount.",
-			"icons": []
-		},
-		{
-			"progress": 35,
-			"title": "SCHNORR SIGNATURES",
-			"text": "The successor of Elliptic Curve Digital Signatures. It is a more efficient algorithm than Elliptic Curve Digital Signatures. Schnorr signatures support “native multisig” which enables the aggregation of multiple signatures into a single one valid for the sum of the keys. /batch validation. It could reduce the use of storage & bandwidth by 25% or more.",
-			"icons": []
-		},
-		{
-			"progress": 35,
-			"title": "MAST (MERKELIZED ABSTRACT SYNTAX TREES)",
-			"text": "Node Interaction with Merkle Trees. M.A.S.T allows Viacoin transaction validation scripts to be stored in partially-hashed form and nodes to interact with the merkle tree. This enables complicated redemption conditions, improves privacy by hiding unexecuted branches & allows inclusion of non-consensus enforced data. MAST allows for complicated smart contracts to be created on the VIA blockchain without clogging it up.",
-			"icons": []
-		},
-		{
-			"progress": 30,
-			"title": "STYX ANONYMOUS TRANSACTIONS",
-			"text": "Styx is an unlinkable anonymous atomic payment hub for Viacoin. Read our STYX Whitepaper.",
-			"icons": []
-		},
-		{
-			"progress": 20,
-			"title": "RSK SMART CONTRACTS",
-			"text": "Ethereum Compatible Smart Contracts. Rootstock is a smart contract platform which has a two-way peg. The idea is to enable it to work with smart contracts. Rootstock runs a turing complete Virtual machine called Rootstock Virtual Machine (which is also compatible with Ethereum virtual machine!) and allows solidity compiled smart contracts to run.",
-			"icons": []
-		}
-	],
-	"team": [{
-			"name": "Romano",
-			"job": "Lead Developer",
-			"picture": "team/romano.svg",
-			"icons": ["GithubIcon"],
-			"url": ["https://github.com/romanornr"]
-		},
-		{
-			"name": "Reorder",
-			"job": "Developer",
-			"picture": "team/reorder.svg",
-			"icons": ["GithubIcon"],
-			"url": ["https://github.com/reorder"]
-		},
-		{
-			"name": "Frank",
-			"job": "Developer",
-			"picture": "team/frank.svg",
-			"icons": ["LinkedinIcon"],
-			"url": ["https://www.linkedin.com/in/frank-marrone-b833533/"]
-		},
-		{
-			"name": "Chainfailure",
-			"job": "Developer",
-			"picture": "team/chainfailure.svg",
-			"icons": ["GithubIcon", "TwitterIcon"],
-			"url": ["https://github.com/chainfailure", "https://www.twitter.com/chainfailure"]
-		},
-		{
-			"name": "Hotshot",
-			"job": "Developer",
-			"picture": "team/hotshot.svg",
-			"icons": ["GithubIcon", "TwitterIcon"],
-			"url": ["https://github.com/abllr", "https://twitter.com/cryptoshot"]
-		},
-		{
-			"name": "Rockstardev",
-			"job": "Developer",
-			"picture": "team/rockstardev.svg",
-			"icons": ["GithubIcon", "TwitterIcon"],
-			"url": ["https://github.com/rockstardev", "https://twitter.com/@r0ckstardev"]
-		},
-		{
-			"name": "Mike V",
-			"job": "Head of Marketing",
-			"picture": "team/mikev.svg",
-			"icons": ["TwitterIcon"],
-			"url": ["https://www.twitter.com/Mike__V_"]
-		},
-		{
-			"name": "CR-MN",
-			"job": "Front-end developer/designer",
-			"picture": "team/crrm.svg",
-			"icons": [],
-			"url": []
-		}
-	],
-	"resources": {
-		"pools": [{
-				"picture": "resources/multipool.png",
-				"url": "https://www.multipool.us/dashboard/pool/via",
-				"delay": 100,
-				"styles": "height: 78px;"
-
-			},
-			{
-				"picture": "resources/f2pool.png",
-				"url": "https://www.f2pool.com/",
-				"delay": 200,
-				"styles": "height: 58px;"
-			},
-			{
-				"picture": "resources/litecoinpool.png",
-				"url": "https://www.litecoinpool.org/",
-				"delay": 300,
-				"styles": "height: 30px;"
-			}
-		],
-		"exchanges": [{
-				"picture": "resources/binance.png",
-				"url": "https://www.binance.com/tradeDetail.html?symbol=VIA_BTC",
-				"delay": 100,
-				"styles": "height: 62px;"
-			},
-			{
-				"picture": "resources/bittrex.png",
-				"url": "https://upbit.com/exchange?code=CRIX.UPBIT.BTC-VIA",
-				"delay": 200,
-				"styles": "height: 45px;"
-			},
-			{
-				"picture": "resources/upbit.png",
-				"url": "https://bittrex.com/Market/Index?MarketName=BTC-VIA",
-				"delay": 300,
-				"styles": "height: 39px;"
-			},
-			{
-				"picture": "resources/poloniex.png",
-				"url": "https://poloniex.com/exchange/btc_via",
-				"delay": 400,
-				"styles": "height: 35px;"
-			},
-			{
-				"picture": "resources/yobit.png",
-				"url": "https://yobit.net/en/trade/VIA/BTC",
-				"delay": 500,
-				"styles": "height: 55px;"
-			},
-			{
-				"picture": "resources/coinroom.png",
-				"url": "https://coinroom.com/",
-				"delay": 600,
-				"styles": "height: 35px;"
-			},
-			{
-				"picture": "resources/barterdex.png",
-				"url": "http://www.barterdex.com/",
-				"delay": 700,
-				"styles": "height: 35px;"
-			},
-			{
-				"picture": "resources/peer2cash.png",
-				"url": "https://peer2.cash",
-				"delay": 800,
-				"styles": "height: 35px;"
-			}
-		],
-		"services": [
-			{
-				"picture": "resources/viacoin-explorer.png",
-				"url": "https://explorer.viacoin.org/",
-				"delay": 100,
-				"styles": "height: 44px;"
-			},
-			{
-				"picture": "resources/cryptoid.png",
-				"url": "https://chainz.cryptoid.info/via/",
-				"delay": 100,
-				"styles": "height: 44px;"
-			},
-			{
-				"picture": "resources/litebit.png",
-				"url": "https://www.litebit.eu/en/buy/viacoin",
-				"delay": 200,
-				"styles": "height: 38px;"
-			},
-			{
-				"picture": "resources/peer2krd.png",
-				"url": "https://peer2.krd",
-				"delay": 200,
-				"styles": "height: 38px;"
-			}
-		]
-	},
-	"vendors": [
-		{
-			"name": "Evolution Host",
-			"picture": "vendors/evolution-host.png",
-			"url": "https://evolution-host.com",
-			"title": "Experience the future of hosting.",
-			"styles": "max-width: 128px;"
-		},
-		{
-			"name": "Cryptips.org",
-			"picture": "vendors/cryptips.png",
-			"url": "https://www.cryptips.org/",
-			"title": "Tip your favorite streamers!",
-			"styles": "max-width: 250px;"
-		},
-		{
-			"name": "Blockchaindenim.com",
-			"picture": "vendors/blockchaindenim.png",
-			"url": "https://www.blockchaindenim.com/",
-			"title": "Quality blockchain fashion.",
-			"styles": "max-width: 250px;"
-		},
-		{
-			"name": "CryptocurrencyPosters.com",
-			"picture": "vendors/cryptoposters.png",
-			"url": "https://www.cryptocurrencyposters.com/",
-			"title": "Fine, crypto-themed artwork.",
-			"styles": "max-width: 250px;"
-		},
-		{
-			"name": "PaulmanAcre.com",
-			"picture": "vendors/paulmanacre.png",
-			"url": "https://www.paulmanacre.com/",
-			"title": "Homemade delicious hot sauces.",
-			"styles": "max-width: 180px;"
-		}
-	],
-	"donate": [{
-			"name": "Viacoin",
-			"currency": "VIA",
-			"address": "VvG41BRB2W9GeAbgsiAdJQdiAncUJwoW1K"
-		},
-		{
-			"name": "Bitcoin",
-			"currency": "BTC",
-			"address": "341YqUzFMxrmQaJzATQjdzSsMiy2E7mz3d"
-		},
-		{
-			"name": "Litecoin",
-			"currency": "LTC",
-			"address": "MFGKd5jcAp2ZBGzfm4DVWSBB8bdGiaYZcD"
-		},
-		{
-			"name": "Ethereum",
-			"currency": "ETH",
-			"address": "0xf85cde43d0c9B7d7C89216c5ac5F1517e27Cd5CD"
-		}
-	]
+  "slider": {
+    "slides": [
+      "<div class=\"columns is-vcentered is-centered\"><div class=\"column is-8 is-offset-2 has-text-centered\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">SECURE MICROPAYMENTS<br><strong>PERFECTED</strong></h1><h2 class=\"subtitle is-4 has-text-white-bis\">Viacoin was the <span style=\"color: #7dd421;\">first cryptocurrency</span> to implement <span style=\"color: #7dd421;\">OP_CHECKLOCKTIMEVERIFY</span>, which is a crucial component for Lightning Network and atomic swaps</h2><div class=\"content has-text-white-ter has-text-centered\"><p><strong class=\"has-text-white\">✓ 24 second block time</strong>  Ultra-fast confirmations</p><p><strong class=\"has-text-white\">✓ Low transaction fees</strong>  Minimal cost per transaction</p><p><strong class=\"has-text-white\">✓ Strong network hashrate</strong>  Highly secure blockchain</p><p><strong class=\"has-text-white\">✓ OP_CHECKLOCKTIMEVERIFY</strong>  Advanced scripting capabilities</p><p><strong class=\"has-text-white\">✓ Tor nodes available</strong>  Enhanced privacy options</p><div class=\"columns is-market-stats has-text-centered\"><div class=\"column\"><p class=\"heading has-text-grey-light\">Price</p><p class=\"title is-1 has-text-white has-text-weight-bold market-value\">${price}</p></div><div class=\"column has-separator\"><p class=\"heading has-text-grey-light\">Market Cap</p><p class=\"title is-1 has-text-white has-text-weight-bold market-value\">${market_cap_usd}</p></div><div class=\"column has-separator\"><p class=\"heading has-text-grey-light\">Volume 24H</p><p class=\"title is-1 has-text-white has-text-weight-bold market-value\">${24h_volume_usd}</p></div></div></div></div></div>",
+      "<div class=\"columns is-vcentered is-centered\"><div class=\"column is-5 has-text-centered\"><figure class=\"image\"><img src=\"intro/btcpay.png\" alt=\"BTCPay Server Integration\" /></figure></div><div class=\"column is-5 has-text-centered\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">INTRODUCING BTCPAY SUPPORT</h1><h2 class=\"subtitle is-4 has-text-white-bis\">Accept Viacoin payments with BTCPay Server - the self-hosted, open-source cryptocurrency payment processor.</h2><div class=\"content has-text-white-ter\"><p><strong class=\"has-text-white\">✓ Self-hosted solution</strong> - Complete control over your payments</p><p><strong class=\"has-text-white\">✓ No third-party dependencies</strong> - Direct peer-to-peer transactions</p><p><strong class=\"has-text-white\">✓ Open source</strong> - Transparent and auditable code</p><p><strong class=\"has-text-white\">✓ Multiple integrations</strong> - E-commerce platform support</p><p><strong class=\"has-text-white\">✓ Lightning Network ready</strong> - Instant micropayments</p></div></div></div></div>",
+      "<div class=\"columns is-vcentered is-centered\"><div class=\"column is-5 has-text-centered\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">VIACOIN COPAY MULTISIGNATURE WALLET</h1><h2 class=\"subtitle is-4 has-text-white-bis\">Secure your Viacoin with advanced multisignature technology using our Copay-based wallet solution.</h2><div class=\"content has-text-white-ter\"><p><strong class=\"has-text-white\">✓ Multisignature security</strong> - Require multiple signatures for transactions</p><p><strong class=\"has-text-white\">✓ Shared wallets</strong> - Perfect for organizations and teams</p><p><strong class=\"has-text-white\">✓ Hierarchical Deterministic</strong> - Generate unlimited addresses</p><p><strong class=\"has-text-white\">✓ Cross-platform</strong> - Available on desktop and mobile</p><p><strong class=\"has-text-white\">✓ Open source</strong> - Community audited and transparent</p></div></div></div><div class=\"column is-5 has-text-centered\"><figure class=\"image\"><img src=\"intro/copay.png\" alt=\"Viacoin Copay Wallet\" /></figure></div></div>",
+      "<div class=\"columns is-vcentered is-centered\"><div class=\"column is-5 has-text-centered\"><figure class=\"image\"><img src=\"intro/ledger.png\" alt=\"Ledger Hardware Wallet Support\" /></figure></div><div class=\"column is-5 has-text-centered\"><div class=\"content\"><h1 class=\"title is-2 has-text-white\">INTRODUCING HARDWARE WALLET SUPPORT</h1><h2 class=\"subtitle is-4 has-text-white-bis\">Store your Viacoin safely with Ledger hardware wallet integration - the most secure way to manage your cryptocurrency.</h2><div class=\"content has-text-white-ter\"><p><strong class=\"has-text-white\">✓ Cold storage security</strong> - Private keys never leave the device</p><p><strong class=\"has-text-white\">✓ Ledger integration</strong> - Full support for Ledger Nano S & X</p><p><strong class=\"has-text-white\">✓ Secure transactions</strong> - Confirm all transactions on device</p><p><strong class=\"has-text-white\">✓ Recovery seed</strong> - 24-word backup for ultimate security</p><p><strong class=\"has-text-white\">✓ Multi-currency support</strong> - Manage multiple cryptocurrencies</p></div></div></div></div>"
+    ]
+  },
+  "features": [
+    {
+      "icon": "FastAndSecureIcon",
+      "title": "Fast & Secure",
+      "text": "Viacoin is an open source cryptocurrency created in 2014, derived from the Bitcoin protocol. Viacoin has a total supply of 23,176,392 coins and has a 24 second block time, resulting in a transaction speed 25x faster than Bitcoin. Viacoin can handle 175 transactions per second without scaling through Segwit or Lightning Network, making it perfect for fast (micro)transactions"
+    },
+    {
+      "icon": "DigitIcon",
+      "title": "Auxiliary Proof-of-Work",
+      "text": "Viacoin uses merged mining, also known as 'AuxPoW'. This allows miners to mine for more than one blockchain at the same time. A miner could mine Litecoin and Viacoin or any other Scrypt coin simultaneously. Miners have an incentive to mine Viacoin, even if the reward is low, as they are able to mine Viacoin for “free”. This results in a very high network hashrate, which highly increases the network security."
+    },
+    {
+      "icon": "AtomicSwapIcon",
+      "title": "Atomic Swaps",
+      "text": "With Viacoin you can perform cross-chain atomic swaps between different cryptocurrencies without using centralized exchanges. Viacoin was the first cryptocurrency to integrate Peter Todd's OP_CHECKLOCKTIMEVERIFY BIP 65 proposal. Our atomic swap contract uses SHA256 secret hashes (instead of RIPEMD160) as it is more secure and has wider compatibility with altcoins"
+    },
+    {
+      "icon": "ScalableIcon",
+      "title": "Scalable",
+      "text": "Viacoin has adopted SegWit. Segregated Witness helps to shrink the size of a transaction and cope with the UTXO growth. It also aims to increase the per-block transaction throughput by a factor of 2 or 3, while simultaneously making block syncing faster for new nodes. Viacoin will also integrate other features like Schnorr signatures, which will help lowering the transaction size and costs"
+    },
+    {
+      "icon": "LightningNetworkIcon",
+      "title": "Lightning Network",
+      "text": "Viacoin is ready to use the Lightning Network. This enables improvements of several orders of magnitude in transaction throughput by moving the majority of transactions outside the consensus ledgers into payment channels. This allows millions to billions of transactions per second across the network. A capacity that blows away legacy payment rails"
+    },
+    {
+      "icon": "ShieldIcon",
+      "title": "Dark Gravity wave",
+      "text": "Dark Gravity Wave (DGW) is a new algorithm designed to address certain flaws such as the time warp attack in the KGW algorithm. This concept was first introduced in Dash, previously known as Darkcoin. It makes use of multiple exponential moving averages and simple move averages to achieve a smoother readjustment mechanism"
+    }
+  ],
+  "roadmap": [
+    {
+      "title": "TREZOR HARDWARE WALLET SUPPORT",
+      "text": "TREZOR is one of the most trusted and secure ways to store your Viacoins. Isolate your private keys into the safety of TREZOR & enjoy Viacoin without risk. The best protection at no cost to your inconvenience.",
+      "progress": 100,
+      "icons": [
+        "TrezorIcon"
+      ]
+    },
+    {
+      "title": "GENERAL BYTES ATM SUPPORT",
+      "text": "General Bytes is the leading cryptocurrency hardware manufacturer. They have sold over 1250+ ATMS spread across 40+ countries. Viacoin is now available on all General Bytes ATMs.",
+      "progress": 100,
+      "icons": [
+        "WindowsIcon",
+        "AndroidIcon"
+      ]
+    },
+    {
+      "title": "BTCPAY SERVER SUPPORT",
+      "text": "BTCPay Server is an Open Source payment processor, written in C#, that conforms to the invoice API of Bitpay. This allows easy migration of your code base to your own, self-hosted payment processor. Viacoin is now available as a payment option",
+      "progress": 100,
+      "icons": [
+        "WindowsIcon",
+        "LinuxIcon",
+        "MacOsIcon",
+        "ChromeOsIcon",
+        "AndroidIcon",
+        "IosIcon",
+        "WindowsPhoneIcon"
+      ]
+    },
+    {
+      "title": "VIACOIN CORE 0.15.1",
+      "text": "Viacoin Core 0.15.1 is a big update compared to its previous version. The following features and improvements are included: chainstate database restructure, valid block assertion, p2p network optimization, UTXO mempool optimization, block relay improvements, no keypool refill flush and upgrade LevelDB.",
+      "progress": 100,
+      "icons": [
+        "WindowsIcon",
+        "MacOsIcon",
+        "LinuxIcon"
+      ]
+    },
+    {
+      "title": "VIALECTRUM 3.1.3.1",
+      "text": "Updated Vialectrum lightweight wallet with improved functionality and bug fixes.",
+      "progress": 100,
+      "icons": [
+        "VialectrumIcon"
+      ]
+    },
+    {
+      "title": "VIALECTRUM 3.2.2",
+      "text": "Vialectrum is a fast, secure and very easy to use lightweight Viacoin client. Your funds are securely stored and can easily be recovered from any device using a secret phrase. Vialectrum 3.2.2 comes with faster transaction signing, hardware wallet improvements, an optional 'dark theme', several bug fixes and more",
+      "progress": 100,
+      "icons": [
+        "VialectrumIcon"
+      ]
+    },
+    {
+      "title": "VIACOIN CORE 0.16",
+      "text": "Viacoin Core 0.16 will feature the following: bech32 address support, sha256 hashing optimizations (which leads to faster synchronization and block validation), HD wallets by default, several bug fixes and other optimizations.",
+      "progress": 100,
+      "icons": [
+        "WindowsIcon",
+        "MacOsIcon",
+        "LinuxIcon"
+      ]
+    },
+    {
+      "title": "VIACOIN ECLAIR",
+      "text": "Viacoin Eclair is an implementation of the Viacoin Lightning Network. Viacoin Eclair enables you to run your own Viacoin Lightning Network node and make Viacoin Lightning Network payments. Opening and closing channels is much fast than Bitcoin due to Viacoin's 24 second block time.",
+      "progress": 80,
+      "icons": [
+        "LightningNetworkIcon"
+      ]
+    },
+    {
+      "title": "VIACOIN COPAY",
+      "text": "ecure your personal funds with multiple signatures, or just one. Take security into your own hands and avoid trusting third parties with your savings. Like a joint-checking account, your Viacoin Copay wallet can have multiple users. Manage shared funds with friends and coworkers. Share a wallet with your child and introduce them to Viacoin. Viacoin Copay makes sharing a wallet simple and secure.",
+      "progress": 80,
+      "icons": [
+        "CopayIcon"
+      ]
+    },
+    {
+      "title": "VIACOIN SAMOURAI",
+      "text": "A modern Viacoin wallet hand forged to keep your transactions private, your identity masked, and your funds secure. Currently available for Bitcoin: samouraiwallet.com.",
+      "progress": 50,
+      "icons": [
+        "AndroidIcon",
+        "MobileIcon"
+      ]
+    },
+    {
+      "title": "VIACOIN ECLAIR WALLET",
+      "text": "Viacoin Eclair Wallet is a next generation, Lightning-ready Viacoin wallet. It can be used as a regular Viacoin wallet, and can also connect to the Viacoin Lightning Network for cheap and instant payments.",
+      "progress": 0,
+      "icons": [
+        "LightningNetworkIcon",
+        "WindowsIcon",
+        "MacOsIcon",
+        "LinuxIcon",
+        "MobileIcon"
+      ]
+    },
+    {
+      "title": "ZAP LIGHTNING NETWORK WALLET",
+      "text": "Trustlessly send and receive viacoins instantly with minimal fees via the Lightning Network. Zap is a free Lightning Network wallet focused on user experience and ease of use, with the overall goal of helping the cryptocurrency community scale Bitcoin and other cryptocurrencies. Currently available for Bitcoin: zap.jackmallers.com.",
+      "progress": 0,
+      "icons": [
+        "LightningNetworkIcon",
+        "WindowsIcon",
+        "MacOsIcon"
+      ]
+    },
+    {
+      "title": "VIAD (VIACOIN GOLANG)",
+      "text": "Full node implementation of Viacoin written in Go programming language.",
+      "progress": 100,
+      "icons": [
+        "WindowsIcon",
+        "LinuxIcon",
+        "MacOsIcon"
+      ]
+    },
+    {
+      "title": "NVIACOIN",
+      "text": "NViacoin is the most complete Viacoin library for the .NET platform. It provides low level access to Viacoin primitives so you can easily build your application on top of it. NViacoin is an important component for BTCPay and Styx (which uses TumbleBit).",
+      "progress": 100,
+      "icons": [
+        "WindowsIcon",
+        "LinuxIcon",
+        "MacOsIcon"
+      ]
+    },
+    {
+      "title": "VIACOINJ",
+      "text": "Viacoin Core alternative implementation in Java. ViacoinJ is a library for working with the Viacoin protocol. It can maintain a wallet, send/receive transactions without needing a local copy of Viacoin Core and has many other advanced features. It’s implemented in Java but can be used from any JVM compatible language.",
+      "progress": 100,
+      "icons": [
+        "WindowsIcon",
+        "LinuxIcon",
+        "MacOsIcon"
+      ]
+    },
+    {
+      "title": "LIGHTNING NETWORK DAEMON (LND)",
+      "text": "Faster and cheaper than Bitcoin. The Lightning Network Daemon (lnd) is a complete implementation of a Lightning Network node.",
+      "progress": 90,
+      "icons": [
+        "LightningNetworkIcon",
+        "WindowsIcon",
+        "LinuxIcon"
+      ]
+    },
+    {
+      "title": "Viacoin Bech32 for Native SegWit addresses",
+      "text": "Bech32 addresses are natively SegWit compatible, meaning the transaction doesn’t need extra space to put SegWit in the P2SH address. It also has more advantages like smaller QR codes, stronger protection against typing errors, enables auto completion and only consisting of lower cases. Vialectrum 3.1.3.1 and Coinomi are already support Bech32 addresses. Ledger and Viacoin Core 0.16 wil add Bech32 support soon.",
+      "progress": 90,
+      "icons": [
+        "FastAndSecureIcon",
+        "ScalableIcon"
+      ]
+    },
+    {
+      "title": "C-LIGHTNING",
+      "text": "C-lightning is a standard compliant implementation of the Lightning Network protocol. The Lightning Network is a scalability solution for Viacoin, enabling secure and instant transfer of funds between any two parties for any amount.",
+      "progress": 80,
+      "icons": [
+        "LightningNetworkIcon",
+        "LinuxIcon"
+      ]
+    },
+    {
+      "title": "SCHNORR SIGNATURES",
+      "text": "The successor of Elliptic Curve Digital Signatures. It is a more efficient algorithm than Elliptic Curve Digital Signatures. Schnorr signatures support “native multisig” which enables the aggregation of multiple signatures into a single one valid for the sum of the keys. /batch validation. It could reduce the use of storage & bandwidth by 25% or more.",
+      "progress": 35,
+      "icons": [
+        "FastAndSecureIcon",
+        "ScalableIcon"
+      ]
+    },
+    {
+      "title": "MAST (MERKELIZED ABSTRACT SYNTAX TREES)",
+      "text": "Node Interaction with Merkle Trees. M.A.S.T allows Viacoin transaction validation scripts to be stored in partially-hashed form and nodes to interact with the merkle tree. This enables complicated redemption conditions, improves privacy by hiding unexecuted branches & allows inclusion of non-consensus enforced data. MAST allows for complicated smart contracts to be created on the VIA blockchain without clogging it up.",
+      "progress": 35,
+      "icons": [
+        "ScalableIcon",
+        "FastAndSecureIcon"
+      ]
+    },
+    {
+      "title": "STYX ANONYMOUS TRANSACTIONS",
+      "text": "Styx is an unlinkable anonymous atomic payment hub for Viacoin. Read our STYX Whitepaper.",
+      "progress": 30,
+      "icons": [
+        "FastAndSecureIcon",
+        "AtomicSwapIcon"
+      ]
+    },
+    {
+      "title": "RSK SMART CONTRACTS",
+      "text": "Ethereum Compatible Smart Contracts. Rootstock is a smart contract platform which has a two-way peg. The idea is to enable it to work with smart contracts. Rootstock runs a turing complete Virtual machine called Rootstock Virtual Machine (which is also compatible with Ethereum virtual machine!) and allows solidity compiled smart contracts to run.",
+      "progress": 20,
+      "icons": [
+        "ScalableIcon",
+        "DigitIcon"
+      ]
+    }
+  ],
+  "wallets": {
+    "first": [
+      {
+        "os": [
+          {
+            "icon": "WindowsIcon",
+            "title": "Windows",
+            "button": "Download",
+            "url": "https://github.com/viacoin/viacoin/releases"
+          },
+          {
+            "icon": "MacOsIcon",
+            "title": "macOS",
+            "button": "Download",
+            "url": "https://github.com/viacoin/viacoin/releases"
+          },
+          {
+            "icon": "LinuxIcon",
+            "title": "Linux",
+            "button": "Download",
+            "url": "https://github.com/viacoin/viacoin/releases"
+          }
+        ]
+      },
+      {
+        "apps": [
+          {
+            "icon": "VialectrumIcon",
+            "title": "Vialectrum",
+            "button": "Download",
+            "url": "https://github.com/viacoin/vialectrum"
+          },
+          {
+            "icon": "ViacoinPaperWalletIcon",
+            "title": "Paper Wallet",
+            "button": "Generate",
+            "url": "https://paper.viacoin.org"
+          }
+        ]
+      }
+    ],
+    "third": [
+      {
+        "icon": "MobileIcon",
+        "title": "Mobile",
+        "button": "Get App",
+        "url": "https://viacoin.org"
+      },
+      {
+        "icon": "CoinomiIcon",
+        "title": "Coinomi",
+        "button": "Get Wallet",
+        "url": "https://www.coinomi.com"
+      },
+      {
+        "icon": "TrezorIcon",
+        "title": "Trezor",
+        "button": "Get Wallet",
+        "url": "https://trezor.io"
+      },
+      {
+        "icon": "LedgerIcon",
+        "title": "Ledger",
+        "button": "Get Wallet",
+        "url": "https://www.ledger.com"
+      },
+      {
+        "icon": "CopayIcon",
+        "title": "Copay",
+        "button": "Get Wallet",
+        "url": "https://github.com/viacoin/copay"
+      },
+      {
+        "icon": "PungoIcon",
+        "title": "Pungo",
+        "button": "Get Wallet",
+        "url": "https://pungo.app"
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Romano",
+      "job": "Lead Developer",
+      "picture": "team/romano.svg",
+      "icons": ["GithubIcon"],
+      "url": ["https://github.com/romanornr"]
+    },
+    {
+      "name": "Reorder",
+      "job": "Developer",
+      "picture": "team/reorder.svg",
+      "icons": ["GithubIcon"],
+      "url": ["https://github.com/reorder"]
+    },
+    {
+      "name": "Frank",
+      "job": "Developer",
+      "picture": "team/frank.svg",
+      "icons": ["LinkedinIcon"],
+      "url": ["https://www.linkedin.com/in/frank-marrone-b833533/"]
+    },
+    {
+      "name": "Chainfailure",
+      "job": "Developer",
+      "picture": "team/chainfailure.svg",
+      "icons": ["GithubIcon", "TwitterIcon"],
+      "url": ["https://github.com/chainfailure", "https://www.twitter.com/chainfailure"]
+    },
+    {
+      "name": "Hotshot",
+      "job": "Developer",
+      "picture": "team/hotshot.svg",
+      "icons": ["GithubIcon", "TwitterIcon"],
+      "url": ["https://github.com/abllr", "https://twitter.com/cryptoshot"]
+    },
+    {
+      "name": "Rockstardev",
+      "job": "Developer",
+      "picture": "team/rockstardev.svg",
+      "icons": ["GithubIcon", "TwitterIcon"],
+      "url": ["https://github.com/rockstardev", "https://twitter.com/@r0ckstardev"]
+    },
+    {
+      "name": "Mike V",
+      "job": "Head of Marketing",
+      "picture": "team/mikev.svg",
+      "icons": ["TwitterIcon"],
+      "url": ["https://www.twitter.com/Mike__V_"]
+    },
+    {
+      "name": "CR-MN",
+      "job": "Front-end developer/designer",
+      "picture": "team/crrm.svg",
+      "icons": [],
+      "url": []
+    }
+  ],
+  "resources": {
+    "pools": [
+      {
+        "title": "F2Pool",
+        "url": "https://www.f2pool.com",
+        "picture": "/resources/f2pool.png"
+      },
+      {
+        "title": "LitecoinPool",
+        "url": "https://litecoinpool.org",
+        "picture": "/resources/litecoinpool.png"
+      },
+      {
+        "title": "Multipool",
+        "url": "https://www.multipool.us/dashboard/pool/via",
+        "picture": "/resources/multipool.png"
+      }
+    ],
+    "exchanges": [
+      {
+        "title": "Binance",
+        "url": "https://www.binance.com/tradeDetail.html?symbol=VIA_BTC",
+        "picture": "/resources/binance.png",
+        "delay": 100,
+        "height": "62px"
+      },
+      {
+        "title": "Bittrex",
+        "url": "https://upbit.com/exchange?code=CRIX.UPBIT.BTC-VIA",
+        "picture": "/resources/bittrex.png",
+        "delay": 200,
+        "height": "45px"
+      },
+      {
+        "title": "Upbit",
+        "url": "https://bittrex.com/Market/Index?MarketName=BTC-VIA",
+        "picture": "/resources/upbit.png",
+        "delay": 300,
+        "height": "39px"
+      },
+      {
+        "title": "Poloniex",
+        "url": "https://poloniex.com/exchange/btc_via",
+        "picture": "/resources/poloniex.png",
+        "delay": 400,
+        "height": "35px"
+      },
+      {
+        "title": "Yobit",
+        "url": "https://yobit.net/en/trade/VIA/BTC",
+        "picture": "/resources/yobit.png",
+        "delay": 500,
+        "height": "55px"
+      },
+      {
+        "title": "Coinroom",
+        "url": "https://coinroom.com/",
+        "picture": "/resources/coinroom.png",
+        "delay": 600,
+        "height": "35px"
+      },
+      {
+        "title": "Barterdex",
+        "url": "http://www.barterdex.com/",
+        "picture": "/resources/barterdex.png",
+        "delay": 700,
+        "height": "35px"
+      },
+      {
+        "title": "Peer2cash",
+        "url": "https://peer2.cash",
+        "picture": "/resources/peer2cash.png",
+        "delay": 800,
+        "height": "35px"
+      }
+    ],
+    "services": [
+      {
+        "title": "Block Explorer",
+        "url": "https://explorer.viacoin.org",
+        "picture": "/resources/viacoin-explorer.png"
+      },
+      {
+        "title": "CryptoID",
+        "url": "https://chainz.cryptoid.info/via",
+        "picture": "/resources/cryptoid.png"
+      },
+      {
+        "title": "Litebit",
+        "url": "https://litebit.io",
+        "picture": "/resources/litebit.png",
+        "delay": 900,
+        "height": "35px"
+      },
+      {
+        "title": "Peer2krd",
+        "url": "https://peer2.cash",
+        "picture": "/resources/peer2cash.png",
+        "delay": 1000,
+        "height": "35px"
+      }
+    ]
+  },
+  "vendors": [
+    {
+      "name": "CryptoPosters",
+      "title": "Art Posters",
+      "url": "https://cryptoposters.co",
+      "picture": "/vendors/cryptoposters.png"
+    },
+    {
+      "name": "Cryptips",
+      "title": "Tipstickers",
+      "url": "https://cryptips.se",
+      "picture": "/vendors/cryptips.png"
+    },
+    {
+      "name": "Evolution Host",
+      "title": "Hosting",
+      "url": "https://evolution-host.com",
+      "picture": "/vendors/evolution-host.png"
+    },
+    {
+      "name": "Paul Mana",
+      "title": "Design",
+      "url": "https://paulmana.com",
+      "picture": "/vendors/paulmanacre.png"
+    },
+    {
+      "name": "BlockchainDenim",
+      "title": "Denim",
+      "url": "https://blockchaindenim.com",
+      "picture": "/vendors/blockchaindenim.png"
+    }
+  ],
+  "donate": [
+    {
+      "currency": "VIA",
+      "name": "Viacoin",
+      "address": "VPzExampleAddress123456789"
+    },
+    {
+      "currency": "BTC",
+      "name": "Bitcoin",
+      "address": "1ExampleBitcoinAddress123456789"
+    }
+  ]
 }
