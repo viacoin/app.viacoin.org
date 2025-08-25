@@ -47,7 +47,7 @@ npm run build
   - [public/CNAME](public/CNAME) -> /CNAME (for custom domain)
 - Base path is "/" (configured in [vite.config.js](vite.config.js))
 
-Service worker registration occurs in [src/viacoin.js](src/viacoin.js) at [navigator.serviceWorker.register()](src/viacoin.js:7).
+Service worker registration occurs in [src/viacoin.js](src/viacoin.js) at [navigator.serviceWorker.register()](src/viacoin.js).
 
 ## Deploy (GitHub Pages via gh-pages)
 
