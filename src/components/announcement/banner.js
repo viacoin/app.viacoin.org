@@ -40,7 +40,7 @@ export default class AnnouncementBanner extends Component {
               <div class="banner-ctas">
                 <a class="banner-link secondary" href="https://docs.onvia.org/?utm_source=viacoin.org&amp;utm_medium=referral&amp;utm_campaign=announcement-2025-08&amp;utm_content=banner-secondary">Via L2 Rollup Gitbook Documentation</a>
                 <a class="banner-link secondary" href="https://blog.onvia.org/introducing-via-a-bitcoin-l2-sovereign-zk-rollup/">Blog post announcement</a>
-                <a class="banner-link secondary" href="https://buildonvia.org/?utm_source=viacoin.org&amp;utm_medium=referral&amp;utm_campaign=announcement-2025-08&amp;utm_content=banner-primary">New site</a>
+                <a class="banner-link secondary" href="https://buildonvia.org/?utm_source=viacoin.org&amp;utm_medium=referral&amp;utm_campaign=announcement-2025-08&amp;utm_content=banner-primary">New Site: buildonvia.org</a>
                 <a class="banner-link secondary" href="https://x.com/buildonvia">Follow Via on X / Twitter</a>
               </div>
                 

@@ -181,7 +181,7 @@
     animation: backdropFadeIn 300ms ease-out
 
   .via-l2-banner .banner-link
-    transition: background-color 160ms ease, filter 160ms ease
+    transition: background-color 160ms ease, filter 160ms ease, transform 120ms ease, box-shadow 160ms ease, transform 120ms ease, box-shadow 160ms ease
 
   .banner-close
     transition: background-color 200ms ease
@@ -218,4 +218,57 @@
 
 // Prevent body scroll when overlay is active
 body.overlay-active
-  overflow: hidden
+  overflow: hidden// CTA emphasis overrides (appended)
+.via-l2-banner
+  .banner-ctas
+    flex-wrap: wrap
+    .banner-link
+      font-weight: 600
+      font-size: clamp(0.95rem, 0.4vw + 0.9rem, 1.1rem)
+      padding: .75rem 1.1rem
+      border-radius: 6px
+      box-shadow: 0 4px 12px rgba(0,0,0,.25)
+
+.via-l2-banner .banner-ctas .banner-link:hover
+  transform: translateY(-1px)
+  box-shadow: 0 6px 16px rgba(0,0,0,.35)
+
+.via-l2-banner .banner-ctas .banner-link:active
+  transform: translateY(0)
+
+.via-l2-banner .banner-ctas .primary
+  box-shadow: 0 6px 18px rgba(0,0,0,.4)
+
+.via-l2-banner .banner-ctas .secondary
+  background: rgba(255,255,255,.08)
+  border: 1px solid rgba(255,255,255,.35)
+
+.via-l2-banner .banner-ctas .secondary:hover
+  background: rgba(255,255,255,.14)
+// CTA emphasis overrides (appended)
+.via-l2-banner
+  .banner-ctas
+    flex-wrap: wrap
+    .banner-link
+      font-weight: 600
+      font-size: clamp(0.95rem, 0.4vw + 0.9rem, 1.1rem)
+      padding: .75rem 1.1rem
+      border-radius: 6px
+      box-shadow: 0 4px 12px rgba(0,0,0,.25)
+
+.via-l2-banner .banner-ctas .banner-link:hover
+  transform: translateY(-1px)
+  box-shadow: 0 6px 16px rgba(0,0,0,.35)
+
+.via-l2-banner .banner-ctas .banner-link:active
+  transform: translateY(0)
+
+.via-l2-banner .banner-ctas .primary
+  box-shadow: 0 6px 18px rgba(0,0,0,.4)
+
+.via-l2-banner .banner-ctas .secondary
+  background: rgba(255,255,255,.08)
+  border: 1px solid rgba(255,255,255,.35)
+
+.via-l2-banner .banner-ctas .secondary:hover
+  background: rgba(255,255,255,.14)
