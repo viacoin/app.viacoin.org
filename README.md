@@ -59,7 +59,7 @@ This repository is deployed via Cloudflare Pages. A typical Pages setup for this
 
 Custom domain:
 - Attach viacoin.org to the Pages project in the Cloudflare dashboard (ensure the certificate shows Active).
-- After the Cloudflare custom domain is active, you can remove public/CNAME (Cloudflare Pages does not use the CNAME file; leaving it will just serve it as a static file).
+- Do not include public/CNAME. Cloudflare Pages does not use a CNAME file; if present it will be served as a static file.
 
 Headers and caching:
 - public/_headers is included to set caching and security headers (copied to dist/_headers).
