@@ -28,14 +28,38 @@
     flex: 1
     font-size: $size-6
     line-height: 1.4
+    max-width: 72ch
+    margin: 0 auto
 
     strong
       font-weight: $weight-black
       color: $white
 
+    p
+      line-height: 1.65
+      margin-bottom: 1.2rem
+      color: inherit
+
+      &:last-child
+        margin-bottom: 0
+
+    +mobile
+      max-width: none
+      margin: 0
+
   .banner-ctas
     display: flex
     gap: .5rem
+    margin-top: 1.5rem
+    margin-bottom: 1.5rem
+
+    +tablet
+      margin-top: 2rem
+      margin-bottom: 2rem
+
+    +widescreen
+      margin-top: 2.25rem
+      margin-bottom: 2rem
 
     +mobile
       width: 100%
