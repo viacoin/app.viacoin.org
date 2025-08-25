@@ -1,0 +1,48 @@
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+  Timing-Allow-Origin: *
+
+/intro/*
+  Cache-Control: public, max-age=604800
+
+/resources/*
+  Cache-Control: public, max-age=604800
+
+/vendors/*
+  Cache-Control: public, max-age=604800
+
+/team/*
+  Cache-Control: public, max-age=604800
+
+/config.json
+  Cache-Control: no-cache, must-revalidate
+  Content-Type: application/json; charset=utf-8
+
+/service-worker.js
+  Cache-Control: no-store
+  Service-Worker-Allowed: /
+  Content-Type: application/javascript; charset=utf-8
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+  Content-Type: application/xml; charset=utf-8
+
+/robots.txt
+  Cache-Control: public, max-age=300
+  Content-Type: text/plain; charset=utf-8
+
+/index.html
+  Cache-Control: no-store, must-revalidate
+
+/*
+  Cache-Control: no-cache
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Permissions-Policy: geolocation=(), camera=(), microphone=(), payment=(), usb=(), browsing-topics=()
+  Cross-Origin-Resource-Policy: same-origin
+  Cross-Origin-Opener-Policy: same-origin
+  X-XSS-Protection: 0
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: blob: https:; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://min-api.cryptocompare.com https://www.google-analytics.com https://stats.g.doubleclick.net; media-src 'self'; frame-src 'self'; worker-src 'self';
