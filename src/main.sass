@@ -1,5 +1,12 @@
 @charset "utf-8"
 
+// Import Bulma core utilities first (required for mixins like +desktop, +mobile)
+@import "../node_modules/bulma/sass/utilities/_all"
+// Import initial variables first (required for derived-variables)
+@import "../node_modules/bulma/sass/utilities/initial-variables"
+// Import derived variables (defines $family-common, $background, $link, etc.)
+@import "../node_modules/bulma/sass/utilities/derived-variables"
+
 @import "../node_modules/bulma/sass/layout/section"
 @import "../node_modules/bulma/sass/layout/hero"
 @import "../node_modules/bulma/sass/grid/columns"
@@ -30,11 +37,11 @@ body
   background: $background
 
 p
-  font-family: $family-common
+  font-family: $family-primary
 
 .app
   section
-    @include transition(all 300ms ease-in-out)
+    transition: all 300ms ease-in-out
 
 .columns
   +mobile
@@ -49,12 +56,12 @@ p
     vertical-align: middle
 
 .grayscale
-  @include grayscale(100%)
+  filter: grayscale(100%)
   &:hover
-    @include grayscale(0)
+    filter: grayscale(0)
 
 .title
-  font-family: $family-impact
+  font-family: $family-primary
   text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.35)
 
   &.is-1
@@ -72,9 +79,24 @@ p
   +mobile
     font-size: $size-6
   font-size: $size-4
-  font-family: $family-common
+  font-family: $family-primary
   text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.35)
 
 button
   &:focus
     outline: 0
+
+.has-text-weight-semibold
+  font-weight: 600 !important
+
+.title strong
+  color: #fff
+  font-weight: 900
+
+
+h1.title.is-1.is-spaced.has-text-weight-normal
+  font-size: 4.8rem
+  line-height: 4rem
+
+.title.is-1
+  letter-spacing: -.3rem

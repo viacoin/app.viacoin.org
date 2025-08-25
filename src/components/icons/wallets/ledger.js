@@ -1,8 +1,7 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
-/** @jsx preact.h */
 
-export default class Ledger extends preact.Component {
+export default class Ledger extends Component {
   render() {
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 501.96 503.61">
       <path d="M427.64,4.36H196V315.2H506.87v-230C507,41.57,471.31,4.36,427.64,4.36Z" transform="translate(-5.04 -4.36)"/>

@@ -1,4 +1,4 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
 import Media from 'components/roadmap/media'
 
@@ -13,9 +13,8 @@ import IosIcon from 'components/icons/os/ios';
 
 import "./styles.sass"
 
-/** @jsx preact.h */
 
-export default class LayoutRoadmap extends preact.Component {
+export default class LayoutRoadmap extends Component {
 
   medias(config) {
     const icons = {
@@ -41,7 +40,7 @@ export default class LayoutRoadmap extends preact.Component {
   render(props, state) {
     const {config} = props;
     const medias = this.medias(config);
-    return <section class="section is-roadmap" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center">
+    return <section class="section is-roadmap has-background-blue-space" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center">
       <div class="container">
         <h3 class="title is-1 has-text-weight-light">
           <strong>2018</strong>

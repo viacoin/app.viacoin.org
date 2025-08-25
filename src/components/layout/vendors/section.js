@@ -1,12 +1,11 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
 import Logo from 'components/logo/picture';
 
 import "./styles.sass";
 
-/** @jsx preact.h */
 
-export default class LayoutVendors extends preact.Component {
+export default class LayoutVendors extends Component {
 
   vendors(config) {
     return config.map(v => {

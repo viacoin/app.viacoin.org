@@ -1,12 +1,10 @@
 import 'main.sass';
-import preact from 'preact';
+import { h, render } from 'preact';
 import App from 'components/app';
 
-/** @jsx preact.h */
-
 document.addEventListener('DOMContentLoaded', () => {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js');
+  if (import.meta.env.PROD && 'serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js');
   }
-  preact.render((<App />), document.body);
+  render((<App />), document.body);
 });

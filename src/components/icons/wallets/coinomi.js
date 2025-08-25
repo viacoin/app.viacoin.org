@@ -1,8 +1,7 @@
-import preact from 'preact';
+import { h, Component } from 'preact';
 
-/** @jsx preact.h */
 
-export default class Coinomi extends preact.Component {
+export default class Coinomi extends Component {
   render() {
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 406 441.91">
       <path d="M395.31,103.74a39,39,0,0,0-5.85,13.67c-6-3-12.59-4.46-18.94-6.52-14.87-4.75-29.74-9.38-44.57-14l-80-25.2c-5-1.57-10-3.08-14.94-4.75a6.72,6.72,0,0,1-2.91-1.42c-.41-.8.1-1.42.49-2a17.68,17.68,0,0,0,2.89-9c0-.71-.29-1.76,1-1.85L306.87,76Z" transform="translate(-53 -35.06)"/>
