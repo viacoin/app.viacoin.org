@@ -526,12 +526,12 @@
     {
       "currency": "VIA",
       "name": "Viacoin",
-      "address": "VPzExampleAddress123456789"
+      "address": ""
     },
     {
       "currency": "BTC",
       "name": "Bitcoin",
-      "address": "1ExampleBitcoinAddress123456789"
+      "address": ""
     }
   ]
 }

@@ -11,7 +11,7 @@ export default class LayoutVendors extends Component {
     return config.map(v => {
       return <div class="column is-half" data-aos-speed="3" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center">
         <a href={v.url} alt={v.name} title={v.title} target="_blank">
-          <img class="" src={v.picture} style={v.styles} />
+          <img class="" src={v.picture} alt={v.name || 'Vendor logo'} style={v.styles} />
           <h5 class="title is-5 has-text-weight-bold">{v.name}</h5>
           <h6 class="subtitle is-6 is-italic has-text-weight-bold">&laquo; {v.title} &raquo;</h6>
         </a>
@@ -22,8 +22,11 @@ export default class LayoutVendors extends Component {
   render(props, state) {
     const {config} = props;
     const vendors = this.vendors(config);
-    return <section class="is-vendors">
+    
+    return <section class="is-vendors" role="region" aria-label="Vendors">
       <div class="container">
+        <h2 id="vendors" class="title is-2 has-text-centered">Vendors</h2>
+        <p class="has-text-centered" style="margin-bottom: 2rem;">These merchants and services support Viacoin payments.</p>
         <div class="has-text-centered" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center">
           <Logo />
           <h3 class="title is-1" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center">

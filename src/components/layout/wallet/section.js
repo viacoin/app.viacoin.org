@@ -83,8 +83,20 @@ export default class LayoutTeam extends Component {
     if (this.props.config && this.props.config.third) {
       thirds = this.wallets(this.props.config.third);
     }
-    return <section class="is-wallet">
+    // Build summary from wallet config
+    const walletTypes = [];
+    if (this.props.config && this.props.config.third) {
+      const walletNames = this.props.config.third.map(w => w.title);
+      walletTypes.push(...walletNames);
+    }
+    const summaryText = walletTypes.length > 0
+      ? `Viacoin supports wallets including ${walletTypes.slice(0, 4).join(', ')}, available across desktop and mobile platforms.`
+      : 'Viacoin supports various wallets across desktop and mobile platforms.';
+
+    return <section class="is-wallet" role="region" aria-label="Wallets">
       <div class="container">
+        <h2 id="wallets" class="title is-2 has-text-centered">Wallets</h2>
+        <p class="has-text-centered" style="margin-bottom: 2rem;">{summaryText}</p>
         <div class="has-text-centered" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center">
           <Logo />
           <h3 class="title is-1" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center">

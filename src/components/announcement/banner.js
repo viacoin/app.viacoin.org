@@ -30,17 +30,18 @@ export default class AnnouncementBanner extends Component {
   render(props, state) {
     if (!state.visible) return null;
     return (
-      <div class="via-l2-banner-overlay" role="dialog" aria-modal="true" aria-label="Announcement: Viacoin is becoming Via L2 | Sovereign Validity zkEVM Rollup for Bitcoin">
+      <section id="site-announcement" class="announcement via-l2-banner-overlay" role="region" aria-label="Announcement">
         <div class="banner-backdrop" onclick={this.dismiss}></div>
-        <div class="via-l2-banner" role="region" aria-label="Announcement: Viacoin is becoming Via L2 | Sovereign Validity zkEVM Rollup for Bitcoin" data-banner="via-l2-announcement">
+        <div class="via-l2-banner" data-banner="via-l2-announcement">
           <div class="container">
             <div class="banner-inner">
               <div class="banner-text">
-                <h1 class="announcement-title"><strong>Viacoin transitions into Via L2 | Sovereign Validity zkEVM Rollup for Bitcoin</strong></h1>
+                <h2>Announcement</h2>
+                <p><strong>Viacoin transitions into Via L2 | Sovereign Validity zkEVM Rollup for Bitcoin</strong></p>
               <div class="banner-ctas">
                 <a class="banner-link secondary" href="https://docs.onvia.org/?utm_source=viacoin.org&amp;utm_medium=referral&amp;utm_campaign=announcement-2025-08&amp;utm_content=banner-secondary">Via L2 Rollup Gitbook Documentation</a>
                 <a class="banner-link secondary" href="https://blog.onvia.org/introducing-via-a-bitcoin-l2-sovereign-zk-rollup/">Blog post announcement</a>
-                <a class="banner-link secondary" href="https://buildonvia.org/?utm_source=viacoin.org&amp;utm_medium=referral&amp;utm_campaign=announcement-2025-08&amp;utm_content=banner-primary">New Site: buildonvia.org</a>
+                <a class="banner-link secondary" href="https://onvia.org/?utm_source=viacoin.org&amp;utm_medium=referral&amp;utm_campaign=announcement-2025-08&amp;utm_content=banner-primary">New Site: buildonvia.org</a>
                 <a class="banner-link secondary" href="https://x.com/buildonvia">Follow Via on X / Twitter</a>
               </div>
                 
@@ -61,13 +62,15 @@ export default class AnnouncementBanner extends Component {
                 <p>However, it's about adapting and evolving. We're taking the flexibility and practicality with us. Take Ethereum, for example. A large part of its market cap and TVL is dominated by Ethereum Layer 2, and the upside for Bitcoin L2s is huge.</p>
                 <p><b>Via as a layer 2 would enable us to scale up, as we are not just building a new layer on top of Bitcoin, but also an entire DeFi ecosystem. Bringing EVM smart contracts to Bitcoin.</b></p>
                 <p>The holders still owning legacy Viacoins will be rewarded with the airdrop or a swap for the new Via token, which has a vision stronger than before.</p>
+                <p><b>For more information, visit <a href="https://onvia.org/">onvia.org</a></b></p>
+                <p>The old Viacoin.org website remains visible for now, but may be redirected to the new site in the future or remains visible as a nostalgic reminder of the past.</p>
               </div>
 
               <button class="banner-close" aria-label="Dismiss announcement" title="Dismiss announcement" onclick={this.dismiss}>&times;</button>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

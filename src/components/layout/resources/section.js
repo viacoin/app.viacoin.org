@@ -38,8 +38,15 @@ export default class LayoutResources extends Component {
   render(props, state) {
     const {config} = props;
     const resources = this.resources(config);
-    return <section class="is-resources">
+    // Build summary from resources config
+    const servicesCount = config.services ? config.services.length : 0;
+    const exchangesCount = config.exchanges ? config.exchanges.length : 0;
+    const summaryText = `Viacoin resources include block explorer, documentation, and community channels across ${exchangesCount} exchanges and ${servicesCount} services.`;
+
+    return <section class="is-resources" role="region" aria-label="Resources">
       <div class="container">
+        <h2 id="resources" class="title is-2 has-text-centered">Resources</h2>
+        <p class="has-text-centered" style="margin-bottom: 2rem;">{summaryText}</p>
         <div class="has-text-centered" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center">
           <Logo />
           <h3 class="title is-1" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center">

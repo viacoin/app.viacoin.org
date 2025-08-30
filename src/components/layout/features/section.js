@@ -36,8 +36,15 @@ export default class LayoutFeatures extends Component {
   render(props, state) {
     const {config} = props;
     const cards = this.cards(config);
-    return <section class="section is-features has-background-blue-space" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center">
+    
+    // Build summary from config feature titles
+    const featureTitles = config.map(f => f.title).slice(0, 5);
+    const summaryText = `Viacoin features include ${featureTitles.join(', ').replace(/, ([^,]+)$/, ', and $1')}.`;
+    
+    return <section class="section is-features has-background-blue-space" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center" role="region" aria-label="Features">
       <div class="container">
+        <h2 id="features" class="title is-2 has-text-white has-text-centered">Viacoin features</h2>
+        <p class="has-text-white-bis has-text-centered" style="margin-bottom: 2rem;">{summaryText}</p>
         <div class="has-text-centered">
           <Logo text="true" />
           <h3 class="title is-1 has-text-weight-light">

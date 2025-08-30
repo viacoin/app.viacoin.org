@@ -40,14 +40,17 @@ export default class LayoutRoadmap extends Component {
   render(props, state) {
     const {config} = props;
     const medias = this.medias(config);
-    return <section class="section is-roadmap has-background-blue-space" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center">
+    
+    return <section class="section is-roadmap has-background-blue-space" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center" role="region" aria-label="Roadmap">
       <div class="container">
+        <h2 id="roadmap" class="title is-2 has-text-white has-text-centered">Roadmap</h2>
+        <p class="has-text-white-bis has-text-centered" style="margin-bottom: 2rem;">Viacoin's development roadmap outlines protocol improvements and ecosystem milestones.</p>
         <h3 class="title is-1 has-text-weight-light">
           <strong>2018</strong>
           FOCUSED ON <strong>
           IMPROVING</strong> <strong>PERFORMANCE</strong>
         </h3>
-		    { medias }
+      { medias }
       </div>
     </section>;
   }

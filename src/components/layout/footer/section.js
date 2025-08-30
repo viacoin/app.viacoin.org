@@ -19,8 +19,10 @@ export default class LayoutFooter extends Component {
 
   render(props, state) {
     const {config} = props;
-    return <section class="is-footer">
+    return <section class="is-footer" role="region" aria-label="Footer">
       <div class="container">
+        <h2 id="footer" class="title is-2 has-text-white has-text-centered">About Viacoin</h2>
+        <p class="has-text-white-bis has-text-centered" style="margin-bottom: 3rem;">Viacoin is a fast, secure cryptocurrency with Lightning Network support and 24-second block times.</p>
         <div class="columns" data-aos-speed="3" data-aos="fade-up" data-aos-easing="ease" data-aos-anchor-placement="top-center">
           <div class="column is-community">
             <h4 class="title is-1">Community</h4>

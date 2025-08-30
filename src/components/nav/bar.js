@@ -13,6 +13,16 @@ export default class Navbar extends Component {
           <Logo circle="true" text="true" />
         </a>
       </div>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#features">Features</a>
+          <a class="navbar-item" href="#roadmap">Roadmap</a>
+          <a class="navbar-item" href="#wallets">Wallets</a>
+          <a class="navbar-item" href="#resources">Resources</a>
+          <a class="navbar-item" href="#vendors">Vendors</a>
+          <a class="navbar-item" href="#footer">Contact</a>
+        </div>
+      </div>
     </nav>;
   }
 }
