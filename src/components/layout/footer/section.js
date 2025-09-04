@@ -44,7 +44,7 @@ export default class LayoutFooter extends Component {
               <a class="button is-medium is-link" href="https://github.com/vianetwork/" title="Via L2 zkEVM Rollup Github" target="_blank">Via L2 zkEVM Rollup Github (new)</a>
               <a class="button is-medium is-link" href="https://docs.onvia.org/?utm_source=viacoin.org&utm_medium=referral&utm_campaign=announcement-2025-08&utm_content=footer-development" title="Via L2 Gitbook docs" target="_blank" rel="noopener">New Via L2 | Gitbook docs</a>
               <a class="button is-medium is-link" href="https://blog.onvia.org" title="Via L2 zkEVM Rollup Blog" target="_blank">Via L2 zkEVM Rollup | Blog (new)</a>
-              <a class="button is-medium is-link" href="https://buildonvia.org/?utm_source=viacoin.org&utm_medium=referral&utm_campaign=announcement-2025-08&utm_content=footer-development" title="Build on Via — developer portal" target="_blank" rel="noopener">New Via L2 | Build on Via</a>
+              <a class="button is-medium is-link" href="https://onvia.org/?utm_source=viacoin.org&utm_medium=referral&utm_campaign=announcement-2025-08&utm_content=footer-development" title="Build on Via — developer portal" target="_blank" rel="noopener">New Via L2 | Build on Via</a>
             </p>
           </div>
         </div>
